@@ -203,7 +203,7 @@ final class CloudFoundryCleaner {
             .map(ResourceUtils::getId)
             .flatMap(domainId -> cloudFoundryClient.domains()
                 .delete(DeleteDomainRequest.builder()
-                    .async(true)
+                    .async(false)
                     .domainId(domainId)
                     .build()))
             .flatMap(job -> JobUtils.waitForCompletion(cloudFoundryClient, job));
@@ -239,7 +239,7 @@ final class CloudFoundryCleaner {
             .map(ResourceUtils::getId)
             .flatMap(organizationId -> cloudFoundryClient.organizations()
                 .delete(DeleteOrganizationRequest.builder()
-                    .async(true)
+                    .async(false)
                     .organizationId(organizationId)
                     .build()))
             .flatMap(job -> JobUtils.waitForCompletion(cloudFoundryClient, job));
@@ -270,7 +270,7 @@ final class CloudFoundryCleaner {
             .map(ResourceUtils::getId)
             .flatMap(privateDomainId -> cloudFoundryClient.privateDomains()
                 .delete(DeletePrivateDomainRequest.builder()
-                    .async(true)
+                    .async(false)
                     .privateDomainId(privateDomainId)
                     .build()))
             .flatMap(job -> JobUtils.waitForCompletion(cloudFoundryClient, job));
@@ -286,7 +286,7 @@ final class CloudFoundryCleaner {
             .map(ResourceUtils::getId)
             .flatMap(routeId -> cloudFoundryClient.routes()
                 .delete(DeleteRouteRequest.builder()
-                    .async(true)
+                    .async(false)
                     .routeId(routeId)
                     .build()))
             .flatMap(job -> JobUtils.waitForCompletion(cloudFoundryClient, job));
@@ -302,7 +302,7 @@ final class CloudFoundryCleaner {
             .map(ResourceUtils::getId)
             .flatMap(serviceInstanceId -> cloudFoundryClient.serviceInstances()
                 .delete(DeleteServiceInstanceRequest.builder()
-                    .async(true)
+                    .async(false)
                     .serviceInstanceId(serviceInstanceId)
                     .build()))
             .flatMap(job -> JobUtils.waitForCompletion(cloudFoundryClient, job));
@@ -318,7 +318,7 @@ final class CloudFoundryCleaner {
             .map(ResourceUtils::getId)
             .flatMap(spaceId -> cloudFoundryClient.spaces()
                 .delete(DeleteSpaceRequest.builder()
-                    .async(true)
+                    .async(false)
                     .spaceId(spaceId)
                     .build()))
             .flatMap(job -> JobUtils.waitForCompletion(cloudFoundryClient, job));
