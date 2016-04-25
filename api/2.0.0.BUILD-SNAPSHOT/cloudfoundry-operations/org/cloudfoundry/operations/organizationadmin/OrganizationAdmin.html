@@ -17,7 +17,7 @@
     catch(err) {
     }
 //-->
-var methods = {"i0":6,"i1":6,"i2":6,"i3":6,"i4":6};
+var methods = {"i0":6,"i1":6,"i2":6,"i3":6,"i4":6,"i5":6};
 var tabs = {65535:["t0","All Methods"],2:["t2","Instance Methods"],4:["t3","Abstract Methods"]};
 var altColor = "altColor";
 var rowColor = "rowColor";
@@ -150,6 +150,12 @@ var activeTableTab = "activeTableTab";
 <div class="block">Set the organization quota</div>
 </td>
 </tr>
+<tr id="i5" class="rowColor">
+<td class="colFirst"><code><a href="http://projectreactor.io/core/docs/api/reactor/core/publisher/Mono.html?is-external=true" title="class or interface in reactor.core.publisher">Mono</a>&lt;<a href="../../../../org/cloudfoundry/operations/organizationadmin/OrganizationQuota.html" title="class in org.cloudfoundry.operations.organizationadmin">OrganizationQuota</a>&gt;</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../org/cloudfoundry/operations/organizationadmin/OrganizationAdmin.html#updateQuota-org.cloudfoundry.operations.organizationadmin.UpdateQuotaRequest-">updateQuota</a></span>(<a href="../../../../org/cloudfoundry/operations/organizationadmin/UpdateQuotaRequest.html" title="class in org.cloudfoundry.operations.organizationadmin">UpdateQuotaRequest</a>&nbsp;request)</code>
+<div class="block">Update an organization quota</div>
+</td>
+</tr>
 </table>
 </li>
 </ul>
@@ -230,7 +236,7 @@ var activeTableTab = "activeTableTab";
 <a name="setQuota-org.cloudfoundry.operations.organizationadmin.SetQuotaRequest-">
 <!--   -->
 </a>
-<ul class="blockListLast">
+<ul class="blockList">
 <li class="blockList">
 <h4>setQuota</h4>
 <pre><a href="http://projectreactor.io/core/docs/api/reactor/core/publisher/Mono.html?is-external=true" title="class or interface in reactor.core.publisher">Mono</a>&lt;<a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Void.html?is-external=true" title="class or interface in java.lang">Void</a>&gt;&nbsp;setQuota(<a href="../../../../org/cloudfoundry/operations/organizationadmin/SetQuotaRequest.html" title="class in org.cloudfoundry.operations.organizationadmin">SetQuotaRequest</a>&nbsp;request)</pre>
@@ -240,6 +246,22 @@ var activeTableTab = "activeTableTab";
 <dd><code>request</code> - The Set Quota request</dd>
 <dt><span class="returnLabel">Returns:</span></dt>
 <dd>a completion indicator</dd>
+</dl>
+</li>
+</ul>
+<a name="updateQuota-org.cloudfoundry.operations.organizationadmin.UpdateQuotaRequest-">
+<!--   -->
+</a>
+<ul class="blockListLast">
+<li class="blockList">
+<h4>updateQuota</h4>
+<pre><a href="http://projectreactor.io/core/docs/api/reactor/core/publisher/Mono.html?is-external=true" title="class or interface in reactor.core.publisher">Mono</a>&lt;<a href="../../../../org/cloudfoundry/operations/organizationadmin/OrganizationQuota.html" title="class in org.cloudfoundry.operations.organizationadmin">OrganizationQuota</a>&gt;&nbsp;updateQuota(<a href="../../../../org/cloudfoundry/operations/organizationadmin/UpdateQuotaRequest.html" title="class in org.cloudfoundry.operations.organizationadmin">UpdateQuotaRequest</a>&nbsp;request)</pre>
+<div class="block">Update an organization quota</div>
+<dl>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>request</code> - The Update Quota request</dd>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd>the organization quota</dd>
 </dl>
 </li>
 </ul>
