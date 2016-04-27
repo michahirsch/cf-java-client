@@ -17,7 +17,7 @@
     catch(err) {
     }
 //-->
-var methods = {"i0":10,"i1":10,"i2":10,"i3":10,"i4":10,"i5":10,"i6":10,"i7":10,"i8":10,"i9":10,"i10":10,"i11":10};
+var methods = {"i0":10,"i1":10,"i2":10,"i3":10,"i4":10,"i5":10,"i6":10,"i7":10,"i8":10,"i9":10,"i10":10,"i11":10,"i12":10,"i13":10,"i14":10,"i15":10,"i16":10};
 var tabs = {65535:["t0","All Methods"],2:["t2","Instance Methods"],8:["t4","Concrete Methods"]};
 var altColor = "altColor";
 var rowColor = "rowColor";
@@ -148,41 +148,61 @@ extends <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?
 </tr>
 <tr id="i3" class="rowColor">
 <td class="colFirst"><code><a href="../../../../../org/cloudfoundry/client/v2/applications/ApplicationEnvironmentResponse.ApplicationEnvironmentResponseBuilder.html" title="class in org.cloudfoundry.client.v2.applications">ApplicationEnvironmentResponse.ApplicationEnvironmentResponseBuilder</a></code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../org/cloudfoundry/client/v2/applications/ApplicationEnvironmentResponse.ApplicationEnvironmentResponseBuilder.html#environmentJson-java.lang.String-java.lang.Object-">environmentJson</a></span>(<a href="http://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;environmentJsonKey,
-               <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">Object</a>&nbsp;environmentJsonValue)</code>&nbsp;</td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../org/cloudfoundry/client/v2/applications/ApplicationEnvironmentResponse.ApplicationEnvironmentResponseBuilder.html#clearApplicationEnvironmentJsons--">clearApplicationEnvironmentJsons</a></span>()</code>&nbsp;</td>
 </tr>
 <tr id="i4" class="altColor">
 <td class="colFirst"><code><a href="../../../../../org/cloudfoundry/client/v2/applications/ApplicationEnvironmentResponse.ApplicationEnvironmentResponseBuilder.html" title="class in org.cloudfoundry.client.v2.applications">ApplicationEnvironmentResponse.ApplicationEnvironmentResponseBuilder</a></code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../org/cloudfoundry/client/v2/applications/ApplicationEnvironmentResponse.ApplicationEnvironmentResponseBuilder.html#environmentJsons-java.util.Map-">environmentJsons</a></span>(<a href="http://docs.oracle.com/javase/8/docs/api/java/util/Map.html?is-external=true" title="class or interface in java.util">Map</a>&lt;? extends <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>,? extends <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">Object</a>&gt;&nbsp;environmentJsons)</code>&nbsp;</td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../org/cloudfoundry/client/v2/applications/ApplicationEnvironmentResponse.ApplicationEnvironmentResponseBuilder.html#clearEnvironmentJsons--">clearEnvironmentJsons</a></span>()</code>&nbsp;</td>
 </tr>
 <tr id="i5" class="rowColor">
+<td class="colFirst"><code><a href="../../../../../org/cloudfoundry/client/v2/applications/ApplicationEnvironmentResponse.ApplicationEnvironmentResponseBuilder.html" title="class in org.cloudfoundry.client.v2.applications">ApplicationEnvironmentResponse.ApplicationEnvironmentResponseBuilder</a></code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../org/cloudfoundry/client/v2/applications/ApplicationEnvironmentResponse.ApplicationEnvironmentResponseBuilder.html#clearRunningEnvironmentJsons--">clearRunningEnvironmentJsons</a></span>()</code>&nbsp;</td>
+</tr>
+<tr id="i6" class="altColor">
+<td class="colFirst"><code><a href="../../../../../org/cloudfoundry/client/v2/applications/ApplicationEnvironmentResponse.ApplicationEnvironmentResponseBuilder.html" title="class in org.cloudfoundry.client.v2.applications">ApplicationEnvironmentResponse.ApplicationEnvironmentResponseBuilder</a></code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../org/cloudfoundry/client/v2/applications/ApplicationEnvironmentResponse.ApplicationEnvironmentResponseBuilder.html#clearStagingEnvironmentJsons--">clearStagingEnvironmentJsons</a></span>()</code>&nbsp;</td>
+</tr>
+<tr id="i7" class="rowColor">
+<td class="colFirst"><code><a href="../../../../../org/cloudfoundry/client/v2/applications/ApplicationEnvironmentResponse.ApplicationEnvironmentResponseBuilder.html" title="class in org.cloudfoundry.client.v2.applications">ApplicationEnvironmentResponse.ApplicationEnvironmentResponseBuilder</a></code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../org/cloudfoundry/client/v2/applications/ApplicationEnvironmentResponse.ApplicationEnvironmentResponseBuilder.html#clearSystemEnvironmentJsons--">clearSystemEnvironmentJsons</a></span>()</code>&nbsp;</td>
+</tr>
+<tr id="i8" class="altColor">
+<td class="colFirst"><code><a href="../../../../../org/cloudfoundry/client/v2/applications/ApplicationEnvironmentResponse.ApplicationEnvironmentResponseBuilder.html" title="class in org.cloudfoundry.client.v2.applications">ApplicationEnvironmentResponse.ApplicationEnvironmentResponseBuilder</a></code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../org/cloudfoundry/client/v2/applications/ApplicationEnvironmentResponse.ApplicationEnvironmentResponseBuilder.html#environmentJson-java.lang.String-java.lang.Object-">environmentJson</a></span>(<a href="http://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;environmentJsonKey,
+               <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">Object</a>&nbsp;environmentJsonValue)</code>&nbsp;</td>
+</tr>
+<tr id="i9" class="rowColor">
+<td class="colFirst"><code><a href="../../../../../org/cloudfoundry/client/v2/applications/ApplicationEnvironmentResponse.ApplicationEnvironmentResponseBuilder.html" title="class in org.cloudfoundry.client.v2.applications">ApplicationEnvironmentResponse.ApplicationEnvironmentResponseBuilder</a></code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../org/cloudfoundry/client/v2/applications/ApplicationEnvironmentResponse.ApplicationEnvironmentResponseBuilder.html#environmentJsons-java.util.Map-">environmentJsons</a></span>(<a href="http://docs.oracle.com/javase/8/docs/api/java/util/Map.html?is-external=true" title="class or interface in java.util">Map</a>&lt;? extends <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>,? extends <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">Object</a>&gt;&nbsp;environmentJsons)</code>&nbsp;</td>
+</tr>
+<tr id="i10" class="altColor">
 <td class="colFirst"><code><a href="../../../../../org/cloudfoundry/client/v2/applications/ApplicationEnvironmentResponse.ApplicationEnvironmentResponseBuilder.html" title="class in org.cloudfoundry.client.v2.applications">ApplicationEnvironmentResponse.ApplicationEnvironmentResponseBuilder</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../../org/cloudfoundry/client/v2/applications/ApplicationEnvironmentResponse.ApplicationEnvironmentResponseBuilder.html#runningEnvironmentJson-java.lang.String-java.lang.Object-">runningEnvironmentJson</a></span>(<a href="http://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;runningEnvironmentJsonKey,
                       <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">Object</a>&nbsp;runningEnvironmentJsonValue)</code>&nbsp;</td>
 </tr>
-<tr id="i6" class="altColor">
+<tr id="i11" class="rowColor">
 <td class="colFirst"><code><a href="../../../../../org/cloudfoundry/client/v2/applications/ApplicationEnvironmentResponse.ApplicationEnvironmentResponseBuilder.html" title="class in org.cloudfoundry.client.v2.applications">ApplicationEnvironmentResponse.ApplicationEnvironmentResponseBuilder</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../../org/cloudfoundry/client/v2/applications/ApplicationEnvironmentResponse.ApplicationEnvironmentResponseBuilder.html#runningEnvironmentJsons-java.util.Map-">runningEnvironmentJsons</a></span>(<a href="http://docs.oracle.com/javase/8/docs/api/java/util/Map.html?is-external=true" title="class or interface in java.util">Map</a>&lt;? extends <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>,? extends <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">Object</a>&gt;&nbsp;runningEnvironmentJsons)</code>&nbsp;</td>
 </tr>
-<tr id="i7" class="rowColor">
+<tr id="i12" class="altColor">
 <td class="colFirst"><code><a href="../../../../../org/cloudfoundry/client/v2/applications/ApplicationEnvironmentResponse.ApplicationEnvironmentResponseBuilder.html" title="class in org.cloudfoundry.client.v2.applications">ApplicationEnvironmentResponse.ApplicationEnvironmentResponseBuilder</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../../org/cloudfoundry/client/v2/applications/ApplicationEnvironmentResponse.ApplicationEnvironmentResponseBuilder.html#stagingEnvironmentJson-java.lang.String-java.lang.Object-">stagingEnvironmentJson</a></span>(<a href="http://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;stagingEnvironmentJsonKey,
                       <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">Object</a>&nbsp;stagingEnvironmentJsonValue)</code>&nbsp;</td>
 </tr>
-<tr id="i8" class="altColor">
+<tr id="i13" class="rowColor">
 <td class="colFirst"><code><a href="../../../../../org/cloudfoundry/client/v2/applications/ApplicationEnvironmentResponse.ApplicationEnvironmentResponseBuilder.html" title="class in org.cloudfoundry.client.v2.applications">ApplicationEnvironmentResponse.ApplicationEnvironmentResponseBuilder</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../../org/cloudfoundry/client/v2/applications/ApplicationEnvironmentResponse.ApplicationEnvironmentResponseBuilder.html#stagingEnvironmentJsons-java.util.Map-">stagingEnvironmentJsons</a></span>(<a href="http://docs.oracle.com/javase/8/docs/api/java/util/Map.html?is-external=true" title="class or interface in java.util">Map</a>&lt;? extends <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>,? extends <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">Object</a>&gt;&nbsp;stagingEnvironmentJsons)</code>&nbsp;</td>
 </tr>
-<tr id="i9" class="rowColor">
+<tr id="i14" class="altColor">
 <td class="colFirst"><code><a href="../../../../../org/cloudfoundry/client/v2/applications/ApplicationEnvironmentResponse.ApplicationEnvironmentResponseBuilder.html" title="class in org.cloudfoundry.client.v2.applications">ApplicationEnvironmentResponse.ApplicationEnvironmentResponseBuilder</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../../org/cloudfoundry/client/v2/applications/ApplicationEnvironmentResponse.ApplicationEnvironmentResponseBuilder.html#systemEnvironmentJson-java.lang.String-java.lang.Object-">systemEnvironmentJson</a></span>(<a href="http://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;systemEnvironmentJsonKey,
                      <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">Object</a>&nbsp;systemEnvironmentJsonValue)</code>&nbsp;</td>
 </tr>
-<tr id="i10" class="altColor">
+<tr id="i15" class="rowColor">
 <td class="colFirst"><code><a href="../../../../../org/cloudfoundry/client/v2/applications/ApplicationEnvironmentResponse.ApplicationEnvironmentResponseBuilder.html" title="class in org.cloudfoundry.client.v2.applications">ApplicationEnvironmentResponse.ApplicationEnvironmentResponseBuilder</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../../org/cloudfoundry/client/v2/applications/ApplicationEnvironmentResponse.ApplicationEnvironmentResponseBuilder.html#systemEnvironmentJsons-java.util.Map-">systemEnvironmentJsons</a></span>(<a href="http://docs.oracle.com/javase/8/docs/api/java/util/Map.html?is-external=true" title="class or interface in java.util">Map</a>&lt;? extends <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>,? extends <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">Object</a>&gt;&nbsp;systemEnvironmentJsons)</code>&nbsp;</td>
 </tr>
-<tr id="i11" class="rowColor">
+<tr id="i16" class="altColor">
 <td class="colFirst"><code><a href="http://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../../org/cloudfoundry/client/v2/applications/ApplicationEnvironmentResponse.ApplicationEnvironmentResponseBuilder.html#toString--">toString</a></span>()</code>&nbsp;</td>
 </tr>
@@ -229,6 +249,16 @@ public&nbsp;<a href="../../../../../org/cloudfoundry/client/v2/applications/Appl
 public&nbsp;<a href="../../../../../org/cloudfoundry/client/v2/applications/ApplicationEnvironmentResponse.ApplicationEnvironmentResponseBuilder.html" title="class in org.cloudfoundry.client.v2.applications">ApplicationEnvironmentResponse.ApplicationEnvironmentResponseBuilder</a>&nbsp;applicationEnvironmentJsons(<a href="http://docs.oracle.com/javase/8/docs/api/java/util/Map.html?is-external=true" title="class or interface in java.util">Map</a>&lt;? extends <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>,? extends <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">Object</a>&gt;&nbsp;applicationEnvironmentJsons)</pre>
 </li>
 </ul>
+<a name="clearApplicationEnvironmentJsons--">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>clearApplicationEnvironmentJsons</h4>
+<pre><a href="http://docs.oracle.com/javase/8/docs/api/javax/annotation/Generated.html?is-external=true" title="class or interface in javax.annotation">@Generated</a>(<a href="http://docs.oracle.com/javase/8/docs/api/javax/annotation/Generated.html?is-external=true#value--" title="class or interface in javax.annotation">value</a>="lombok")
+public&nbsp;<a href="../../../../../org/cloudfoundry/client/v2/applications/ApplicationEnvironmentResponse.ApplicationEnvironmentResponseBuilder.html" title="class in org.cloudfoundry.client.v2.applications">ApplicationEnvironmentResponse.ApplicationEnvironmentResponseBuilder</a>&nbsp;clearApplicationEnvironmentJsons()</pre>
+</li>
+</ul>
 <a name="environmentJson-java.lang.String-java.lang.Object-">
 <!--   -->
 </a>
@@ -248,6 +278,16 @@ public&nbsp;<a href="../../../../../org/cloudfoundry/client/v2/applications/Appl
 <h4>environmentJsons</h4>
 <pre><a href="http://docs.oracle.com/javase/8/docs/api/javax/annotation/Generated.html?is-external=true" title="class or interface in javax.annotation">@Generated</a>(<a href="http://docs.oracle.com/javase/8/docs/api/javax/annotation/Generated.html?is-external=true#value--" title="class or interface in javax.annotation">value</a>="lombok")
 public&nbsp;<a href="../../../../../org/cloudfoundry/client/v2/applications/ApplicationEnvironmentResponse.ApplicationEnvironmentResponseBuilder.html" title="class in org.cloudfoundry.client.v2.applications">ApplicationEnvironmentResponse.ApplicationEnvironmentResponseBuilder</a>&nbsp;environmentJsons(<a href="http://docs.oracle.com/javase/8/docs/api/java/util/Map.html?is-external=true" title="class or interface in java.util">Map</a>&lt;? extends <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>,? extends <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">Object</a>&gt;&nbsp;environmentJsons)</pre>
+</li>
+</ul>
+<a name="clearEnvironmentJsons--">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>clearEnvironmentJsons</h4>
+<pre><a href="http://docs.oracle.com/javase/8/docs/api/javax/annotation/Generated.html?is-external=true" title="class or interface in javax.annotation">@Generated</a>(<a href="http://docs.oracle.com/javase/8/docs/api/javax/annotation/Generated.html?is-external=true#value--" title="class or interface in javax.annotation">value</a>="lombok")
+public&nbsp;<a href="../../../../../org/cloudfoundry/client/v2/applications/ApplicationEnvironmentResponse.ApplicationEnvironmentResponseBuilder.html" title="class in org.cloudfoundry.client.v2.applications">ApplicationEnvironmentResponse.ApplicationEnvironmentResponseBuilder</a>&nbsp;clearEnvironmentJsons()</pre>
 </li>
 </ul>
 <a name="runningEnvironmentJson-java.lang.String-java.lang.Object-">
@@ -271,6 +311,16 @@ public&nbsp;<a href="../../../../../org/cloudfoundry/client/v2/applications/Appl
 public&nbsp;<a href="../../../../../org/cloudfoundry/client/v2/applications/ApplicationEnvironmentResponse.ApplicationEnvironmentResponseBuilder.html" title="class in org.cloudfoundry.client.v2.applications">ApplicationEnvironmentResponse.ApplicationEnvironmentResponseBuilder</a>&nbsp;runningEnvironmentJsons(<a href="http://docs.oracle.com/javase/8/docs/api/java/util/Map.html?is-external=true" title="class or interface in java.util">Map</a>&lt;? extends <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>,? extends <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">Object</a>&gt;&nbsp;runningEnvironmentJsons)</pre>
 </li>
 </ul>
+<a name="clearRunningEnvironmentJsons--">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>clearRunningEnvironmentJsons</h4>
+<pre><a href="http://docs.oracle.com/javase/8/docs/api/javax/annotation/Generated.html?is-external=true" title="class or interface in javax.annotation">@Generated</a>(<a href="http://docs.oracle.com/javase/8/docs/api/javax/annotation/Generated.html?is-external=true#value--" title="class or interface in javax.annotation">value</a>="lombok")
+public&nbsp;<a href="../../../../../org/cloudfoundry/client/v2/applications/ApplicationEnvironmentResponse.ApplicationEnvironmentResponseBuilder.html" title="class in org.cloudfoundry.client.v2.applications">ApplicationEnvironmentResponse.ApplicationEnvironmentResponseBuilder</a>&nbsp;clearRunningEnvironmentJsons()</pre>
+</li>
+</ul>
 <a name="stagingEnvironmentJson-java.lang.String-java.lang.Object-">
 <!--   -->
 </a>
@@ -292,6 +342,16 @@ public&nbsp;<a href="../../../../../org/cloudfoundry/client/v2/applications/Appl
 public&nbsp;<a href="../../../../../org/cloudfoundry/client/v2/applications/ApplicationEnvironmentResponse.ApplicationEnvironmentResponseBuilder.html" title="class in org.cloudfoundry.client.v2.applications">ApplicationEnvironmentResponse.ApplicationEnvironmentResponseBuilder</a>&nbsp;stagingEnvironmentJsons(<a href="http://docs.oracle.com/javase/8/docs/api/java/util/Map.html?is-external=true" title="class or interface in java.util">Map</a>&lt;? extends <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>,? extends <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">Object</a>&gt;&nbsp;stagingEnvironmentJsons)</pre>
 </li>
 </ul>
+<a name="clearStagingEnvironmentJsons--">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>clearStagingEnvironmentJsons</h4>
+<pre><a href="http://docs.oracle.com/javase/8/docs/api/javax/annotation/Generated.html?is-external=true" title="class or interface in javax.annotation">@Generated</a>(<a href="http://docs.oracle.com/javase/8/docs/api/javax/annotation/Generated.html?is-external=true#value--" title="class or interface in javax.annotation">value</a>="lombok")
+public&nbsp;<a href="../../../../../org/cloudfoundry/client/v2/applications/ApplicationEnvironmentResponse.ApplicationEnvironmentResponseBuilder.html" title="class in org.cloudfoundry.client.v2.applications">ApplicationEnvironmentResponse.ApplicationEnvironmentResponseBuilder</a>&nbsp;clearStagingEnvironmentJsons()</pre>
+</li>
+</ul>
 <a name="systemEnvironmentJson-java.lang.String-java.lang.Object-">
 <!--   -->
 </a>
@@ -311,6 +371,16 @@ public&nbsp;<a href="../../../../../org/cloudfoundry/client/v2/applications/Appl
 <h4>systemEnvironmentJsons</h4>
 <pre><a href="http://docs.oracle.com/javase/8/docs/api/javax/annotation/Generated.html?is-external=true" title="class or interface in javax.annotation">@Generated</a>(<a href="http://docs.oracle.com/javase/8/docs/api/javax/annotation/Generated.html?is-external=true#value--" title="class or interface in javax.annotation">value</a>="lombok")
 public&nbsp;<a href="../../../../../org/cloudfoundry/client/v2/applications/ApplicationEnvironmentResponse.ApplicationEnvironmentResponseBuilder.html" title="class in org.cloudfoundry.client.v2.applications">ApplicationEnvironmentResponse.ApplicationEnvironmentResponseBuilder</a>&nbsp;systemEnvironmentJsons(<a href="http://docs.oracle.com/javase/8/docs/api/java/util/Map.html?is-external=true" title="class or interface in java.util">Map</a>&lt;? extends <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>,? extends <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">Object</a>&gt;&nbsp;systemEnvironmentJsons)</pre>
+</li>
+</ul>
+<a name="clearSystemEnvironmentJsons--">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>clearSystemEnvironmentJsons</h4>
+<pre><a href="http://docs.oracle.com/javase/8/docs/api/javax/annotation/Generated.html?is-external=true" title="class or interface in javax.annotation">@Generated</a>(<a href="http://docs.oracle.com/javase/8/docs/api/javax/annotation/Generated.html?is-external=true#value--" title="class or interface in javax.annotation">value</a>="lombok")
+public&nbsp;<a href="../../../../../org/cloudfoundry/client/v2/applications/ApplicationEnvironmentResponse.ApplicationEnvironmentResponseBuilder.html" title="class in org.cloudfoundry.client.v2.applications">ApplicationEnvironmentResponse.ApplicationEnvironmentResponseBuilder</a>&nbsp;clearSystemEnvironmentJsons()</pre>
 </li>
 </ul>
 <a name="build--">
