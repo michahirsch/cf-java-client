@@ -17,7 +17,7 @@
     catch(err) {
     }
 //-->
-var methods = {"i0":6,"i1":6,"i2":6,"i3":6,"i4":6,"i5":6,"i6":6,"i7":6,"i8":6,"i9":6};
+var methods = {"i0":6,"i1":6,"i2":6,"i3":6,"i4":6,"i5":6,"i6":6,"i7":6,"i8":6,"i9":6,"i10":6};
 var tabs = {65535:["t0","All Methods"],2:["t2","Instance Methods"],4:["t3","Abstract Methods"]};
 var altColor = "altColor";
 var rowColor = "rowColor";
@@ -180,6 +180,12 @@ var activeTableTab = "activeTableTab";
 <div class="block">Unbind a service instance from an application</div>
 </td>
 </tr>
+<tr id="i10" class="altColor">
+<td class="colFirst"><code><a href="http://projectreactor.io/core/docs/api/reactor/core/publisher/Mono.html?is-external=true" title="class or interface in reactor.core.publisher">Mono</a>&lt;<a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Void.html?is-external=true" title="class or interface in java.lang">Void</a>&gt;</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../org/cloudfoundry/operations/services/Services.html#update-org.cloudfoundry.operations.services.UpdateServiceInstanceRequest-">update</a></span>(<a href="../../../../org/cloudfoundry/operations/services/UpdateServiceInstanceRequest.html" title="class in org.cloudfoundry.operations.services">UpdateServiceInstanceRequest</a>&nbsp;request)</code>
+<div class="block">Update a service instance</div>
+</td>
+</tr>
 </table>
 </li>
 </ul>
@@ -340,7 +346,7 @@ var activeTableTab = "activeTableTab";
 <a name="unbind-org.cloudfoundry.operations.services.UnbindServiceInstanceRequest-">
 <!--   -->
 </a>
-<ul class="blockListLast">
+<ul class="blockList">
 <li class="blockList">
 <h4>unbind</h4>
 <pre><a href="http://projectreactor.io/core/docs/api/reactor/core/publisher/Mono.html?is-external=true" title="class or interface in reactor.core.publisher">Mono</a>&lt;<a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Void.html?is-external=true" title="class or interface in java.lang">Void</a>&gt;&nbsp;unbind(<a href="../../../../org/cloudfoundry/operations/services/UnbindServiceInstanceRequest.html" title="class in org.cloudfoundry.operations.services">UnbindServiceInstanceRequest</a>&nbsp;request)</pre>
@@ -348,6 +354,22 @@ var activeTableTab = "activeTableTab";
 <dl>
 <dt><span class="paramLabel">Parameters:</span></dt>
 <dd><code>request</code> - the unbind service instance request</dd>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd>a completion indicator</dd>
+</dl>
+</li>
+</ul>
+<a name="update-org.cloudfoundry.operations.services.UpdateServiceInstanceRequest-">
+<!--   -->
+</a>
+<ul class="blockListLast">
+<li class="blockList">
+<h4>update</h4>
+<pre><a href="http://projectreactor.io/core/docs/api/reactor/core/publisher/Mono.html?is-external=true" title="class or interface in reactor.core.publisher">Mono</a>&lt;<a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Void.html?is-external=true" title="class or interface in java.lang">Void</a>&gt;&nbsp;update(<a href="../../../../org/cloudfoundry/operations/services/UpdateServiceInstanceRequest.html" title="class in org.cloudfoundry.operations.services">UpdateServiceInstanceRequest</a>&nbsp;request)</pre>
+<div class="block">Update a service instance</div>
+<dl>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>request</code> - the update service instance request</dd>
 <dt><span class="returnLabel">Returns:</span></dt>
 <dd>a completion indicator</dd>
 </dl>
