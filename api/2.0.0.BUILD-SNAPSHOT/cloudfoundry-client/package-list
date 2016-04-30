@@ -36,7 +36,7 @@ org.cloudfoundry.client.v3.droplets
 org.cloudfoundry.client.v3.packages
 org.cloudfoundry.client.v3.processes
 org.cloudfoundry.client.v3.tasks
-org.cloudfoundry.logging
+org.cloudfoundry.doppler
 org.cloudfoundry.uaa
 org.cloudfoundry.uaa.accesstokenadministration
 org.cloudfoundry.uaa.identityzonemanagement

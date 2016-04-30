@@ -73,13 +73,27 @@
 </a>
 <h2 class="title">A</h2>
 <dl>
-<dt><span class="memberNameLink"><a href="org/cloudfoundry/spring/uaa/SpringUaaClient.html#accessTokenAdministration--">accessTokenAdministration()</a></span> - Method in class org.cloudfoundry.spring.uaa.<a href="org/cloudfoundry/spring/uaa/SpringUaaClient.html" title="class in org.cloudfoundry.spring.uaa">SpringUaaClient</a></dt>
+<dt><a href="org/cloudfoundry/reactor/util/AbstractReactorOperations.html" title="class in org.cloudfoundry.reactor.util"><span class="typeNameLink">AbstractReactorOperations</span></a> - Class in <a href="org/cloudfoundry/reactor/util/package-summary.html">org.cloudfoundry.reactor.util</a></dt>
 <dd>&nbsp;</dd>
+<dt><span class="memberNameLink"><a href="org/cloudfoundry/reactor/util/AbstractReactorOperations.html#AbstractReactorOperations-org.cloudfoundry.reactor.util.AuthorizationProvider-reactor.io.netty.http.HttpClient-com.fasterxml.jackson.databind.ObjectMapper-reactor.core.publisher.Mono-">AbstractReactorOperations(AuthorizationProvider, HttpClient, ObjectMapper, Mono&lt;String&gt;)</a></span> - Constructor for class org.cloudfoundry.reactor.util.<a href="org/cloudfoundry/reactor/util/AbstractReactorOperations.html" title="class in org.cloudfoundry.reactor.util">AbstractReactorOperations</a></dt>
+<dd>&nbsp;</dd>
+<dt><span class="memberNameLink"><a href="org/cloudfoundry/reactor/uaa/ReactorUaaClient.html#accessTokenAdministration--">accessTokenAdministration()</a></span> - Method in class org.cloudfoundry.reactor.uaa.<a href="org/cloudfoundry/reactor/uaa/ReactorUaaClient.html" title="class in org.cloudfoundry.reactor.uaa">ReactorUaaClient</a></dt>
+<dd>&nbsp;</dd>
+<dt><span class="memberNameLink"><a href="org/cloudfoundry/reactor/util/AuthorizationProvider.html#addAuthorization-reactor.io.netty.http.HttpOutbound-">addAuthorization(HttpOutbound)</a></span> - Method in interface org.cloudfoundry.reactor.util.<a href="org/cloudfoundry/reactor/util/AuthorizationProvider.html" title="interface in org.cloudfoundry.reactor.util">AuthorizationProvider</a></dt>
+<dd>
+<div class="block">Adds the <code>Authorization</code> header to an <code>HttpOutbound</code></div>
+</dd>
 <dt><span class="memberNameLink"><a href="org/cloudfoundry/spring/client/SpringCloudFoundryClient.html#applicationsV2--">applicationsV2()</a></span> - Method in class org.cloudfoundry.spring.client.<a href="org/cloudfoundry/spring/client/SpringCloudFoundryClient.html" title="class in org.cloudfoundry.spring.client">SpringCloudFoundryClient</a></dt>
 <dd>&nbsp;</dd>
 <dt><span class="memberNameLink"><a href="org/cloudfoundry/spring/client/SpringCloudFoundryClient.html#applicationsV3--">applicationsV3()</a></span> - Method in class org.cloudfoundry.spring.client.<a href="org/cloudfoundry/spring/client/SpringCloudFoundryClient.html" title="class in org.cloudfoundry.spring.client">SpringCloudFoundryClient</a></dt>
 <dd>&nbsp;</dd>
 <dt><span class="memberNameLink"><a href="org/cloudfoundry/spring/client/SpringCloudFoundryClient.html#applicationUsageEvents--">applicationUsageEvents()</a></span> - Method in class org.cloudfoundry.spring.client.<a href="org/cloudfoundry/spring/client/SpringCloudFoundryClient.html" title="class in org.cloudfoundry.spring.client">SpringCloudFoundryClient</a></dt>
+<dd>&nbsp;</dd>
+<dt><a href="org/cloudfoundry/reactor/util/AuthorizationProvider.html" title="interface in org.cloudfoundry.reactor.util"><span class="typeNameLink">AuthorizationProvider</span></a> - Interface in <a href="org/cloudfoundry/reactor/util/package-summary.html">org.cloudfoundry.reactor.util</a></dt>
+<dd>
+<div class="block">A provider that adds the <code>Authorization</code> header to requests</div>
+</dd>
+<dt><span class="memberNameLink"><a href="org/cloudfoundry/reactor/util/DefaultConnectionContext.DefaultConnectionContextBuilder.html#authorizationProvider-org.cloudfoundry.reactor.util.AuthorizationProvider-">authorizationProvider(AuthorizationProvider)</a></span> - Method in class org.cloudfoundry.reactor.util.<a href="org/cloudfoundry/reactor/util/DefaultConnectionContext.DefaultConnectionContextBuilder.html" title="class in org.cloudfoundry.reactor.util">DefaultConnectionContext.DefaultConnectionContextBuilder</a></dt>
 <dd>&nbsp;</dd>
 </dl>
 <a name="I:B">
@@ -87,17 +101,13 @@
 </a>
 <h2 class="title">B</h2>
 <dl>
+<dt><span class="memberNameLink"><a href="org/cloudfoundry/reactor/util/DefaultConnectionContext.DefaultConnectionContextBuilder.html#build--">build()</a></span> - Method in class org.cloudfoundry.reactor.util.<a href="org/cloudfoundry/reactor/util/DefaultConnectionContext.DefaultConnectionContextBuilder.html" title="class in org.cloudfoundry.reactor.util">DefaultConnectionContext.DefaultConnectionContextBuilder</a></dt>
+<dd>&nbsp;</dd>
 <dt><span class="memberNameLink"><a href="org/cloudfoundry/spring/client/SpringCloudFoundryClient.SpringCloudFoundryClientBuilder.html#build--">build()</a></span> - Method in class org.cloudfoundry.spring.client.<a href="org/cloudfoundry/spring/client/SpringCloudFoundryClient.SpringCloudFoundryClientBuilder.html" title="class in org.cloudfoundry.spring.client">SpringCloudFoundryClient.SpringCloudFoundryClientBuilder</a></dt>
 <dd>&nbsp;</dd>
-<dt><span class="memberNameLink"><a href="org/cloudfoundry/spring/logging/SpringLoggingClient.SpringLoggingClientBuilder.html#build--">build()</a></span> - Method in class org.cloudfoundry.spring.logging.<a href="org/cloudfoundry/spring/logging/SpringLoggingClient.SpringLoggingClientBuilder.html" title="class in org.cloudfoundry.spring.logging">SpringLoggingClient.SpringLoggingClientBuilder</a></dt>
-<dd>&nbsp;</dd>
-<dt><span class="memberNameLink"><a href="org/cloudfoundry/spring/uaa/SpringUaaClient.SpringUaaClientBuilder.html#build--">build()</a></span> - Method in class org.cloudfoundry.spring.uaa.<a href="org/cloudfoundry/spring/uaa/SpringUaaClient.SpringUaaClientBuilder.html" title="class in org.cloudfoundry.spring.uaa">SpringUaaClient.SpringUaaClientBuilder</a></dt>
+<dt><span class="memberNameLink"><a href="org/cloudfoundry/reactor/util/DefaultConnectionContext.html#builder--">builder()</a></span> - Static method in class org.cloudfoundry.reactor.util.<a href="org/cloudfoundry/reactor/util/DefaultConnectionContext.html" title="class in org.cloudfoundry.reactor.util">DefaultConnectionContext</a></dt>
 <dd>&nbsp;</dd>
 <dt><span class="memberNameLink"><a href="org/cloudfoundry/spring/client/SpringCloudFoundryClient.html#builder--">builder()</a></span> - Static method in class org.cloudfoundry.spring.client.<a href="org/cloudfoundry/spring/client/SpringCloudFoundryClient.html" title="class in org.cloudfoundry.spring.client">SpringCloudFoundryClient</a></dt>
-<dd>&nbsp;</dd>
-<dt><span class="memberNameLink"><a href="org/cloudfoundry/spring/logging/SpringLoggingClient.html#builder--">builder()</a></span> - Static method in class org.cloudfoundry.spring.logging.<a href="org/cloudfoundry/spring/logging/SpringLoggingClient.html" title="class in org.cloudfoundry.spring.logging">SpringLoggingClient</a></dt>
-<dd>&nbsp;</dd>
-<dt><span class="memberNameLink"><a href="org/cloudfoundry/spring/uaa/SpringUaaClient.html#builder--">builder()</a></span> - Static method in class org.cloudfoundry.spring.uaa.<a href="org/cloudfoundry/spring/uaa/SpringUaaClient.html" title="class in org.cloudfoundry.spring.uaa">SpringUaaClient</a></dt>
 <dd>&nbsp;</dd>
 <dt><span class="memberNameLink"><a href="org/cloudfoundry/spring/client/SpringCloudFoundryClient.html#buildpacks--">buildpacks()</a></span> - Method in class org.cloudfoundry.spring.client.<a href="org/cloudfoundry/spring/client/SpringCloudFoundryClient.html" title="class in org.cloudfoundry.spring.client">SpringCloudFoundryClient</a></dt>
 <dd>&nbsp;</dd>
@@ -107,17 +117,19 @@
 </a>
 <h2 class="title">C</h2>
 <dl>
-<dt><span class="memberNameLink"><a href="org/cloudfoundry/spring/logging/LoggregatorMessageHttpMessageConverter.html#canWrite-org.springframework.http.MediaType-">canWrite(MediaType)</a></span> - Method in class org.cloudfoundry.spring.logging.<a href="org/cloudfoundry/spring/logging/LoggregatorMessageHttpMessageConverter.html" title="class in org.cloudfoundry.spring.logging">LoggregatorMessageHttpMessageConverter</a></dt>
-<dd>&nbsp;</dd>
 <dt><span class="memberNameLink"><a href="org/cloudfoundry/spring/client/SpringCloudFoundryClient.SpringCloudFoundryClientBuilder.html#clearProblemHandlers--">clearProblemHandlers()</a></span> - Method in class org.cloudfoundry.spring.client.<a href="org/cloudfoundry/spring/client/SpringCloudFoundryClient.SpringCloudFoundryClientBuilder.html" title="class in org.cloudfoundry.spring.client">SpringCloudFoundryClient.SpringCloudFoundryClientBuilder</a></dt>
 <dd>&nbsp;</dd>
 <dt><span class="memberNameLink"><a href="org/cloudfoundry/spring/client/SpringCloudFoundryClient.SpringCloudFoundryClientBuilder.html#clientId-java.lang.String-">clientId(String)</a></span> - Method in class org.cloudfoundry.spring.client.<a href="org/cloudfoundry/spring/client/SpringCloudFoundryClient.SpringCloudFoundryClientBuilder.html" title="class in org.cloudfoundry.spring.client">SpringCloudFoundryClient.SpringCloudFoundryClientBuilder</a></dt>
 <dd>&nbsp;</dd>
 <dt><span class="memberNameLink"><a href="org/cloudfoundry/spring/client/SpringCloudFoundryClient.SpringCloudFoundryClientBuilder.html#clientSecret-java.lang.String-">clientSecret(String)</a></span> - Method in class org.cloudfoundry.spring.client.<a href="org/cloudfoundry/spring/client/SpringCloudFoundryClient.SpringCloudFoundryClientBuilder.html" title="class in org.cloudfoundry.spring.client">SpringCloudFoundryClient.SpringCloudFoundryClientBuilder</a></dt>
 <dd>&nbsp;</dd>
-<dt><span class="memberNameLink"><a href="org/cloudfoundry/spring/logging/SpringLoggingClient.SpringLoggingClientBuilder.html#cloudFoundryClient-org.cloudfoundry.spring.client.SpringCloudFoundryClient-">cloudFoundryClient(SpringCloudFoundryClient)</a></span> - Method in class org.cloudfoundry.spring.logging.<a href="org/cloudfoundry/spring/logging/SpringLoggingClient.SpringLoggingClientBuilder.html" title="class in org.cloudfoundry.spring.logging">SpringLoggingClient.SpringLoggingClientBuilder</a></dt>
+<dt><a href="org/cloudfoundry/reactor/util/ConnectionContext.html" title="interface in org.cloudfoundry.reactor.util"><span class="typeNameLink">ConnectionContext</span></a> - Interface in <a href="org/cloudfoundry/reactor/util/package-summary.html">org.cloudfoundry.reactor.util</a></dt>
 <dd>&nbsp;</dd>
-<dt><span class="memberNameLink"><a href="org/cloudfoundry/spring/uaa/SpringUaaClient.SpringUaaClientBuilder.html#cloudFoundryClient-org.cloudfoundry.spring.client.SpringCloudFoundryClient-">cloudFoundryClient(SpringCloudFoundryClient)</a></span> - Method in class org.cloudfoundry.spring.uaa.<a href="org/cloudfoundry/spring/uaa/SpringUaaClient.SpringUaaClientBuilder.html" title="class in org.cloudfoundry.spring.uaa">SpringUaaClient.SpringUaaClientBuilder</a></dt>
+<dt><a href="org/cloudfoundry/reactor/util/ConnectionContextSupplier.html" title="interface in org.cloudfoundry.reactor.util"><span class="typeNameLink">ConnectionContextSupplier</span></a> - Interface in <a href="org/cloudfoundry/reactor/util/package-summary.html">org.cloudfoundry.reactor.util</a></dt>
+<dd>&nbsp;</dd>
+<dt><span class="memberNameLink"><a href="org/cloudfoundry/reactor/doppler/ReactorDopplerClient.html#containerMetrics-org.cloudfoundry.doppler.ContainerMetricsRequest-">containerMetrics(ContainerMetricsRequest)</a></span> - Method in class org.cloudfoundry.reactor.doppler.<a href="org/cloudfoundry/reactor/doppler/ReactorDopplerClient.html" title="class in org.cloudfoundry.reactor.doppler">ReactorDopplerClient</a></dt>
+<dd>&nbsp;</dd>
+<dt><span class="memberNameLink"><a href="org/cloudfoundry/reactor/uaa/identityzonemanagement/SpringIdentityZoneManagement.html#create-org.cloudfoundry.uaa.identityzonemanagement.CreateIdentityZoneRequest-">create(CreateIdentityZoneRequest)</a></span> - Method in class org.cloudfoundry.reactor.uaa.identityzonemanagement.<a href="org/cloudfoundry/reactor/uaa/identityzonemanagement/SpringIdentityZoneManagement.html" title="class in org.cloudfoundry.reactor.uaa.identityzonemanagement">SpringIdentityZoneManagement</a></dt>
 <dd>&nbsp;</dd>
 </dl>
 <a name="I:D">
@@ -125,6 +137,18 @@
 </a>
 <h2 class="title">D</h2>
 <dl>
+<dt><span class="memberNameLink"><a href="org/cloudfoundry/reactor/util/JsonCodec.html#decode-java.lang.Class-">decode(Class&lt;T&gt;)</a></span> - Static method in class org.cloudfoundry.reactor.util.<a href="org/cloudfoundry/reactor/util/JsonCodec.html" title="class in org.cloudfoundry.reactor.util">JsonCodec</a></dt>
+<dd>&nbsp;</dd>
+<dt><span class="memberNameLink"><a href="org/cloudfoundry/reactor/util/JsonCodec.html#decode-com.fasterxml.jackson.databind.ObjectMapper-java.lang.Class-">decode(ObjectMapper, Class&lt;T&gt;)</a></span> - Static method in class org.cloudfoundry.reactor.util.<a href="org/cloudfoundry/reactor/util/JsonCodec.html" title="class in org.cloudfoundry.reactor.util">JsonCodec</a></dt>
+<dd>&nbsp;</dd>
+<dt><a href="org/cloudfoundry/reactor/util/DefaultConnectionContext.html" title="class in org.cloudfoundry.reactor.util"><span class="typeNameLink">DefaultConnectionContext</span></a> - Class in <a href="org/cloudfoundry/reactor/util/package-summary.html">org.cloudfoundry.reactor.util</a></dt>
+<dd>&nbsp;</dd>
+<dt><a href="org/cloudfoundry/reactor/util/DefaultConnectionContext.DefaultConnectionContextBuilder.html" title="class in org.cloudfoundry.reactor.util"><span class="typeNameLink">DefaultConnectionContext.DefaultConnectionContextBuilder</span></a> - Class in <a href="org/cloudfoundry/reactor/util/package-summary.html">org.cloudfoundry.reactor.util</a></dt>
+<dd>&nbsp;</dd>
+<dt><span class="memberNameLink"><a href="org/cloudfoundry/reactor/uaa/identityzonemanagement/SpringIdentityZoneManagement.html#delete-org.cloudfoundry.uaa.identityzonemanagement.DeleteIdentityZoneRequest-">delete(DeleteIdentityZoneRequest)</a></span> - Method in class org.cloudfoundry.reactor.uaa.identityzonemanagement.<a href="org/cloudfoundry/reactor/uaa/identityzonemanagement/SpringIdentityZoneManagement.html" title="class in org.cloudfoundry.reactor.uaa.identityzonemanagement">SpringIdentityZoneManagement</a></dt>
+<dd>&nbsp;</dd>
+<dt><span class="memberNameLink"><a href="org/cloudfoundry/reactor/util/AbstractReactorOperations.html#delete-REQ-java.lang.Class-java.util.function.Consumer-">delete(REQ, Class&lt;RSP&gt;, Consumer&lt;Tuple2&lt;UriComponentsBuilder, REQ&gt;&gt;)</a></span> - Method in class org.cloudfoundry.reactor.util.<a href="org/cloudfoundry/reactor/util/AbstractReactorOperations.html" title="class in org.cloudfoundry.reactor.util">AbstractReactorOperations</a></dt>
+<dd>&nbsp;</dd>
 <dt><span class="memberNameLink"><a href="org/cloudfoundry/spring/client/SpringCloudFoundryClient.html#domains--">domains()</a></span> - Method in class org.cloudfoundry.spring.client.<a href="org/cloudfoundry/spring/client/SpringCloudFoundryClient.html" title="class in org.cloudfoundry.spring.client">SpringCloudFoundryClient</a></dt>
 <dd>&nbsp;</dd>
 <dt><span class="memberNameLink"><a href="org/cloudfoundry/spring/client/SpringCloudFoundryClient.html#droplets--">droplets()</a></span> - Method in class org.cloudfoundry.spring.client.<a href="org/cloudfoundry/spring/client/SpringCloudFoundryClient.html" title="class in org.cloudfoundry.spring.client">SpringCloudFoundryClient</a></dt>
@@ -135,6 +159,10 @@
 </a>
 <h2 class="title">E</h2>
 <dl>
+<dt><span class="memberNameLink"><a href="org/cloudfoundry/reactor/util/JsonCodec.html#encode--">encode()</a></span> - Static method in class org.cloudfoundry.reactor.util.<a href="org/cloudfoundry/reactor/util/JsonCodec.html" title="class in org.cloudfoundry.reactor.util">JsonCodec</a></dt>
+<dd>&nbsp;</dd>
+<dt><span class="memberNameLink"><a href="org/cloudfoundry/reactor/util/JsonCodec.html#encode-com.fasterxml.jackson.databind.ObjectMapper-">encode(ObjectMapper)</a></span> - Static method in class org.cloudfoundry.reactor.util.<a href="org/cloudfoundry/reactor/util/JsonCodec.html" title="class in org.cloudfoundry.reactor.util">JsonCodec</a></dt>
+<dd>&nbsp;</dd>
 <dt><span class="memberNameLink"><a href="org/cloudfoundry/spring/client/SpringCloudFoundryClient.html#environmentVariableGroups--">environmentVariableGroups()</a></span> - Method in class org.cloudfoundry.spring.client.<a href="org/cloudfoundry/spring/client/SpringCloudFoundryClient.html" title="class in org.cloudfoundry.spring.client">SpringCloudFoundryClient</a></dt>
 <dd>&nbsp;</dd>
 <dt><span class="memberNameLink"><a href="org/cloudfoundry/spring/client/SpringCloudFoundryClient.html#events--">events()</a></span> - Method in class org.cloudfoundry.spring.client.<a href="org/cloudfoundry/spring/client/SpringCloudFoundryClient.html" title="class in org.cloudfoundry.spring.client">SpringCloudFoundryClient</a></dt>
@@ -147,24 +175,56 @@
 <dl>
 <dt><span class="memberNameLink"><a href="org/cloudfoundry/spring/client/SpringCloudFoundryClient.html#featureFlags--">featureFlags()</a></span> - Method in class org.cloudfoundry.spring.client.<a href="org/cloudfoundry/spring/client/SpringCloudFoundryClient.html" title="class in org.cloudfoundry.spring.client">SpringCloudFoundryClient</a></dt>
 <dd>&nbsp;</dd>
+<dt><span class="memberNameLink"><a href="org/cloudfoundry/reactor/doppler/ReactorDopplerClient.html#firehose-org.cloudfoundry.doppler.FirehoseRequest-">firehose(FirehoseRequest)</a></span> - Method in class org.cloudfoundry.reactor.doppler.<a href="org/cloudfoundry/reactor/doppler/ReactorDopplerClient.html" title="class in org.cloudfoundry.reactor.doppler">ReactorDopplerClient</a></dt>
+<dd>&nbsp;</dd>
 </dl>
 <a name="I:G">
 <!--   -->
 </a>
 <h2 class="title">G</h2>
 <dl>
+<dt><span class="memberNameLink"><a href="org/cloudfoundry/reactor/uaa/identityzonemanagement/SpringIdentityZoneManagement.html#get-org.cloudfoundry.uaa.identityzonemanagement.GetIdentityZoneRequest-">get(GetIdentityZoneRequest)</a></span> - Method in class org.cloudfoundry.reactor.uaa.identityzonemanagement.<a href="org/cloudfoundry/reactor/uaa/identityzonemanagement/SpringIdentityZoneManagement.html" title="class in org.cloudfoundry.reactor.uaa.identityzonemanagement">SpringIdentityZoneManagement</a></dt>
+<dd>&nbsp;</dd>
+<dt><span class="memberNameLink"><a href="org/cloudfoundry/reactor/util/AbstractReactorOperations.html#get-REQ-java.lang.Class-java.util.function.Consumer-">get(REQ, Class&lt;RSP&gt;, Consumer&lt;Tuple2&lt;UriComponentsBuilder, REQ&gt;&gt;)</a></span> - Method in class org.cloudfoundry.reactor.util.<a href="org/cloudfoundry/reactor/util/AbstractReactorOperations.html" title="class in org.cloudfoundry.reactor.util">AbstractReactorOperations</a></dt>
+<dd>&nbsp;</dd>
+<dt><span class="memberNameLink"><a href="org/cloudfoundry/reactor/util/AbstractReactorOperations.html#get-REQ-java.util.function.Consumer-">get(REQ, Consumer&lt;Tuple2&lt;UriComponentsBuilder, REQ&gt;&gt;)</a></span> - Method in class org.cloudfoundry.reactor.util.<a href="org/cloudfoundry/reactor/util/AbstractReactorOperations.html" title="class in org.cloudfoundry.reactor.util">AbstractReactorOperations</a></dt>
+<dd>&nbsp;</dd>
 <dt><span class="memberNameLink"><a href="org/cloudfoundry/spring/client/SpringCloudFoundryClient.html#getAccessToken--">getAccessToken()</a></span> - Method in class org.cloudfoundry.spring.client.<a href="org/cloudfoundry/spring/client/SpringCloudFoundryClient.html" title="class in org.cloudfoundry.spring.client">SpringCloudFoundryClient</a></dt>
+<dd>&nbsp;</dd>
+<dt><span class="memberNameLink"><a href="org/cloudfoundry/reactor/util/ConnectionContext.html#getAuthorizationProvider--">getAuthorizationProvider()</a></span> - Method in interface org.cloudfoundry.reactor.util.<a href="org/cloudfoundry/reactor/util/ConnectionContext.html" title="interface in org.cloudfoundry.reactor.util">ConnectionContext</a></dt>
+<dd>&nbsp;</dd>
+<dt><span class="memberNameLink"><a href="org/cloudfoundry/reactor/util/DefaultConnectionContext.html#getAuthorizationProvider--">getAuthorizationProvider()</a></span> - Method in class org.cloudfoundry.reactor.util.<a href="org/cloudfoundry/reactor/util/DefaultConnectionContext.html" title="class in org.cloudfoundry.reactor.util">DefaultConnectionContext</a></dt>
 <dd>&nbsp;</dd>
 <dt><span class="memberNameLink"><a href="org/cloudfoundry/spring/client/SpringCloudFoundryClient.html#getConnectionContext--">getConnectionContext()</a></span> - Method in class org.cloudfoundry.spring.client.<a href="org/cloudfoundry/spring/client/SpringCloudFoundryClient.html" title="class in org.cloudfoundry.spring.client">SpringCloudFoundryClient</a></dt>
 <dd>
 <div class="block">Returns the Spring-based connection context</div>
 </dd>
+<dt><span class="memberNameLink"><a href="org/cloudfoundry/reactor/util/ConnectionContextSupplier.html#getConnectionContext2--">getConnectionContext2()</a></span> - Method in interface org.cloudfoundry.reactor.util.<a href="org/cloudfoundry/reactor/util/ConnectionContextSupplier.html" title="interface in org.cloudfoundry.reactor.util">ConnectionContextSupplier</a></dt>
+<dd>&nbsp;</dd>
+<dt><span class="memberNameLink"><a href="org/cloudfoundry/spring/client/SpringCloudFoundryClient.html#getConnectionContext2--">getConnectionContext2()</a></span> - Method in class org.cloudfoundry.spring.client.<a href="org/cloudfoundry/spring/client/SpringCloudFoundryClient.html" title="class in org.cloudfoundry.spring.client">SpringCloudFoundryClient</a></dt>
+<dd>&nbsp;</dd>
+<dt><span class="memberNameLink"><a href="org/cloudfoundry/reactor/util/ConnectionContext.html#getHttpClient--">getHttpClient()</a></span> - Method in interface org.cloudfoundry.reactor.util.<a href="org/cloudfoundry/reactor/util/ConnectionContext.html" title="interface in org.cloudfoundry.reactor.util">ConnectionContext</a></dt>
+<dd>&nbsp;</dd>
+<dt><span class="memberNameLink"><a href="org/cloudfoundry/reactor/util/DefaultConnectionContext.html#getHttpClient--">getHttpClient()</a></span> - Method in class org.cloudfoundry.reactor.util.<a href="org/cloudfoundry/reactor/util/DefaultConnectionContext.html" title="class in org.cloudfoundry.reactor.util">DefaultConnectionContext</a></dt>
+<dd>&nbsp;</dd>
+<dt><span class="memberNameLink"><a href="org/cloudfoundry/reactor/util/ConnectionContext.html#getObjectMapper--">getObjectMapper()</a></span> - Method in interface org.cloudfoundry.reactor.util.<a href="org/cloudfoundry/reactor/util/ConnectionContext.html" title="interface in org.cloudfoundry.reactor.util">ConnectionContext</a></dt>
+<dd>&nbsp;</dd>
+<dt><span class="memberNameLink"><a href="org/cloudfoundry/reactor/util/DefaultConnectionContext.html#getObjectMapper--">getObjectMapper()</a></span> - Method in class org.cloudfoundry.reactor.util.<a href="org/cloudfoundry/reactor/util/DefaultConnectionContext.html" title="class in org.cloudfoundry.reactor.util">DefaultConnectionContext</a></dt>
+<dd>&nbsp;</dd>
+<dt><span class="memberNameLink"><a href="org/cloudfoundry/reactor/util/ConnectionContext.html#getRoot-java.lang.String-">getRoot(String)</a></span> - Method in interface org.cloudfoundry.reactor.util.<a href="org/cloudfoundry/reactor/util/ConnectionContext.html" title="interface in org.cloudfoundry.reactor.util">ConnectionContext</a></dt>
+<dd>&nbsp;</dd>
+<dt><span class="memberNameLink"><a href="org/cloudfoundry/reactor/util/DefaultConnectionContext.html#getRoot-java.lang.String-">getRoot(String)</a></span> - Method in class org.cloudfoundry.reactor.util.<a href="org/cloudfoundry/reactor/util/DefaultConnectionContext.html" title="class in org.cloudfoundry.reactor.util">DefaultConnectionContext</a></dt>
+<dd>&nbsp;</dd>
+<dt><span class="memberNameLink"><a href="org/cloudfoundry/reactor/uaa/accesstokenadministration/SpringAccessTokenAdministration.html#getTokenKey-org.cloudfoundry.uaa.accesstokenadministration.GetTokenKeyRequest-">getTokenKey(GetTokenKeyRequest)</a></span> - Method in class org.cloudfoundry.reactor.uaa.accesstokenadministration.<a href="org/cloudfoundry/reactor/uaa/accesstokenadministration/SpringAccessTokenAdministration.html" title="class in org.cloudfoundry.reactor.uaa.accesstokenadministration">SpringAccessTokenAdministration</a></dt>
+<dd>&nbsp;</dd>
 </dl>
 <a name="I:H">
 <!--   -->
 </a>
 <h2 class="title">H</h2>
 <dl>
+<dt><span class="memberNameLink"><a href="org/cloudfoundry/reactor/util/DefaultConnectionContext.DefaultConnectionContextBuilder.html#host-java.lang.String-">host(String)</a></span> - Method in class org.cloudfoundry.reactor.util.<a href="org/cloudfoundry/reactor/util/DefaultConnectionContext.DefaultConnectionContextBuilder.html" title="class in org.cloudfoundry.reactor.util">DefaultConnectionContext.DefaultConnectionContextBuilder</a></dt>
+<dd>&nbsp;</dd>
 <dt><span class="memberNameLink"><a href="org/cloudfoundry/spring/client/SpringCloudFoundryClient.SpringCloudFoundryClientBuilder.html#host-java.lang.String-">host(String)</a></span> - Method in class org.cloudfoundry.spring.client.<a href="org/cloudfoundry/spring/client/SpringCloudFoundryClient.SpringCloudFoundryClientBuilder.html" title="class in org.cloudfoundry.spring.client">SpringCloudFoundryClient.SpringCloudFoundryClientBuilder</a></dt>
 <dd>&nbsp;</dd>
 </dl>
@@ -173,7 +233,7 @@
 </a>
 <h2 class="title">I</h2>
 <dl>
-<dt><span class="memberNameLink"><a href="org/cloudfoundry/spring/uaa/SpringUaaClient.html#identityZoneManagement--">identityZoneManagement()</a></span> - Method in class org.cloudfoundry.spring.uaa.<a href="org/cloudfoundry/spring/uaa/SpringUaaClient.html" title="class in org.cloudfoundry.spring.uaa">SpringUaaClient</a></dt>
+<dt><span class="memberNameLink"><a href="org/cloudfoundry/reactor/uaa/ReactorUaaClient.html#identityZoneManagement--">identityZoneManagement()</a></span> - Method in class org.cloudfoundry.reactor.uaa.<a href="org/cloudfoundry/reactor/uaa/ReactorUaaClient.html" title="class in org.cloudfoundry.reactor.uaa">ReactorUaaClient</a></dt>
 <dd>&nbsp;</dd>
 <dt><span class="memberNameLink"><a href="org/cloudfoundry/spring/client/SpringCloudFoundryClient.html#info--">info()</a></span> - Method in class org.cloudfoundry.spring.client.<a href="org/cloudfoundry/spring/client/SpringCloudFoundryClient.html" title="class in org.cloudfoundry.spring.client">SpringCloudFoundryClient</a></dt>
 <dd>&nbsp;</dd>
@@ -185,15 +245,17 @@
 <dl>
 <dt><span class="memberNameLink"><a href="org/cloudfoundry/spring/client/SpringCloudFoundryClient.html#jobs--">jobs()</a></span> - Method in class org.cloudfoundry.spring.client.<a href="org/cloudfoundry/spring/client/SpringCloudFoundryClient.html" title="class in org.cloudfoundry.spring.client">SpringCloudFoundryClient</a></dt>
 <dd>&nbsp;</dd>
+<dt><a href="org/cloudfoundry/reactor/util/JsonCodec.html" title="class in org.cloudfoundry.reactor.util"><span class="typeNameLink">JsonCodec</span></a> - Class in <a href="org/cloudfoundry/reactor/util/package-summary.html">org.cloudfoundry.reactor.util</a></dt>
+<dd>&nbsp;</dd>
+<dt><span class="memberNameLink"><a href="org/cloudfoundry/reactor/util/JsonCodec.html#JsonCodec--">JsonCodec()</a></span> - Constructor for class org.cloudfoundry.reactor.util.<a href="org/cloudfoundry/reactor/util/JsonCodec.html" title="class in org.cloudfoundry.reactor.util">JsonCodec</a></dt>
+<dd>&nbsp;</dd>
 </dl>
 <a name="I:L">
 <!--   -->
 </a>
 <h2 class="title">L</h2>
 <dl>
-<dt><a href="org/cloudfoundry/spring/logging/LoggregatorMessageHttpMessageConverter.html" title="class in org.cloudfoundry.spring.logging"><span class="typeNameLink">LoggregatorMessageHttpMessageConverter</span></a> - Class in <a href="org/cloudfoundry/spring/logging/package-summary.html">org.cloudfoundry.spring.logging</a></dt>
-<dd>&nbsp;</dd>
-<dt><span class="memberNameLink"><a href="org/cloudfoundry/spring/logging/LoggregatorMessageHttpMessageConverter.html#LoggregatorMessageHttpMessageConverter--">LoggregatorMessageHttpMessageConverter()</a></span> - Constructor for class org.cloudfoundry.spring.logging.<a href="org/cloudfoundry/spring/logging/LoggregatorMessageHttpMessageConverter.html" title="class in org.cloudfoundry.spring.logging">LoggregatorMessageHttpMessageConverter</a></dt>
+<dt><span class="memberNameLink"><a href="org/cloudfoundry/reactor/uaa/identityzonemanagement/SpringIdentityZoneManagement.html#list-org.cloudfoundry.uaa.identityzonemanagement.ListIdentityZoneRequest-">list(ListIdentityZoneRequest)</a></span> - Method in class org.cloudfoundry.reactor.uaa.identityzonemanagement.<a href="org/cloudfoundry/reactor/uaa/identityzonemanagement/SpringIdentityZoneManagement.html" title="class in org.cloudfoundry.reactor.uaa.identityzonemanagement">SpringIdentityZoneManagement</a></dt>
 <dd>&nbsp;</dd>
 </dl>
 <a name="I:O">
@@ -201,11 +263,19 @@
 </a>
 <h2 class="title">O</h2>
 <dl>
+<dt><span class="memberNameLink"><a href="org/cloudfoundry/reactor/util/DefaultConnectionContext.DefaultConnectionContextBuilder.html#objectMapper-com.fasterxml.jackson.databind.ObjectMapper-">objectMapper(ObjectMapper)</a></span> - Method in class org.cloudfoundry.reactor.util.<a href="org/cloudfoundry/reactor/util/DefaultConnectionContext.DefaultConnectionContextBuilder.html" title="class in org.cloudfoundry.reactor.util">DefaultConnectionContext.DefaultConnectionContextBuilder</a></dt>
+<dd>&nbsp;</dd>
+<dt><a href="org/cloudfoundry/reactor/doppler/package-summary.html">org.cloudfoundry.reactor.doppler</a> - package org.cloudfoundry.reactor.doppler</dt>
+<dd>&nbsp;</dd>
+<dt><a href="org/cloudfoundry/reactor/uaa/package-summary.html">org.cloudfoundry.reactor.uaa</a> - package org.cloudfoundry.reactor.uaa</dt>
+<dd>&nbsp;</dd>
+<dt><a href="org/cloudfoundry/reactor/uaa/accesstokenadministration/package-summary.html">org.cloudfoundry.reactor.uaa.accesstokenadministration</a> - package org.cloudfoundry.reactor.uaa.accesstokenadministration</dt>
+<dd>&nbsp;</dd>
+<dt><a href="org/cloudfoundry/reactor/uaa/identityzonemanagement/package-summary.html">org.cloudfoundry.reactor.uaa.identityzonemanagement</a> - package org.cloudfoundry.reactor.uaa.identityzonemanagement</dt>
+<dd>&nbsp;</dd>
+<dt><a href="org/cloudfoundry/reactor/util/package-summary.html">org.cloudfoundry.reactor.util</a> - package org.cloudfoundry.reactor.util</dt>
+<dd>&nbsp;</dd>
 <dt><a href="org/cloudfoundry/spring/client/package-summary.html">org.cloudfoundry.spring.client</a> - package org.cloudfoundry.spring.client</dt>
-<dd>&nbsp;</dd>
-<dt><a href="org/cloudfoundry/spring/logging/package-summary.html">org.cloudfoundry.spring.logging</a> - package org.cloudfoundry.spring.logging</dt>
-<dd>&nbsp;</dd>
-<dt><a href="org/cloudfoundry/spring/uaa/package-summary.html">org.cloudfoundry.spring.uaa</a> - package org.cloudfoundry.spring.uaa</dt>
 <dd>&nbsp;</dd>
 <dt><span class="memberNameLink"><a href="org/cloudfoundry/spring/client/SpringCloudFoundryClient.html#organizationQuotaDefinitions--">organizationQuotaDefinitions()</a></span> - Method in class org.cloudfoundry.spring.client.<a href="org/cloudfoundry/spring/client/SpringCloudFoundryClient.html" title="class in org.cloudfoundry.spring.client">SpringCloudFoundryClient</a></dt>
 <dd>&nbsp;</dd>
@@ -221,7 +291,11 @@
 <dd>&nbsp;</dd>
 <dt><span class="memberNameLink"><a href="org/cloudfoundry/spring/client/SpringCloudFoundryClient.SpringCloudFoundryClientBuilder.html#password-java.lang.String-">password(String)</a></span> - Method in class org.cloudfoundry.spring.client.<a href="org/cloudfoundry/spring/client/SpringCloudFoundryClient.SpringCloudFoundryClientBuilder.html" title="class in org.cloudfoundry.spring.client">SpringCloudFoundryClient.SpringCloudFoundryClientBuilder</a></dt>
 <dd>&nbsp;</dd>
+<dt><span class="memberNameLink"><a href="org/cloudfoundry/reactor/util/DefaultConnectionContext.DefaultConnectionContextBuilder.html#port-java.lang.Integer-">port(Integer)</a></span> - Method in class org.cloudfoundry.reactor.util.<a href="org/cloudfoundry/reactor/util/DefaultConnectionContext.DefaultConnectionContextBuilder.html" title="class in org.cloudfoundry.reactor.util">DefaultConnectionContext.DefaultConnectionContextBuilder</a></dt>
+<dd>&nbsp;</dd>
 <dt><span class="memberNameLink"><a href="org/cloudfoundry/spring/client/SpringCloudFoundryClient.SpringCloudFoundryClientBuilder.html#port-java.lang.Integer-">port(Integer)</a></span> - Method in class org.cloudfoundry.spring.client.<a href="org/cloudfoundry/spring/client/SpringCloudFoundryClient.SpringCloudFoundryClientBuilder.html" title="class in org.cloudfoundry.spring.client">SpringCloudFoundryClient.SpringCloudFoundryClientBuilder</a></dt>
+<dd>&nbsp;</dd>
+<dt><span class="memberNameLink"><a href="org/cloudfoundry/reactor/util/AbstractReactorOperations.html#post-REQ-java.lang.Class-java.util.function.Consumer-">post(REQ, Class&lt;RSP&gt;, Consumer&lt;Tuple2&lt;UriComponentsBuilder, REQ&gt;&gt;)</a></span> - Method in class org.cloudfoundry.reactor.util.<a href="org/cloudfoundry/reactor/util/AbstractReactorOperations.html" title="class in org.cloudfoundry.reactor.util">AbstractReactorOperations</a></dt>
 <dd>&nbsp;</dd>
 <dt><span class="memberNameLink"><a href="org/cloudfoundry/spring/client/SpringCloudFoundryClient.html#privateDomains--">privateDomains()</a></span> - Method in class org.cloudfoundry.spring.client.<a href="org/cloudfoundry/spring/client/SpringCloudFoundryClient.html" title="class in org.cloudfoundry.spring.client">SpringCloudFoundryClient</a></dt>
 <dd>&nbsp;</dd>
@@ -231,15 +305,23 @@
 <dd>&nbsp;</dd>
 <dt><span class="memberNameLink"><a href="org/cloudfoundry/spring/client/SpringCloudFoundryClient.html#processes--">processes()</a></span> - Method in class org.cloudfoundry.spring.client.<a href="org/cloudfoundry/spring/client/SpringCloudFoundryClient.html" title="class in org.cloudfoundry.spring.client">SpringCloudFoundryClient</a></dt>
 <dd>&nbsp;</dd>
+<dt><span class="memberNameLink"><a href="org/cloudfoundry/reactor/util/AbstractReactorOperations.html#put-REQ-java.lang.Class-java.util.function.Consumer-">put(REQ, Class&lt;RSP&gt;, Consumer&lt;Tuple2&lt;UriComponentsBuilder, REQ&gt;&gt;)</a></span> - Method in class org.cloudfoundry.reactor.util.<a href="org/cloudfoundry/reactor/util/AbstractReactorOperations.html" title="class in org.cloudfoundry.reactor.util">AbstractReactorOperations</a></dt>
+<dd>&nbsp;</dd>
 </dl>
 <a name="I:R">
 <!--   -->
 </a>
 <h2 class="title">R</h2>
 <dl>
-<dt><span class="memberNameLink"><a href="org/cloudfoundry/spring/logging/LoggregatorMessageHttpMessageConverter.html#readInternal-java.lang.Class-org.springframework.http.HttpInputMessage-">readInternal(Class&lt;? extends List&lt;LogMessage&gt;&gt;, HttpInputMessage)</a></span> - Method in class org.cloudfoundry.spring.logging.<a href="org/cloudfoundry/spring/logging/LoggregatorMessageHttpMessageConverter.html" title="class in org.cloudfoundry.spring.logging">LoggregatorMessageHttpMessageConverter</a></dt>
-<dd>&nbsp;</dd>
-<dt><span class="memberNameLink"><a href="org/cloudfoundry/spring/logging/SpringLoggingClient.html#recent-org.cloudfoundry.logging.RecentLogsRequest-">recent(RecentLogsRequest)</a></span> - Method in class org.cloudfoundry.spring.logging.<a href="org/cloudfoundry/spring/logging/SpringLoggingClient.html" title="class in org.cloudfoundry.spring.logging">SpringLoggingClient</a></dt>
+<dt><a href="org/cloudfoundry/reactor/doppler/ReactorDopplerClient.html" title="class in org.cloudfoundry.reactor.doppler"><span class="typeNameLink">ReactorDopplerClient</span></a> - Class in <a href="org/cloudfoundry/reactor/doppler/package-summary.html">org.cloudfoundry.reactor.doppler</a></dt>
+<dd>
+<div class="block">The Reactor-based implementation of <a href="https://github.com/cloudfoundry/cf-java-client/cloudfoundry-client/apidocs/org/cloudfoundry/doppler/DopplerClient.html?is-external=true" title="class or interface in org.cloudfoundry.doppler"><code>DopplerClient</code></a></div>
+</dd>
+<dt><a href="org/cloudfoundry/reactor/uaa/ReactorUaaClient.html" title="class in org.cloudfoundry.reactor.uaa"><span class="typeNameLink">ReactorUaaClient</span></a> - Class in <a href="org/cloudfoundry/reactor/uaa/package-summary.html">org.cloudfoundry.reactor.uaa</a></dt>
+<dd>
+<div class="block">The Spring-based implementation of <a href="https://github.com/cloudfoundry/cf-java-client/cloudfoundry-client/apidocs/org/cloudfoundry/uaa/UaaClient.html?is-external=true" title="class or interface in org.cloudfoundry.uaa"><code>UaaClient</code></a></div>
+</dd>
+<dt><span class="memberNameLink"><a href="org/cloudfoundry/reactor/doppler/ReactorDopplerClient.html#recentLogs-org.cloudfoundry.doppler.RecentLogsRequest-">recentLogs(RecentLogsRequest)</a></span> - Method in class org.cloudfoundry.reactor.doppler.<a href="org/cloudfoundry/reactor/doppler/ReactorDopplerClient.html" title="class in org.cloudfoundry.reactor.doppler">ReactorDopplerClient</a></dt>
 <dd>&nbsp;</dd>
 <dt><span class="memberNameLink"><a href="org/cloudfoundry/spring/client/SpringCloudFoundryClient.html#routeMappings--">routeMappings()</a></span> - Method in class org.cloudfoundry.spring.client.<a href="org/cloudfoundry/spring/client/SpringCloudFoundryClient.html" title="class in org.cloudfoundry.spring.client">SpringCloudFoundryClient</a></dt>
 <dd>&nbsp;</dd>
@@ -277,29 +359,29 @@
 <dd>&nbsp;</dd>
 <dt><span class="memberNameLink"><a href="org/cloudfoundry/spring/client/SpringCloudFoundryClient.html#spaces--">spaces()</a></span> - Method in class org.cloudfoundry.spring.client.<a href="org/cloudfoundry/spring/client/SpringCloudFoundryClient.html" title="class in org.cloudfoundry.spring.client">SpringCloudFoundryClient</a></dt>
 <dd>&nbsp;</dd>
+<dt><a href="org/cloudfoundry/reactor/uaa/accesstokenadministration/SpringAccessTokenAdministration.html" title="class in org.cloudfoundry.reactor.uaa.accesstokenadministration"><span class="typeNameLink">SpringAccessTokenAdministration</span></a> - Class in <a href="org/cloudfoundry/reactor/uaa/accesstokenadministration/package-summary.html">org.cloudfoundry.reactor.uaa.accesstokenadministration</a></dt>
+<dd>&nbsp;</dd>
+<dt><span class="memberNameLink"><a href="org/cloudfoundry/reactor/uaa/accesstokenadministration/SpringAccessTokenAdministration.html#SpringAccessTokenAdministration-org.cloudfoundry.reactor.util.AuthorizationProvider-reactor.io.netty.http.HttpClient-com.fasterxml.jackson.databind.ObjectMapper-reactor.core.publisher.Mono-">SpringAccessTokenAdministration(AuthorizationProvider, HttpClient, ObjectMapper, Mono&lt;String&gt;)</a></span> - Constructor for class org.cloudfoundry.reactor.uaa.accesstokenadministration.<a href="org/cloudfoundry/reactor/uaa/accesstokenadministration/SpringAccessTokenAdministration.html" title="class in org.cloudfoundry.reactor.uaa.accesstokenadministration">SpringAccessTokenAdministration</a></dt>
+<dd>
+<div class="block">Creates an instance</div>
+</dd>
 <dt><a href="org/cloudfoundry/spring/client/SpringCloudFoundryClient.html" title="class in org.cloudfoundry.spring.client"><span class="typeNameLink">SpringCloudFoundryClient</span></a> - Class in <a href="org/cloudfoundry/spring/client/package-summary.html">org.cloudfoundry.spring.client</a></dt>
 <dd>
 <div class="block">The Spring-based implementation of <a href="https://github.com/cloudfoundry/cf-java-client/cloudfoundry-client/apidocs/org/cloudfoundry/client/CloudFoundryClient.html?is-external=true" title="class or interface in org.cloudfoundry.client"><code>CloudFoundryClient</code></a></div>
 </dd>
 <dt><a href="org/cloudfoundry/spring/client/SpringCloudFoundryClient.SpringCloudFoundryClientBuilder.html" title="class in org.cloudfoundry.spring.client"><span class="typeNameLink">SpringCloudFoundryClient.SpringCloudFoundryClientBuilder</span></a> - Class in <a href="org/cloudfoundry/spring/client/package-summary.html">org.cloudfoundry.spring.client</a></dt>
 <dd>&nbsp;</dd>
-<dt><a href="org/cloudfoundry/spring/logging/SpringLoggingClient.html" title="class in org.cloudfoundry.spring.logging"><span class="typeNameLink">SpringLoggingClient</span></a> - Class in <a href="org/cloudfoundry/spring/logging/package-summary.html">org.cloudfoundry.spring.logging</a></dt>
+<dt><a href="org/cloudfoundry/reactor/uaa/identityzonemanagement/SpringIdentityZoneManagement.html" title="class in org.cloudfoundry.reactor.uaa.identityzonemanagement"><span class="typeNameLink">SpringIdentityZoneManagement</span></a> - Class in <a href="org/cloudfoundry/reactor/uaa/identityzonemanagement/package-summary.html">org.cloudfoundry.reactor.uaa.identityzonemanagement</a></dt>
 <dd>
-<div class="block">The Spring-based implementation of <a href="https://github.com/cloudfoundry/cf-java-client/cloudfoundry-client/apidocs/org/cloudfoundry/logging/LoggingClient.html?is-external=true" title="class or interface in org.cloudfoundry.logging"><code>LoggingClient</code></a></div>
+<div class="block">The Spring-based implementation of <a href="https://github.com/cloudfoundry/cf-java-client/cloudfoundry-client/apidocs/org/cloudfoundry/uaa/identityzonemanagement/IdentityZoneManagement.html?is-external=true" title="class or interface in org.cloudfoundry.uaa.identityzonemanagement"><code>IdentityZoneManagement</code></a></div>
 </dd>
-<dt><a href="org/cloudfoundry/spring/logging/SpringLoggingClient.SpringLoggingClientBuilder.html" title="class in org.cloudfoundry.spring.logging"><span class="typeNameLink">SpringLoggingClient.SpringLoggingClientBuilder</span></a> - Class in <a href="org/cloudfoundry/spring/logging/package-summary.html">org.cloudfoundry.spring.logging</a></dt>
-<dd>&nbsp;</dd>
-<dt><a href="org/cloudfoundry/spring/uaa/SpringUaaClient.html" title="class in org.cloudfoundry.spring.uaa"><span class="typeNameLink">SpringUaaClient</span></a> - Class in <a href="org/cloudfoundry/spring/uaa/package-summary.html">org.cloudfoundry.spring.uaa</a></dt>
+<dt><span class="memberNameLink"><a href="org/cloudfoundry/reactor/uaa/identityzonemanagement/SpringIdentityZoneManagement.html#SpringIdentityZoneManagement-org.cloudfoundry.reactor.util.AuthorizationProvider-reactor.io.netty.http.HttpClient-com.fasterxml.jackson.databind.ObjectMapper-reactor.core.publisher.Mono-">SpringIdentityZoneManagement(AuthorizationProvider, HttpClient, ObjectMapper, Mono&lt;String&gt;)</a></span> - Constructor for class org.cloudfoundry.reactor.uaa.identityzonemanagement.<a href="org/cloudfoundry/reactor/uaa/identityzonemanagement/SpringIdentityZoneManagement.html" title="class in org.cloudfoundry.reactor.uaa.identityzonemanagement">SpringIdentityZoneManagement</a></dt>
 <dd>
-<div class="block">The Spring-based implementation of <a href="https://github.com/cloudfoundry/cf-java-client/cloudfoundry-client/apidocs/org/cloudfoundry/uaa/UaaClient.html?is-external=true" title="class or interface in org.cloudfoundry.uaa"><code>UaaClient</code></a></div>
+<div class="block">Creates an instance</div>
 </dd>
-<dt><a href="org/cloudfoundry/spring/uaa/SpringUaaClient.SpringUaaClientBuilder.html" title="class in org.cloudfoundry.spring.uaa"><span class="typeNameLink">SpringUaaClient.SpringUaaClientBuilder</span></a> - Class in <a href="org/cloudfoundry/spring/uaa/package-summary.html">org.cloudfoundry.spring.uaa</a></dt>
-<dd>&nbsp;</dd>
 <dt><span class="memberNameLink"><a href="org/cloudfoundry/spring/client/SpringCloudFoundryClient.html#stacks--">stacks()</a></span> - Method in class org.cloudfoundry.spring.client.<a href="org/cloudfoundry/spring/client/SpringCloudFoundryClient.html" title="class in org.cloudfoundry.spring.client">SpringCloudFoundryClient</a></dt>
 <dd>&nbsp;</dd>
-<dt><span class="memberNameLink"><a href="org/cloudfoundry/spring/logging/SpringLoggingClient.html#stream-org.cloudfoundry.logging.StreamLogsRequest-">stream(StreamLogsRequest)</a></span> - Method in class org.cloudfoundry.spring.logging.<a href="org/cloudfoundry/spring/logging/SpringLoggingClient.html" title="class in org.cloudfoundry.spring.logging">SpringLoggingClient</a></dt>
-<dd>&nbsp;</dd>
-<dt><span class="memberNameLink"><a href="org/cloudfoundry/spring/logging/LoggregatorMessageHttpMessageConverter.html#supports-java.lang.Class-">supports(Class&lt;?&gt;)</a></span> - Method in class org.cloudfoundry.spring.logging.<a href="org/cloudfoundry/spring/logging/LoggregatorMessageHttpMessageConverter.html" title="class in org.cloudfoundry.spring.logging">LoggregatorMessageHttpMessageConverter</a></dt>
+<dt><span class="memberNameLink"><a href="org/cloudfoundry/reactor/doppler/ReactorDopplerClient.html#stream-org.cloudfoundry.doppler.StreamRequest-">stream(StreamRequest)</a></span> - Method in class org.cloudfoundry.reactor.doppler.<a href="org/cloudfoundry/reactor/doppler/ReactorDopplerClient.html" title="class in org.cloudfoundry.reactor.doppler">ReactorDopplerClient</a></dt>
 <dd>&nbsp;</dd>
 </dl>
 <a name="I:T">
@@ -309,15 +391,11 @@
 <dl>
 <dt><span class="memberNameLink"><a href="org/cloudfoundry/spring/client/SpringCloudFoundryClient.html#tasks--">tasks()</a></span> - Method in class org.cloudfoundry.spring.client.<a href="org/cloudfoundry/spring/client/SpringCloudFoundryClient.html" title="class in org.cloudfoundry.spring.client">SpringCloudFoundryClient</a></dt>
 <dd>&nbsp;</dd>
+<dt><span class="memberNameLink"><a href="org/cloudfoundry/reactor/util/DefaultConnectionContext.DefaultConnectionContextBuilder.html#toString--">toString()</a></span> - Method in class org.cloudfoundry.reactor.util.<a href="org/cloudfoundry/reactor/util/DefaultConnectionContext.DefaultConnectionContextBuilder.html" title="class in org.cloudfoundry.reactor.util">DefaultConnectionContext.DefaultConnectionContextBuilder</a></dt>
+<dd>&nbsp;</dd>
 <dt><span class="memberNameLink"><a href="org/cloudfoundry/spring/client/SpringCloudFoundryClient.SpringCloudFoundryClientBuilder.html#toString--">toString()</a></span> - Method in class org.cloudfoundry.spring.client.<a href="org/cloudfoundry/spring/client/SpringCloudFoundryClient.SpringCloudFoundryClientBuilder.html" title="class in org.cloudfoundry.spring.client">SpringCloudFoundryClient.SpringCloudFoundryClientBuilder</a></dt>
 <dd>&nbsp;</dd>
-<dt><span class="memberNameLink"><a href="org/cloudfoundry/spring/logging/SpringLoggingClient.SpringLoggingClientBuilder.html#toString--">toString()</a></span> - Method in class org.cloudfoundry.spring.logging.<a href="org/cloudfoundry/spring/logging/SpringLoggingClient.SpringLoggingClientBuilder.html" title="class in org.cloudfoundry.spring.logging">SpringLoggingClient.SpringLoggingClientBuilder</a></dt>
-<dd>&nbsp;</dd>
-<dt><span class="memberNameLink"><a href="org/cloudfoundry/spring/logging/SpringLoggingClient.html#toString--">toString()</a></span> - Method in class org.cloudfoundry.spring.logging.<a href="org/cloudfoundry/spring/logging/SpringLoggingClient.html" title="class in org.cloudfoundry.spring.logging">SpringLoggingClient</a></dt>
-<dd>&nbsp;</dd>
-<dt><span class="memberNameLink"><a href="org/cloudfoundry/spring/uaa/SpringUaaClient.SpringUaaClientBuilder.html#toString--">toString()</a></span> - Method in class org.cloudfoundry.spring.uaa.<a href="org/cloudfoundry/spring/uaa/SpringUaaClient.SpringUaaClientBuilder.html" title="class in org.cloudfoundry.spring.uaa">SpringUaaClient.SpringUaaClientBuilder</a></dt>
-<dd>&nbsp;</dd>
-<dt><span class="memberNameLink"><a href="org/cloudfoundry/spring/uaa/SpringUaaClient.html#toString--">toString()</a></span> - Method in class org.cloudfoundry.spring.uaa.<a href="org/cloudfoundry/spring/uaa/SpringUaaClient.html" title="class in org.cloudfoundry.spring.uaa">SpringUaaClient</a></dt>
+<dt><span class="memberNameLink"><a href="org/cloudfoundry/reactor/util/DefaultConnectionContext.DefaultConnectionContextBuilder.html#trustCertificates-java.lang.Boolean-">trustCertificates(Boolean)</a></span> - Method in class org.cloudfoundry.reactor.util.<a href="org/cloudfoundry/reactor/util/DefaultConnectionContext.DefaultConnectionContextBuilder.html" title="class in org.cloudfoundry.reactor.util">DefaultConnectionContext.DefaultConnectionContextBuilder</a></dt>
 <dd>&nbsp;</dd>
 </dl>
 <a name="I:U">
@@ -325,6 +403,8 @@
 </a>
 <h2 class="title">U</h2>
 <dl>
+<dt><span class="memberNameLink"><a href="org/cloudfoundry/reactor/uaa/identityzonemanagement/SpringIdentityZoneManagement.html#update-org.cloudfoundry.uaa.identityzonemanagement.UpdateIdentityZoneRequest-">update(UpdateIdentityZoneRequest)</a></span> - Method in class org.cloudfoundry.reactor.uaa.identityzonemanagement.<a href="org/cloudfoundry/reactor/uaa/identityzonemanagement/SpringIdentityZoneManagement.html" title="class in org.cloudfoundry.reactor.uaa.identityzonemanagement">SpringIdentityZoneManagement</a></dt>
+<dd>&nbsp;</dd>
 <dt><span class="memberNameLink"><a href="org/cloudfoundry/spring/client/SpringCloudFoundryClient.SpringCloudFoundryClientBuilder.html#username-java.lang.String-">username(String)</a></span> - Method in class org.cloudfoundry.spring.client.<a href="org/cloudfoundry/spring/client/SpringCloudFoundryClient.SpringCloudFoundryClientBuilder.html" title="class in org.cloudfoundry.spring.client">SpringCloudFoundryClient.SpringCloudFoundryClientBuilder</a></dt>
 <dd>&nbsp;</dd>
 <dt><span class="memberNameLink"><a href="org/cloudfoundry/spring/client/SpringCloudFoundryClient.html#userProvidedServiceInstances--">userProvidedServiceInstances()</a></span> - Method in class org.cloudfoundry.spring.client.<a href="org/cloudfoundry/spring/client/SpringCloudFoundryClient.html" title="class in org.cloudfoundry.spring.client">SpringCloudFoundryClient</a></dt>
@@ -337,7 +417,7 @@
 </a>
 <h2 class="title">W</h2>
 <dl>
-<dt><span class="memberNameLink"><a href="org/cloudfoundry/spring/logging/LoggregatorMessageHttpMessageConverter.html#writeInternal-java.util.List-org.springframework.http.HttpOutputMessage-">writeInternal(List&lt;LogMessage&gt;, HttpOutputMessage)</a></span> - Method in class org.cloudfoundry.spring.logging.<a href="org/cloudfoundry/spring/logging/LoggregatorMessageHttpMessageConverter.html" title="class in org.cloudfoundry.spring.logging">LoggregatorMessageHttpMessageConverter</a></dt>
+<dt><span class="memberNameLink"><a href="org/cloudfoundry/reactor/util/AbstractReactorOperations.html#ws-REQ-java.util.function.Consumer-">ws(REQ, Consumer&lt;Tuple2&lt;UriComponentsBuilder, REQ&gt;&gt;)</a></span> - Method in class org.cloudfoundry.reactor.util.<a href="org/cloudfoundry/reactor/util/AbstractReactorOperations.html" title="class in org.cloudfoundry.reactor.util">AbstractReactorOperations</a></dt>
 <dd>&nbsp;</dd>
 </dl>
 <a href="#I:A">A</a>&nbsp;<a href="#I:B">B</a>&nbsp;<a href="#I:C">C</a>&nbsp;<a href="#I:D">D</a>&nbsp;<a href="#I:E">E</a>&nbsp;<a href="#I:F">F</a>&nbsp;<a href="#I:G">G</a>&nbsp;<a href="#I:H">H</a>&nbsp;<a href="#I:I">I</a>&nbsp;<a href="#I:J">J</a>&nbsp;<a href="#I:L">L</a>&nbsp;<a href="#I:O">O</a>&nbsp;<a href="#I:P">P</a>&nbsp;<a href="#I:R">R</a>&nbsp;<a href="#I:S">S</a>&nbsp;<a href="#I:T">T</a>&nbsp;<a href="#I:U">U</a>&nbsp;<a href="#I:W">W</a>&nbsp;</div>

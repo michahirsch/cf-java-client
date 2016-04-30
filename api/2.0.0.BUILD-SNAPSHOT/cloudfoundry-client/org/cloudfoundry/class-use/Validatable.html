@@ -222,7 +222,7 @@
 <td class="colLast">&nbsp;</td>
 </tr>
 <tr class="rowColor">
-<td class="colFirst"><a href="#org.cloudfoundry.logging">org.cloudfoundry.logging</a></td>
+<td class="colFirst"><a href="#org.cloudfoundry.doppler">org.cloudfoundry.doppler</a></td>
 <td class="colLast">&nbsp;</td>
 </tr>
 <tr class="altColor">
@@ -2100,12 +2100,12 @@
 </tbody>
 </table>
 </li>
-<li class="blockList"><a name="org.cloudfoundry.logging">
+<li class="blockList"><a name="org.cloudfoundry.doppler">
 <!--   -->
 </a>
-<h3>Uses of <a href="../../../org/cloudfoundry/Validatable.html" title="interface in org.cloudfoundry">Validatable</a> in <a href="../../../org/cloudfoundry/logging/package-summary.html">org.cloudfoundry.logging</a></h3>
+<h3>Uses of <a href="../../../org/cloudfoundry/Validatable.html" title="interface in org.cloudfoundry">Validatable</a> in <a href="../../../org/cloudfoundry/doppler/package-summary.html">org.cloudfoundry.doppler</a></h3>
 <table class="useSummary" border="0" cellpadding="3" cellspacing="0" summary="Use table, listing classes, and an explanation">
-<caption><span>Classes in <a href="../../../org/cloudfoundry/logging/package-summary.html">org.cloudfoundry.logging</a> that implement <a href="../../../org/cloudfoundry/Validatable.html" title="interface in org.cloudfoundry">Validatable</a></span><span class="tabEnd">&nbsp;</span></caption>
+<caption><span>Classes in <a href="../../../org/cloudfoundry/doppler/package-summary.html">org.cloudfoundry.doppler</a> that implement <a href="../../../org/cloudfoundry/Validatable.html" title="interface in org.cloudfoundry">Validatable</a></span><span class="tabEnd">&nbsp;</span></caption>
 <tr>
 <th class="colFirst" scope="col">Modifier and Type</th>
 <th class="colLast" scope="col">Class and Description</th>
@@ -2113,14 +2113,68 @@
 <tbody>
 <tr class="altColor">
 <td class="colFirst"><code>class&nbsp;</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../org/cloudfoundry/logging/RecentLogsRequest.html" title="class in org.cloudfoundry.logging">RecentLogsRequest</a></span></code>
-<div class="block">The request payload for the Recent Logs operation</div>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../org/cloudfoundry/doppler/ContainerMetric.html" title="class in org.cloudfoundry.doppler">ContainerMetric</a></span></code>
+<div class="block">Records resource usage of an app in a container</div>
 </td>
 </tr>
 <tr class="rowColor">
 <td class="colFirst"><code>class&nbsp;</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../org/cloudfoundry/logging/StreamLogsRequest.html" title="class in org.cloudfoundry.logging">StreamLogsRequest</a></span></code>
-<div class="block">The request payload for the Stream Logs operation</div>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../org/cloudfoundry/doppler/ContainerMetricsRequest.html" title="class in org.cloudfoundry.doppler">ContainerMetricsRequest</a></span></code>
+<div class="block">The request payload for the Container Metrics endpoint</div>
+</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>class&nbsp;</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../org/cloudfoundry/doppler/CounterEvent.html" title="class in org.cloudfoundry.doppler">CounterEvent</a></span></code>
+<div class="block">Represents the increment of a counter.</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>class&nbsp;</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../org/cloudfoundry/doppler/Error.html" title="class in org.cloudfoundry.doppler">Error</a></span></code>
+<div class="block">An Error event represents an error in the originating process</div>
+</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>class&nbsp;</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../org/cloudfoundry/doppler/FirehoseRequest.html" title="class in org.cloudfoundry.doppler">FirehoseRequest</a></span></code>
+<div class="block">The request payload for the Firehose endpoint</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>class&nbsp;</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../org/cloudfoundry/doppler/HttpStart.html" title="class in org.cloudfoundry.doppler">HttpStart</a></span></code>&nbsp;</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>class&nbsp;</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../org/cloudfoundry/doppler/HttpStartStop.html" title="class in org.cloudfoundry.doppler">HttpStartStop</a></span></code>&nbsp;</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>class&nbsp;</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../org/cloudfoundry/doppler/HttpStop.html" title="class in org.cloudfoundry.doppler">HttpStop</a></span></code>
+<div class="block">The event emitted when a client receives a response to its request (or when a server completes its handling and returns a response)</div>
+</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>class&nbsp;</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../org/cloudfoundry/doppler/LogMessage.html" title="class in org.cloudfoundry.doppler">LogMessage</a></span></code>&nbsp;</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>class&nbsp;</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../org/cloudfoundry/doppler/RecentLogsRequest.html" title="class in org.cloudfoundry.doppler">RecentLogsRequest</a></span></code>
+<div class="block">The request payload for the Recent Logs endpoint</div>
+</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>class&nbsp;</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../org/cloudfoundry/doppler/StreamRequest.html" title="class in org.cloudfoundry.doppler">StreamRequest</a></span></code>
+<div class="block">The request payload for the Stream endpoint</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>class&nbsp;</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../org/cloudfoundry/doppler/ValueMetric.html" title="class in org.cloudfoundry.doppler">ValueMetric</a></span></code>
+<div class="block">Indicates the value of a metric at an instant in time</div>
 </td>
 </tr>
 </tbody>

@@ -226,7 +226,7 @@
 <td class="colLast">&nbsp;</td>
 </tr>
 <tr class="altColor">
-<td class="colFirst"><a href="#org.cloudfoundry.logging">org.cloudfoundry.logging</a></td>
+<td class="colFirst"><a href="#org.cloudfoundry.doppler">org.cloudfoundry.doppler</a></td>
 <td class="colLast">&nbsp;</td>
 </tr>
 <tr class="rowColor">
@@ -1700,12 +1700,12 @@
 </tbody>
 </table>
 </li>
-<li class="blockList"><a name="org.cloudfoundry.logging">
+<li class="blockList"><a name="org.cloudfoundry.doppler">
 <!--   -->
 </a>
-<h3>Uses of <a href="../../../org/cloudfoundry/ValidationResult.html" title="class in org.cloudfoundry">ValidationResult</a> in <a href="../../../org/cloudfoundry/logging/package-summary.html">org.cloudfoundry.logging</a></h3>
+<h3>Uses of <a href="../../../org/cloudfoundry/ValidationResult.html" title="class in org.cloudfoundry">ValidationResult</a> in <a href="../../../org/cloudfoundry/doppler/package-summary.html">org.cloudfoundry.doppler</a></h3>
 <table class="useSummary" border="0" cellpadding="3" cellspacing="0" summary="Use table, listing methods, and an explanation">
-<caption><span>Methods in <a href="../../../org/cloudfoundry/logging/package-summary.html">org.cloudfoundry.logging</a> that return <a href="../../../org/cloudfoundry/ValidationResult.html" title="class in org.cloudfoundry">ValidationResult</a></span><span class="tabEnd">&nbsp;</span></caption>
+<caption><span>Methods in <a href="../../../org/cloudfoundry/doppler/package-summary.html">org.cloudfoundry.doppler</a> that return <a href="../../../org/cloudfoundry/ValidationResult.html" title="class in org.cloudfoundry">ValidationResult</a></span><span class="tabEnd">&nbsp;</span></caption>
 <tr>
 <th class="colFirst" scope="col">Modifier and Type</th>
 <th class="colLast" scope="col">Method and Description</th>
@@ -1713,11 +1713,51 @@
 <tbody>
 <tr class="altColor">
 <td class="colFirst"><code><a href="../../../org/cloudfoundry/ValidationResult.html" title="class in org.cloudfoundry">ValidationResult</a></code></td>
-<td class="colLast"><span class="typeNameLabel">RecentLogsRequest.</span><code><span class="memberNameLink"><a href="../../../org/cloudfoundry/logging/RecentLogsRequest.html#isValid--">isValid</a></span>()</code>&nbsp;</td>
+<td class="colLast"><span class="typeNameLabel">ContainerMetric.</span><code><span class="memberNameLink"><a href="../../../org/cloudfoundry/doppler/ContainerMetric.html#isValid--">isValid</a></span>()</code>&nbsp;</td>
 </tr>
 <tr class="rowColor">
 <td class="colFirst"><code><a href="../../../org/cloudfoundry/ValidationResult.html" title="class in org.cloudfoundry">ValidationResult</a></code></td>
-<td class="colLast"><span class="typeNameLabel">StreamLogsRequest.</span><code><span class="memberNameLink"><a href="../../../org/cloudfoundry/logging/StreamLogsRequest.html#isValid--">isValid</a></span>()</code>&nbsp;</td>
+<td class="colLast"><span class="typeNameLabel">ContainerMetricsRequest.</span><code><span class="memberNameLink"><a href="../../../org/cloudfoundry/doppler/ContainerMetricsRequest.html#isValid--">isValid</a></span>()</code>&nbsp;</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code><a href="../../../org/cloudfoundry/ValidationResult.html" title="class in org.cloudfoundry">ValidationResult</a></code></td>
+<td class="colLast"><span class="typeNameLabel">CounterEvent.</span><code><span class="memberNameLink"><a href="../../../org/cloudfoundry/doppler/CounterEvent.html#isValid--">isValid</a></span>()</code>&nbsp;</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code><a href="../../../org/cloudfoundry/ValidationResult.html" title="class in org.cloudfoundry">ValidationResult</a></code></td>
+<td class="colLast"><span class="typeNameLabel">Error.</span><code><span class="memberNameLink"><a href="../../../org/cloudfoundry/doppler/Error.html#isValid--">isValid</a></span>()</code>&nbsp;</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code><a href="../../../org/cloudfoundry/ValidationResult.html" title="class in org.cloudfoundry">ValidationResult</a></code></td>
+<td class="colLast"><span class="typeNameLabel">FirehoseRequest.</span><code><span class="memberNameLink"><a href="../../../org/cloudfoundry/doppler/FirehoseRequest.html#isValid--">isValid</a></span>()</code>&nbsp;</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code><a href="../../../org/cloudfoundry/ValidationResult.html" title="class in org.cloudfoundry">ValidationResult</a></code></td>
+<td class="colLast"><span class="typeNameLabel">HttpStart.</span><code><span class="memberNameLink"><a href="../../../org/cloudfoundry/doppler/HttpStart.html#isValid--">isValid</a></span>()</code>&nbsp;</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code><a href="../../../org/cloudfoundry/ValidationResult.html" title="class in org.cloudfoundry">ValidationResult</a></code></td>
+<td class="colLast"><span class="typeNameLabel">HttpStartStop.</span><code><span class="memberNameLink"><a href="../../../org/cloudfoundry/doppler/HttpStartStop.html#isValid--">isValid</a></span>()</code>&nbsp;</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code><a href="../../../org/cloudfoundry/ValidationResult.html" title="class in org.cloudfoundry">ValidationResult</a></code></td>
+<td class="colLast"><span class="typeNameLabel">HttpStop.</span><code><span class="memberNameLink"><a href="../../../org/cloudfoundry/doppler/HttpStop.html#isValid--">isValid</a></span>()</code>&nbsp;</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code><a href="../../../org/cloudfoundry/ValidationResult.html" title="class in org.cloudfoundry">ValidationResult</a></code></td>
+<td class="colLast"><span class="typeNameLabel">LogMessage.</span><code><span class="memberNameLink"><a href="../../../org/cloudfoundry/doppler/LogMessage.html#isValid--">isValid</a></span>()</code>&nbsp;</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code><a href="../../../org/cloudfoundry/ValidationResult.html" title="class in org.cloudfoundry">ValidationResult</a></code></td>
+<td class="colLast"><span class="typeNameLabel">RecentLogsRequest.</span><code><span class="memberNameLink"><a href="../../../org/cloudfoundry/doppler/RecentLogsRequest.html#isValid--">isValid</a></span>()</code>&nbsp;</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code><a href="../../../org/cloudfoundry/ValidationResult.html" title="class in org.cloudfoundry">ValidationResult</a></code></td>
+<td class="colLast"><span class="typeNameLabel">StreamRequest.</span><code><span class="memberNameLink"><a href="../../../org/cloudfoundry/doppler/StreamRequest.html#isValid--">isValid</a></span>()</code>&nbsp;</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code><a href="../../../org/cloudfoundry/ValidationResult.html" title="class in org.cloudfoundry">ValidationResult</a></code></td>
+<td class="colLast"><span class="typeNameLabel">ValueMetric.</span><code><span class="memberNameLink"><a href="../../../org/cloudfoundry/doppler/ValueMetric.html#isValid--">isValid</a></span>()</code>&nbsp;</td>
 </tr>
 </tbody>
 </table>
