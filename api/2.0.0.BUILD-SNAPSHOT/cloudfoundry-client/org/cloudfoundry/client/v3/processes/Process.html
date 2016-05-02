@@ -17,7 +17,7 @@
     catch(err) {
     }
 //-->
-var methods = {"i0":10,"i1":10,"i2":10,"i3":10,"i4":10,"i5":10,"i6":10,"i7":10,"i8":10,"i9":10,"i10":10,"i11":10,"i12":10};
+var methods = {"i0":10,"i1":10,"i2":10,"i3":10,"i4":10,"i5":10,"i6":10,"i7":10,"i8":10,"i9":10,"i10":10,"i11":10,"i12":10,"i13":10};
 var tabs = {65535:["t0","All Methods"],2:["t2","Instance Methods"],8:["t4","Concrete Methods"]};
 var altColor = "altColor";
 var rowColor = "rowColor";
@@ -135,13 +135,14 @@ extends <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?
 </tr>
 <tr class="altColor">
 <td class="colFirst"><code>protected </code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../org/cloudfoundry/client/v3/processes/Process.html#Process-java.lang.String-java.lang.String-java.lang.Integer-java.lang.String-java.lang.Integer-java.util.Map-java.lang.Integer-java.lang.String-java.lang.String-">Process</a></span>(<a href="http://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;command,
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../org/cloudfoundry/client/v3/processes/Process.html#Process-java.lang.String-java.lang.String-java.lang.Integer-java.lang.String-java.lang.Integer-java.util.Map-java.lang.Integer-java.util.List-java.lang.String-java.lang.String-">Process</a></span>(<a href="http://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;command,
        <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;createdAt,
        <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Integer.html?is-external=true" title="class or interface in java.lang">Integer</a>&nbsp;diskInMb,
        <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;id,
        <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Integer.html?is-external=true" title="class or interface in java.lang">Integer</a>&nbsp;instances,
        <a href="http://docs.oracle.com/javase/8/docs/api/java/util/Map.html?is-external=true" title="class or interface in java.util">Map</a>&lt;<a href="http://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>,<a href="../../../../../org/cloudfoundry/client/v3/Link.html" title="class in org.cloudfoundry.client.v3">Link</a>&gt;&nbsp;links,
        <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Integer.html?is-external=true" title="class or interface in java.lang">Integer</a>&nbsp;memoryInMb,
+       <a href="http://docs.oracle.com/javase/8/docs/api/java/util/List.html?is-external=true" title="class or interface in java.util">List</a>&lt;<a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Integer.html?is-external=true" title="class or interface in java.lang">Integer</a>&gt;&nbsp;ports,
        <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;type,
        <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;updatedAt)</code>&nbsp;</td>
 </tr>
@@ -211,22 +212,28 @@ extends <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?
 </td>
 </tr>
 <tr id="i9" class="rowColor">
+<td class="colFirst"><code><a href="http://docs.oracle.com/javase/8/docs/api/java/util/List.html?is-external=true" title="class or interface in java.util">List</a>&lt;<a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Integer.html?is-external=true" title="class or interface in java.lang">Integer</a>&gt;</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../org/cloudfoundry/client/v3/processes/Process.html#getPorts--">getPorts</a></span>()</code>
+<div class="block">The ports opened to the application</div>
+</td>
+</tr>
+<tr id="i10" class="altColor">
 <td class="colFirst"><code><a href="http://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../../org/cloudfoundry/client/v3/processes/Process.html#getType--">getType</a></span>()</code>
 <div class="block">The type</div>
 </td>
 </tr>
-<tr id="i10" class="altColor">
+<tr id="i11" class="rowColor">
 <td class="colFirst"><code><a href="http://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../../org/cloudfoundry/client/v3/processes/Process.html#getUpdatedAt--">getUpdatedAt</a></span>()</code>
 <div class="block">The updated at</div>
 </td>
 </tr>
-<tr id="i11" class="rowColor">
+<tr id="i12" class="altColor">
 <td class="colFirst"><code>int</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../../org/cloudfoundry/client/v3/processes/Process.html#hashCode--">hashCode</a></span>()</code>&nbsp;</td>
 </tr>
-<tr id="i12" class="altColor">
+<tr id="i13" class="rowColor">
 <td class="colFirst"><code><a href="http://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../../org/cloudfoundry/client/v3/processes/Process.html#toString--">toString</a></span>()</code>&nbsp;</td>
 </tr>
@@ -252,7 +259,7 @@ extends <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?
 <!--   -->
 </a>
 <h3>Constructor Detail</h3>
-<a name="Process-java.lang.String-java.lang.String-java.lang.Integer-java.lang.String-java.lang.Integer-java.util.Map-java.lang.Integer-java.lang.String-java.lang.String-">
+<a name="Process-java.lang.String-java.lang.String-java.lang.Integer-java.lang.String-java.lang.Integer-java.util.Map-java.lang.Integer-java.util.List-java.lang.String-java.lang.String-">
 <!--   -->
 </a>
 <ul class="blockListLast">
@@ -265,6 +272,7 @@ extends <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?
                   <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Integer.html?is-external=true" title="class or interface in java.lang">Integer</a>&nbsp;instances,
                   <a href="http://docs.oracle.com/javase/8/docs/api/java/util/Map.html?is-external=true" title="class or interface in java.util">Map</a>&lt;<a href="http://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>,<a href="../../../../../org/cloudfoundry/client/v3/Link.html" title="class in org.cloudfoundry.client.v3">Link</a>&gt;&nbsp;links,
                   <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Integer.html?is-external=true" title="class or interface in java.lang">Integer</a>&nbsp;memoryInMb,
+                  <a href="http://docs.oracle.com/javase/8/docs/api/java/util/List.html?is-external=true" title="class or interface in java.util">List</a>&lt;<a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Integer.html?is-external=true" title="class or interface in java.lang">Integer</a>&gt;&nbsp;ports,
                   <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;type,
                   <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;updatedAt)</pre>
 </li>
@@ -379,6 +387,21 @@ public&nbsp;<a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Integer.
 <dl>
 <dt><span class="returnLabel">Returns:</span></dt>
 <dd>the memory in megabytes</dd>
+</dl>
+</li>
+</ul>
+<a name="getPorts--">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>getPorts</h4>
+<pre><a href="http://docs.oracle.com/javase/8/docs/api/javax/annotation/Generated.html?is-external=true" title="class or interface in javax.annotation">@Generated</a>(<a href="http://docs.oracle.com/javase/8/docs/api/javax/annotation/Generated.html?is-external=true#value--" title="class or interface in javax.annotation">value</a>="lombok")
+public&nbsp;<a href="http://docs.oracle.com/javase/8/docs/api/java/util/List.html?is-external=true" title="class or interface in java.util">List</a>&lt;<a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Integer.html?is-external=true" title="class or interface in java.lang">Integer</a>&gt;&nbsp;getPorts()</pre>
+<div class="block">The ports opened to the application</div>
+<dl>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd>the ports opened to the application</dd>
 </dl>
 </li>
 </ul>
