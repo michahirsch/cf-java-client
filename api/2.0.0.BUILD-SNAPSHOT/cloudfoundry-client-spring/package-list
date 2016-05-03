@@ -2,6 +2,7 @@ org.cloudfoundry.reactor.client
 org.cloudfoundry.reactor.client.v2
 org.cloudfoundry.reactor.client.v2.stacks
 org.cloudfoundry.reactor.client.v2.users
+org.cloudfoundry.reactor.client.v3
 org.cloudfoundry.reactor.doppler
 org.cloudfoundry.reactor.uaa
 org.cloudfoundry.reactor.uaa.accesstokenadministration
