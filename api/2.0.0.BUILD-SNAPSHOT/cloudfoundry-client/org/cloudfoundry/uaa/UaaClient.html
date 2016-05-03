@@ -74,13 +74,13 @@ var activeTableTab = "activeTableTab";
 <ul class="subNavList">
 <li>Summary:&nbsp;</li>
 <li>Nested&nbsp;|&nbsp;</li>
-<li>Field&nbsp;|&nbsp;</li>
+<li><a href="#field.summary">Field</a>&nbsp;|&nbsp;</li>
 <li>Constr&nbsp;|&nbsp;</li>
 <li><a href="#method.summary">Method</a></li>
 </ul>
 <ul class="subNavList">
 <li>Detail:&nbsp;</li>
-<li>Field&nbsp;|&nbsp;</li>
+<li><a href="#field.detail">Field</a>&nbsp;|&nbsp;</li>
 <li>Constr&nbsp;|&nbsp;</li>
 <li><a href="#method.detail">Method</a></li>
 </ul>
@@ -108,6 +108,27 @@ var activeTableTab = "activeTableTab";
 <div class="summary">
 <ul class="blockList">
 <li class="blockList">
+<!-- =========== FIELD SUMMARY =========== -->
+<ul class="blockList">
+<li class="blockList"><a name="field.summary">
+<!--   -->
+</a>
+<h3>Field Summary</h3>
+<table class="memberSummary" border="0" cellpadding="3" cellspacing="0" summary="Field Summary table, listing fields, and an explanation">
+<caption><span>Fields</span><span class="tabEnd">&nbsp;</span></caption>
+<tr>
+<th class="colFirst" scope="col">Modifier and Type</th>
+<th class="colLast" scope="col">Field and Description</th>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>static <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a></code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../org/cloudfoundry/uaa/UaaClient.html#SUPPORTED_API_VERSION">SUPPORTED_API_VERSION</a></span></code>
+<div class="block">The currently supported UAA API version</div>
+</td>
+</tr>
+</table>
+</li>
+</ul>
 <!-- ========== METHOD SUMMARY =========== -->
 <ul class="blockList">
 <li class="blockList"><a name="method.summary">
@@ -121,15 +142,15 @@ var activeTableTab = "activeTableTab";
 <th class="colLast" scope="col">Method and Description</th>
 </tr>
 <tr id="i0" class="altColor">
-<td class="colFirst"><code><a href="../../../org/cloudfoundry/uaa/accesstokens/AccessTokens.html" title="interface in org.cloudfoundry.uaa.accesstokens">AccessTokens</a></code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../org/cloudfoundry/uaa/UaaClient.html#accessTokens--">accessTokens</a></span>()</code>
-<div class="block">Main entry point to the UAA Access Token Administration Client API</div>
+<td class="colFirst"><code><a href="../../../org/cloudfoundry/uaa/identityzones/IdentityZones.html" title="interface in org.cloudfoundry.uaa.identityzones">IdentityZones</a></code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../org/cloudfoundry/uaa/UaaClient.html#identityZones--">identityZones</a></span>()</code>
+<div class="block">Main entry point to the UAA Identity Zone Client API</div>
 </td>
 </tr>
 <tr id="i1" class="rowColor">
-<td class="colFirst"><code><a href="../../../org/cloudfoundry/uaa/identityzones/IdentityZones.html" title="interface in org.cloudfoundry.uaa.identityzones">IdentityZones</a></code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../org/cloudfoundry/uaa/UaaClient.html#identityZones--">identityZones</a></span>()</code>
-<div class="block">Main entry point to the UAA Identity Zone Management Client API</div>
+<td class="colFirst"><code><a href="../../../org/cloudfoundry/uaa/tokens/Tokens.html" title="interface in org.cloudfoundry.uaa.tokens">Tokens</a></code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../org/cloudfoundry/uaa/UaaClient.html#tokens--">tokens</a></span>()</code>
+<div class="block">Main entry point to the UAA Token Client API</div>
 </td>
 </tr>
 </table>
@@ -141,37 +162,59 @@ var activeTableTab = "activeTableTab";
 <div class="details">
 <ul class="blockList">
 <li class="blockList">
+<!-- ============ FIELD DETAIL =========== -->
+<ul class="blockList">
+<li class="blockList"><a name="field.detail">
+<!--   -->
+</a>
+<h3>Field Detail</h3>
+<a name="SUPPORTED_API_VERSION">
+<!--   -->
+</a>
+<ul class="blockListLast">
+<li class="blockList">
+<h4>SUPPORTED_API_VERSION</h4>
+<pre>static final&nbsp;<a href="http://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a> SUPPORTED_API_VERSION</pre>
+<div class="block">The currently supported UAA API version</div>
+<dl>
+<dt><span class="seeLabel">See Also:</span></dt>
+<dd><a href="../../../constant-values.html#org.cloudfoundry.uaa.UaaClient.SUPPORTED_API_VERSION">Constant Field Values</a></dd>
+</dl>
+</li>
+</ul>
+</li>
+</ul>
 <!-- ============ METHOD DETAIL ========== -->
 <ul class="blockList">
 <li class="blockList"><a name="method.detail">
 <!--   -->
 </a>
 <h3>Method Detail</h3>
-<a name="accessTokens--">
+<a name="identityZones--">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
-<h4>accessTokens</h4>
-<pre><a href="../../../org/cloudfoundry/uaa/accesstokens/AccessTokens.html" title="interface in org.cloudfoundry.uaa.accesstokens">AccessTokens</a>&nbsp;accessTokens()</pre>
-<div class="block">Main entry point to the UAA Access Token Administration Client API</div>
+<h4>identityZones</h4>
+<pre><a href="../../../org/cloudfoundry/uaa/identityzones/IdentityZones.html" title="interface in org.cloudfoundry.uaa.identityzones">IdentityZones</a>&nbsp;identityZones()</pre>
+<div class="block">Main entry point to the UAA Identity Zone Client API</div>
 <dl>
 <dt><span class="returnLabel">Returns:</span></dt>
-<dd>the UAA Access Token Administration Client API</dd>
+<dd>the UAA Identity Zone Client API</dd>
 </dl>
 </li>
 </ul>
-<a name="identityZones--">
+<a name="tokens--">
 <!--   -->
 </a>
 <ul class="blockListLast">
 <li class="blockList">
-<h4>identityZones</h4>
-<pre><a href="../../../org/cloudfoundry/uaa/identityzones/IdentityZones.html" title="interface in org.cloudfoundry.uaa.identityzones">IdentityZones</a>&nbsp;identityZones()</pre>
-<div class="block">Main entry point to the UAA Identity Zone Management Client API</div>
+<h4>tokens</h4>
+<pre><a href="../../../org/cloudfoundry/uaa/tokens/Tokens.html" title="interface in org.cloudfoundry.uaa.tokens">Tokens</a>&nbsp;tokens()</pre>
+<div class="block">Main entry point to the UAA Token Client API</div>
 <dl>
 <dt><span class="returnLabel">Returns:</span></dt>
-<dd>the UAA Identity Zone Management Client API</dd>
+<dd>the UAA Token Client API</dd>
 </dl>
 </li>
 </ul>
@@ -229,13 +272,13 @@ var activeTableTab = "activeTableTab";
 <ul class="subNavList">
 <li>Summary:&nbsp;</li>
 <li>Nested&nbsp;|&nbsp;</li>
-<li>Field&nbsp;|&nbsp;</li>
+<li><a href="#field.summary">Field</a>&nbsp;|&nbsp;</li>
 <li>Constr&nbsp;|&nbsp;</li>
 <li><a href="#method.summary">Method</a></li>
 </ul>
 <ul class="subNavList">
 <li>Detail:&nbsp;</li>
-<li>Field&nbsp;|&nbsp;</li>
+<li><a href="#field.detail">Field</a>&nbsp;|&nbsp;</li>
 <li>Constr&nbsp;|&nbsp;</li>
 <li><a href="#method.detail">Method</a></li>
 </ul>
