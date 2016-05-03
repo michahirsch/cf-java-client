@@ -38,5 +38,5 @@ org.cloudfoundry.client.v3.processes
 org.cloudfoundry.client.v3.tasks
 org.cloudfoundry.doppler
 org.cloudfoundry.uaa
-org.cloudfoundry.uaa.accesstokenadministration
-org.cloudfoundry.uaa.identityzonemanagement
+org.cloudfoundry.uaa.accesstokens
+org.cloudfoundry.uaa.identityzones
