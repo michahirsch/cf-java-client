@@ -17,7 +17,7 @@
     catch(err) {
     }
 //-->
-var methods = {"i0":10,"i1":10,"i2":10,"i3":10,"i4":10,"i5":10};
+var methods = {"i0":10,"i1":10,"i2":10,"i3":10,"i4":10};
 var tabs = {65535:["t0","All Methods"],2:["t2","Instance Methods"],8:["t4","Concrete Methods"]};
 var altColor = "altColor";
 var rowColor = "rowColor";
@@ -161,37 +161,32 @@ extends <a href="../../../../../org/cloudfoundry/reactor/util/AbstractReactorOpe
 </tr>
 <tr id="i0" class="altColor">
 <td class="colFirst"><code>protected &lt;REQ extends <a href="https://github.com/cloudfoundry/cf-java-client/cloudfoundry-client/apidocs/org/cloudfoundry/Validatable.html?is-external=true" title="class or interface in org.cloudfoundry">Validatable</a>,RSP&gt;<br><a href="http://projectreactor.io/core/docs/api/reactor/core/publisher/Mono.html?is-external=true" title="class or interface in reactor.core.publisher">Mono</a>&lt;RSP&gt;</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../org/cloudfoundry/reactor/client/v2/AbstractClientV2Operations.html#delete-REQ-java.lang.Class-java.util.function.Consumer-">delete</a></span>(REQ&nbsp;request,
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../org/cloudfoundry/reactor/client/v2/AbstractClientV2Operations.html#delete-REQ-java.lang.Class-java.util.function.Function-">delete</a></span>(REQ&nbsp;request,
       <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Class.html?is-external=true" title="class or interface in java.lang">Class</a>&lt;RSP&gt;&nbsp;responseType,
-      <a href="http://docs.oracle.com/javase/8/docs/api/java/util/function/Consumer.html?is-external=true" title="class or interface in java.util.function">Consumer</a>&lt;<a href="http://projectreactor.io/core/docs/api/reactor/core/tuple/Tuple2.html?is-external=true" title="class or interface in reactor.core.tuple">Tuple2</a>&lt;org.springframework.web.util.UriComponentsBuilder,REQ&gt;&gt;&nbsp;builderCallback)</code>&nbsp;</td>
+      <a href="http://docs.oracle.com/javase/8/docs/api/java/util/function/Function.html?is-external=true" title="class or interface in java.util.function">Function</a>&lt;<a href="http://projectreactor.io/core/docs/api/reactor/core/tuple/Tuple2.html?is-external=true" title="class or interface in reactor.core.tuple">Tuple2</a>&lt;org.springframework.web.util.UriComponentsBuilder,REQ&gt;,org.springframework.web.util.UriComponentsBuilder&gt;&nbsp;uriTransformer)</code>&nbsp;</td>
 </tr>
 <tr id="i1" class="rowColor">
 <td class="colFirst"><code>protected &lt;REQ extends <a href="https://github.com/cloudfoundry/cf-java-client/cloudfoundry-client/apidocs/org/cloudfoundry/Validatable.html?is-external=true" title="class or interface in org.cloudfoundry">Validatable</a>,RSP&gt;<br><a href="http://projectreactor.io/core/docs/api/reactor/core/publisher/Mono.html?is-external=true" title="class or interface in reactor.core.publisher">Mono</a>&lt;RSP&gt;</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../org/cloudfoundry/reactor/client/v2/AbstractClientV2Operations.html#get-REQ-java.lang.Class-java.util.function.Consumer-">get</a></span>(REQ&nbsp;request,
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../org/cloudfoundry/reactor/client/v2/AbstractClientV2Operations.html#get-REQ-java.lang.Class-java.util.function.Function-">get</a></span>(REQ&nbsp;request,
    <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Class.html?is-external=true" title="class or interface in java.lang">Class</a>&lt;RSP&gt;&nbsp;responseType,
-   <a href="http://docs.oracle.com/javase/8/docs/api/java/util/function/Consumer.html?is-external=true" title="class or interface in java.util.function">Consumer</a>&lt;<a href="http://projectreactor.io/core/docs/api/reactor/core/tuple/Tuple2.html?is-external=true" title="class or interface in reactor.core.tuple">Tuple2</a>&lt;org.springframework.web.util.UriComponentsBuilder,REQ&gt;&gt;&nbsp;builderCallback)</code>&nbsp;</td>
+   <a href="http://docs.oracle.com/javase/8/docs/api/java/util/function/Function.html?is-external=true" title="class or interface in java.util.function">Function</a>&lt;<a href="http://projectreactor.io/core/docs/api/reactor/core/tuple/Tuple2.html?is-external=true" title="class or interface in reactor.core.tuple">Tuple2</a>&lt;org.springframework.web.util.UriComponentsBuilder,REQ&gt;,org.springframework.web.util.UriComponentsBuilder&gt;&nbsp;uriTransformer)</code>&nbsp;</td>
 </tr>
 <tr id="i2" class="altColor">
 <td class="colFirst"><code>protected &lt;REQ extends <a href="https://github.com/cloudfoundry/cf-java-client/cloudfoundry-client/apidocs/org/cloudfoundry/Validatable.html?is-external=true" title="class or interface in org.cloudfoundry">Validatable</a>&gt;<br><a href="http://projectreactor.io/core/docs/api/reactor/core/publisher/Mono.html?is-external=true" title="class or interface in reactor.core.publisher">Mono</a>&lt;reactor.io.netty.http.HttpInbound&gt;</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../org/cloudfoundry/reactor/client/v2/AbstractClientV2Operations.html#get-REQ-java.util.function.Consumer-">get</a></span>(REQ&nbsp;request,
-   <a href="http://docs.oracle.com/javase/8/docs/api/java/util/function/Consumer.html?is-external=true" title="class or interface in java.util.function">Consumer</a>&lt;<a href="http://projectreactor.io/core/docs/api/reactor/core/tuple/Tuple2.html?is-external=true" title="class or interface in reactor.core.tuple">Tuple2</a>&lt;org.springframework.web.util.UriComponentsBuilder,REQ&gt;&gt;&nbsp;builderCallback)</code>&nbsp;</td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../org/cloudfoundry/reactor/client/v2/AbstractClientV2Operations.html#get-REQ-java.util.function.Function-">get</a></span>(REQ&nbsp;request,
+   <a href="http://docs.oracle.com/javase/8/docs/api/java/util/function/Function.html?is-external=true" title="class or interface in java.util.function">Function</a>&lt;<a href="http://projectreactor.io/core/docs/api/reactor/core/tuple/Tuple2.html?is-external=true" title="class or interface in reactor.core.tuple">Tuple2</a>&lt;org.springframework.web.util.UriComponentsBuilder,REQ&gt;,org.springframework.web.util.UriComponentsBuilder&gt;&nbsp;uriTransformer)</code>&nbsp;</td>
 </tr>
 <tr id="i3" class="rowColor">
 <td class="colFirst"><code>protected &lt;REQ extends <a href="https://github.com/cloudfoundry/cf-java-client/cloudfoundry-client/apidocs/org/cloudfoundry/Validatable.html?is-external=true" title="class or interface in org.cloudfoundry">Validatable</a>,RSP&gt;<br><a href="http://projectreactor.io/core/docs/api/reactor/core/publisher/Mono.html?is-external=true" title="class or interface in reactor.core.publisher">Mono</a>&lt;RSP&gt;</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../org/cloudfoundry/reactor/client/v2/AbstractClientV2Operations.html#post-REQ-java.lang.Class-java.util.function.Consumer-">post</a></span>(REQ&nbsp;request,
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../org/cloudfoundry/reactor/client/v2/AbstractClientV2Operations.html#post-REQ-java.lang.Class-java.util.function.Function-">post</a></span>(REQ&nbsp;request,
     <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Class.html?is-external=true" title="class or interface in java.lang">Class</a>&lt;RSP&gt;&nbsp;responseType,
-    <a href="http://docs.oracle.com/javase/8/docs/api/java/util/function/Consumer.html?is-external=true" title="class or interface in java.util.function">Consumer</a>&lt;<a href="http://projectreactor.io/core/docs/api/reactor/core/tuple/Tuple2.html?is-external=true" title="class or interface in reactor.core.tuple">Tuple2</a>&lt;org.springframework.web.util.UriComponentsBuilder,REQ&gt;&gt;&nbsp;builderCallback)</code>&nbsp;</td>
+    <a href="http://docs.oracle.com/javase/8/docs/api/java/util/function/Function.html?is-external=true" title="class or interface in java.util.function">Function</a>&lt;<a href="http://projectreactor.io/core/docs/api/reactor/core/tuple/Tuple2.html?is-external=true" title="class or interface in reactor.core.tuple">Tuple2</a>&lt;org.springframework.web.util.UriComponentsBuilder,REQ&gt;,org.springframework.web.util.UriComponentsBuilder&gt;&nbsp;uriTransformer)</code>&nbsp;</td>
 </tr>
 <tr id="i4" class="altColor">
 <td class="colFirst"><code>protected &lt;REQ extends <a href="https://github.com/cloudfoundry/cf-java-client/cloudfoundry-client/apidocs/org/cloudfoundry/Validatable.html?is-external=true" title="class or interface in org.cloudfoundry">Validatable</a>,RSP&gt;<br><a href="http://projectreactor.io/core/docs/api/reactor/core/publisher/Mono.html?is-external=true" title="class or interface in reactor.core.publisher">Mono</a>&lt;RSP&gt;</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../org/cloudfoundry/reactor/client/v2/AbstractClientV2Operations.html#put-REQ-java.lang.Class-java.util.function.Consumer-">put</a></span>(REQ&nbsp;request,
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../org/cloudfoundry/reactor/client/v2/AbstractClientV2Operations.html#put-REQ-java.lang.Class-java.util.function.Function-">put</a></span>(REQ&nbsp;request,
    <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Class.html?is-external=true" title="class or interface in java.lang">Class</a>&lt;RSP&gt;&nbsp;responseType,
-   <a href="http://docs.oracle.com/javase/8/docs/api/java/util/function/Consumer.html?is-external=true" title="class or interface in java.util.function">Consumer</a>&lt;<a href="http://projectreactor.io/core/docs/api/reactor/core/tuple/Tuple2.html?is-external=true" title="class or interface in reactor.core.tuple">Tuple2</a>&lt;org.springframework.web.util.UriComponentsBuilder,REQ&gt;&gt;&nbsp;builderCallback)</code>&nbsp;</td>
-</tr>
-<tr id="i5" class="rowColor">
-<td class="colFirst"><code>protected &lt;REQ extends <a href="https://github.com/cloudfoundry/cf-java-client/cloudfoundry-client/apidocs/org/cloudfoundry/Validatable.html?is-external=true" title="class or interface in org.cloudfoundry">Validatable</a>&gt;<br><a href="http://projectreactor.io/core/docs/api/reactor/core/publisher/Mono.html?is-external=true" title="class or interface in reactor.core.publisher">Mono</a>&lt;reactor.io.netty.http.HttpInbound&gt;</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../org/cloudfoundry/reactor/client/v2/AbstractClientV2Operations.html#ws-REQ-java.util.function.Consumer-">ws</a></span>(REQ&nbsp;request,
-  <a href="http://docs.oracle.com/javase/8/docs/api/java/util/function/Consumer.html?is-external=true" title="class or interface in java.util.function">Consumer</a>&lt;<a href="http://projectreactor.io/core/docs/api/reactor/core/tuple/Tuple2.html?is-external=true" title="class or interface in reactor.core.tuple">Tuple2</a>&lt;org.springframework.web.util.UriComponentsBuilder,REQ&gt;&gt;&nbsp;builderCallback)</code>&nbsp;</td>
+   <a href="http://docs.oracle.com/javase/8/docs/api/java/util/function/Function.html?is-external=true" title="class or interface in java.util.function">Function</a>&lt;<a href="http://projectreactor.io/core/docs/api/reactor/core/tuple/Tuple2.html?is-external=true" title="class or interface in reactor.core.tuple">Tuple2</a>&lt;org.springframework.web.util.UriComponentsBuilder,REQ&gt;,org.springframework.web.util.UriComponentsBuilder&gt;&nbsp;uriTransformer)</code>&nbsp;</td>
 </tr>
 </table>
 <ul class="blockList">
@@ -199,7 +194,7 @@ extends <a href="../../../../../org/cloudfoundry/reactor/util/AbstractReactorOpe
 <!--   -->
 </a>
 <h3>Methods inherited from class&nbsp;org.cloudfoundry.reactor.util.<a href="../../../../../org/cloudfoundry/reactor/util/AbstractReactorOperations.html" title="class in org.cloudfoundry.reactor.util">AbstractReactorOperations</a></h3>
-<code><a href="../../../../../org/cloudfoundry/reactor/util/AbstractReactorOperations.html#doDelete-REQ-java.lang.Class-java.util.function.Consumer-">doDelete</a>, <a href="../../../../../org/cloudfoundry/reactor/util/AbstractReactorOperations.html#doGet-REQ-java.lang.Class-java.util.function.Consumer-">doGet</a>, <a href="../../../../../org/cloudfoundry/reactor/util/AbstractReactorOperations.html#doGet-REQ-java.util.function.Consumer-">doGet</a>, <a href="../../../../../org/cloudfoundry/reactor/util/AbstractReactorOperations.html#doPost-REQ-java.lang.Class-java.util.function.Consumer-">doPost</a>, <a href="../../../../../org/cloudfoundry/reactor/util/AbstractReactorOperations.html#doPut-REQ-java.lang.Class-java.util.function.Consumer-">doPut</a>, <a href="../../../../../org/cloudfoundry/reactor/util/AbstractReactorOperations.html#doWs-REQ-java.util.function.Consumer-">doWs</a></code></li>
+<code><a href="../../../../../org/cloudfoundry/reactor/util/AbstractReactorOperations.html#doDelete-REQ-java.lang.Class-java.util.function.Function-java.util.function.Function-">doDelete</a>, <a href="../../../../../org/cloudfoundry/reactor/util/AbstractReactorOperations.html#doGet-REQ-java.lang.Class-java.util.function.Function-java.util.function.Function-">doGet</a>, <a href="../../../../../org/cloudfoundry/reactor/util/AbstractReactorOperations.html#doGet-REQ-java.util.function.Function-java.util.function.Function-">doGet</a>, <a href="../../../../../org/cloudfoundry/reactor/util/AbstractReactorOperations.html#doPost-REQ-java.lang.Class-java.util.function.Function-java.util.function.Function-">doPost</a>, <a href="../../../../../org/cloudfoundry/reactor/util/AbstractReactorOperations.html#doPut-REQ-java.lang.Class-java.util.function.Function-java.util.function.Function-">doPut</a>, <a href="../../../../../org/cloudfoundry/reactor/util/AbstractReactorOperations.html#doWs-REQ-java.util.function.Function-java.util.function.Function-">doWs</a></code></li>
 </ul>
 <ul class="blockList">
 <li class="blockList"><a name="methods.inherited.from.class.java.lang.Object">
@@ -242,9 +237,9 @@ extends <a href="../../../../../org/cloudfoundry/reactor/util/AbstractReactorOpe
 <!--   -->
 </a>
 <h3>Method Detail</h3>
-<a name="delete-org.cloudfoundry.Validatable-java.lang.Class-java.util.function.Consumer-">
+<a name="delete-org.cloudfoundry.Validatable-java.lang.Class-java.util.function.Function-">
 <!--   -->
-</a><a name="delete-REQ-java.lang.Class-java.util.function.Consumer-">
+</a><a name="delete-REQ-java.lang.Class-java.util.function.Function-">
 <!--   -->
 </a>
 <ul class="blockList">
@@ -252,12 +247,12 @@ extends <a href="../../../../../org/cloudfoundry/reactor/util/AbstractReactorOpe
 <h4>delete</h4>
 <pre>protected final&nbsp;&lt;REQ extends <a href="https://github.com/cloudfoundry/cf-java-client/cloudfoundry-client/apidocs/org/cloudfoundry/Validatable.html?is-external=true" title="class or interface in org.cloudfoundry">Validatable</a>,RSP&gt;&nbsp;<a href="http://projectreactor.io/core/docs/api/reactor/core/publisher/Mono.html?is-external=true" title="class or interface in reactor.core.publisher">Mono</a>&lt;RSP&gt;&nbsp;delete(REQ&nbsp;request,
                                                                <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Class.html?is-external=true" title="class or interface in java.lang">Class</a>&lt;RSP&gt;&nbsp;responseType,
-                                                               <a href="http://docs.oracle.com/javase/8/docs/api/java/util/function/Consumer.html?is-external=true" title="class or interface in java.util.function">Consumer</a>&lt;<a href="http://projectreactor.io/core/docs/api/reactor/core/tuple/Tuple2.html?is-external=true" title="class or interface in reactor.core.tuple">Tuple2</a>&lt;org.springframework.web.util.UriComponentsBuilder,REQ&gt;&gt;&nbsp;builderCallback)</pre>
+                                                               <a href="http://docs.oracle.com/javase/8/docs/api/java/util/function/Function.html?is-external=true" title="class or interface in java.util.function">Function</a>&lt;<a href="http://projectreactor.io/core/docs/api/reactor/core/tuple/Tuple2.html?is-external=true" title="class or interface in reactor.core.tuple">Tuple2</a>&lt;org.springframework.web.util.UriComponentsBuilder,REQ&gt;,org.springframework.web.util.UriComponentsBuilder&gt;&nbsp;uriTransformer)</pre>
 </li>
 </ul>
-<a name="get-org.cloudfoundry.Validatable-java.lang.Class-java.util.function.Consumer-">
+<a name="get-org.cloudfoundry.Validatable-java.lang.Class-java.util.function.Function-">
 <!--   -->
-</a><a name="get-REQ-java.lang.Class-java.util.function.Consumer-">
+</a><a name="get-REQ-java.lang.Class-java.util.function.Function-">
 <!--   -->
 </a>
 <ul class="blockList">
@@ -265,24 +260,24 @@ extends <a href="../../../../../org/cloudfoundry/reactor/util/AbstractReactorOpe
 <h4>get</h4>
 <pre>protected final&nbsp;&lt;REQ extends <a href="https://github.com/cloudfoundry/cf-java-client/cloudfoundry-client/apidocs/org/cloudfoundry/Validatable.html?is-external=true" title="class or interface in org.cloudfoundry">Validatable</a>,RSP&gt;&nbsp;<a href="http://projectreactor.io/core/docs/api/reactor/core/publisher/Mono.html?is-external=true" title="class or interface in reactor.core.publisher">Mono</a>&lt;RSP&gt;&nbsp;get(REQ&nbsp;request,
                                                             <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Class.html?is-external=true" title="class or interface in java.lang">Class</a>&lt;RSP&gt;&nbsp;responseType,
-                                                            <a href="http://docs.oracle.com/javase/8/docs/api/java/util/function/Consumer.html?is-external=true" title="class or interface in java.util.function">Consumer</a>&lt;<a href="http://projectreactor.io/core/docs/api/reactor/core/tuple/Tuple2.html?is-external=true" title="class or interface in reactor.core.tuple">Tuple2</a>&lt;org.springframework.web.util.UriComponentsBuilder,REQ&gt;&gt;&nbsp;builderCallback)</pre>
+                                                            <a href="http://docs.oracle.com/javase/8/docs/api/java/util/function/Function.html?is-external=true" title="class or interface in java.util.function">Function</a>&lt;<a href="http://projectreactor.io/core/docs/api/reactor/core/tuple/Tuple2.html?is-external=true" title="class or interface in reactor.core.tuple">Tuple2</a>&lt;org.springframework.web.util.UriComponentsBuilder,REQ&gt;,org.springframework.web.util.UriComponentsBuilder&gt;&nbsp;uriTransformer)</pre>
 </li>
 </ul>
-<a name="get-org.cloudfoundry.Validatable-java.util.function.Consumer-">
+<a name="get-org.cloudfoundry.Validatable-java.util.function.Function-">
 <!--   -->
-</a><a name="get-REQ-java.util.function.Consumer-">
+</a><a name="get-REQ-java.util.function.Function-">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
 <h4>get</h4>
 <pre>protected final&nbsp;&lt;REQ extends <a href="https://github.com/cloudfoundry/cf-java-client/cloudfoundry-client/apidocs/org/cloudfoundry/Validatable.html?is-external=true" title="class or interface in org.cloudfoundry">Validatable</a>&gt;&nbsp;<a href="http://projectreactor.io/core/docs/api/reactor/core/publisher/Mono.html?is-external=true" title="class or interface in reactor.core.publisher">Mono</a>&lt;reactor.io.netty.http.HttpInbound&gt;&nbsp;get(REQ&nbsp;request,
-                                                                                      <a href="http://docs.oracle.com/javase/8/docs/api/java/util/function/Consumer.html?is-external=true" title="class or interface in java.util.function">Consumer</a>&lt;<a href="http://projectreactor.io/core/docs/api/reactor/core/tuple/Tuple2.html?is-external=true" title="class or interface in reactor.core.tuple">Tuple2</a>&lt;org.springframework.web.util.UriComponentsBuilder,REQ&gt;&gt;&nbsp;builderCallback)</pre>
+                                                                                      <a href="http://docs.oracle.com/javase/8/docs/api/java/util/function/Function.html?is-external=true" title="class or interface in java.util.function">Function</a>&lt;<a href="http://projectreactor.io/core/docs/api/reactor/core/tuple/Tuple2.html?is-external=true" title="class or interface in reactor.core.tuple">Tuple2</a>&lt;org.springframework.web.util.UriComponentsBuilder,REQ&gt;,org.springframework.web.util.UriComponentsBuilder&gt;&nbsp;uriTransformer)</pre>
 </li>
 </ul>
-<a name="post-org.cloudfoundry.Validatable-java.lang.Class-java.util.function.Consumer-">
+<a name="post-org.cloudfoundry.Validatable-java.lang.Class-java.util.function.Function-">
 <!--   -->
-</a><a name="post-REQ-java.lang.Class-java.util.function.Consumer-">
+</a><a name="post-REQ-java.lang.Class-java.util.function.Function-">
 <!--   -->
 </a>
 <ul class="blockList">
@@ -290,32 +285,20 @@ extends <a href="../../../../../org/cloudfoundry/reactor/util/AbstractReactorOpe
 <h4>post</h4>
 <pre>protected final&nbsp;&lt;REQ extends <a href="https://github.com/cloudfoundry/cf-java-client/cloudfoundry-client/apidocs/org/cloudfoundry/Validatable.html?is-external=true" title="class or interface in org.cloudfoundry">Validatable</a>,RSP&gt;&nbsp;<a href="http://projectreactor.io/core/docs/api/reactor/core/publisher/Mono.html?is-external=true" title="class or interface in reactor.core.publisher">Mono</a>&lt;RSP&gt;&nbsp;post(REQ&nbsp;request,
                                                              <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Class.html?is-external=true" title="class or interface in java.lang">Class</a>&lt;RSP&gt;&nbsp;responseType,
-                                                             <a href="http://docs.oracle.com/javase/8/docs/api/java/util/function/Consumer.html?is-external=true" title="class or interface in java.util.function">Consumer</a>&lt;<a href="http://projectreactor.io/core/docs/api/reactor/core/tuple/Tuple2.html?is-external=true" title="class or interface in reactor.core.tuple">Tuple2</a>&lt;org.springframework.web.util.UriComponentsBuilder,REQ&gt;&gt;&nbsp;builderCallback)</pre>
+                                                             <a href="http://docs.oracle.com/javase/8/docs/api/java/util/function/Function.html?is-external=true" title="class or interface in java.util.function">Function</a>&lt;<a href="http://projectreactor.io/core/docs/api/reactor/core/tuple/Tuple2.html?is-external=true" title="class or interface in reactor.core.tuple">Tuple2</a>&lt;org.springframework.web.util.UriComponentsBuilder,REQ&gt;,org.springframework.web.util.UriComponentsBuilder&gt;&nbsp;uriTransformer)</pre>
 </li>
 </ul>
-<a name="put-org.cloudfoundry.Validatable-java.lang.Class-java.util.function.Consumer-">
+<a name="put-org.cloudfoundry.Validatable-java.lang.Class-java.util.function.Function-">
 <!--   -->
-</a><a name="put-REQ-java.lang.Class-java.util.function.Consumer-">
-<!--   -->
-</a>
-<ul class="blockList">
-<li class="blockList">
-<h4>put</h4>
-<pre>protected final&nbsp;&lt;REQ extends <a href="https://github.com/cloudfoundry/cf-java-client/cloudfoundry-client/apidocs/org/cloudfoundry/Validatable.html?is-external=true" title="class or interface in org.cloudfoundry">Validatable</a>,RSP&gt;&nbsp;<a href="http://projectreactor.io/core/docs/api/reactor/core/publisher/Mono.html?is-external=true" title="class or interface in reactor.core.publisher">Mono</a>&lt;RSP&gt;&nbsp;put(REQ&nbsp;request,
-                                                            <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Class.html?is-external=true" title="class or interface in java.lang">Class</a>&lt;RSP&gt;&nbsp;responseType,
-                                                            <a href="http://docs.oracle.com/javase/8/docs/api/java/util/function/Consumer.html?is-external=true" title="class or interface in java.util.function">Consumer</a>&lt;<a href="http://projectreactor.io/core/docs/api/reactor/core/tuple/Tuple2.html?is-external=true" title="class or interface in reactor.core.tuple">Tuple2</a>&lt;org.springframework.web.util.UriComponentsBuilder,REQ&gt;&gt;&nbsp;builderCallback)</pre>
-</li>
-</ul>
-<a name="ws-org.cloudfoundry.Validatable-java.util.function.Consumer-">
-<!--   -->
-</a><a name="ws-REQ-java.util.function.Consumer-">
+</a><a name="put-REQ-java.lang.Class-java.util.function.Function-">
 <!--   -->
 </a>
 <ul class="blockListLast">
 <li class="blockList">
-<h4>ws</h4>
-<pre>protected final&nbsp;&lt;REQ extends <a href="https://github.com/cloudfoundry/cf-java-client/cloudfoundry-client/apidocs/org/cloudfoundry/Validatable.html?is-external=true" title="class or interface in org.cloudfoundry">Validatable</a>&gt;&nbsp;<a href="http://projectreactor.io/core/docs/api/reactor/core/publisher/Mono.html?is-external=true" title="class or interface in reactor.core.publisher">Mono</a>&lt;reactor.io.netty.http.HttpInbound&gt;&nbsp;ws(REQ&nbsp;request,
-                                                                                     <a href="http://docs.oracle.com/javase/8/docs/api/java/util/function/Consumer.html?is-external=true" title="class or interface in java.util.function">Consumer</a>&lt;<a href="http://projectreactor.io/core/docs/api/reactor/core/tuple/Tuple2.html?is-external=true" title="class or interface in reactor.core.tuple">Tuple2</a>&lt;org.springframework.web.util.UriComponentsBuilder,REQ&gt;&gt;&nbsp;builderCallback)</pre>
+<h4>put</h4>
+<pre>protected final&nbsp;&lt;REQ extends <a href="https://github.com/cloudfoundry/cf-java-client/cloudfoundry-client/apidocs/org/cloudfoundry/Validatable.html?is-external=true" title="class or interface in org.cloudfoundry">Validatable</a>,RSP&gt;&nbsp;<a href="http://projectreactor.io/core/docs/api/reactor/core/publisher/Mono.html?is-external=true" title="class or interface in reactor.core.publisher">Mono</a>&lt;RSP&gt;&nbsp;put(REQ&nbsp;request,
+                                                            <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Class.html?is-external=true" title="class or interface in java.lang">Class</a>&lt;RSP&gt;&nbsp;responseType,
+                                                            <a href="http://docs.oracle.com/javase/8/docs/api/java/util/function/Function.html?is-external=true" title="class or interface in java.util.function">Function</a>&lt;<a href="http://projectreactor.io/core/docs/api/reactor/core/tuple/Tuple2.html?is-external=true" title="class or interface in reactor.core.tuple">Tuple2</a>&lt;org.springframework.web.util.UriComponentsBuilder,REQ&gt;,org.springframework.web.util.UriComponentsBuilder&gt;&nbsp;uriTransformer)</pre>
 </li>
 </ul>
 </li>
