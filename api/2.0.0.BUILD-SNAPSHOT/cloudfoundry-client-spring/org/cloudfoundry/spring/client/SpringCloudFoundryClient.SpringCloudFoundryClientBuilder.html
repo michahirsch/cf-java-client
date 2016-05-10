@@ -17,7 +17,7 @@
     catch(err) {
     }
 //-->
-var methods = {"i0":10,"i1":10,"i2":10,"i3":10,"i4":10,"i5":10,"i6":10,"i7":10,"i8":10,"i9":10,"i10":10,"i11":10};
+var methods = {"i0":10,"i1":10,"i2":10,"i3":10,"i4":10,"i5":10,"i6":10,"i7":10,"i8":10,"i9":10,"i10":10,"i11":10,"i12":10,"i13":10,"i14":10,"i15":10};
 var tabs = {65535:["t0","All Methods"],2:["t2","Instance Methods"],8:["t4","Concrete Methods"]};
 var altColor = "altColor";
 var rowColor = "rowColor";
@@ -171,13 +171,29 @@ extends <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?
 </tr>
 <tr id="i9" class="rowColor">
 <td class="colFirst"><code><a href="../../../../org/cloudfoundry/spring/client/SpringCloudFoundryClient.SpringCloudFoundryClientBuilder.html" title="class in org.cloudfoundry.spring.client">SpringCloudFoundryClient.SpringCloudFoundryClientBuilder</a></code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../org/cloudfoundry/spring/client/SpringCloudFoundryClient.SpringCloudFoundryClientBuilder.html#skipSslValidation-java.lang.Boolean-">skipSslValidation</a></span>(<a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Boolean.html?is-external=true" title="class or interface in java.lang">Boolean</a>&nbsp;skipSslValidation)</code>&nbsp;</td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../org/cloudfoundry/spring/client/SpringCloudFoundryClient.SpringCloudFoundryClientBuilder.html#proxyHost-java.lang.String-">proxyHost</a></span>(<a href="http://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;proxyHost)</code>&nbsp;</td>
 </tr>
 <tr id="i10" class="altColor">
+<td class="colFirst"><code><a href="../../../../org/cloudfoundry/spring/client/SpringCloudFoundryClient.SpringCloudFoundryClientBuilder.html" title="class in org.cloudfoundry.spring.client">SpringCloudFoundryClient.SpringCloudFoundryClientBuilder</a></code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../org/cloudfoundry/spring/client/SpringCloudFoundryClient.SpringCloudFoundryClientBuilder.html#proxyPassword-java.lang.String-">proxyPassword</a></span>(<a href="http://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;proxyPassword)</code>&nbsp;</td>
+</tr>
+<tr id="i11" class="rowColor">
+<td class="colFirst"><code><a href="../../../../org/cloudfoundry/spring/client/SpringCloudFoundryClient.SpringCloudFoundryClientBuilder.html" title="class in org.cloudfoundry.spring.client">SpringCloudFoundryClient.SpringCloudFoundryClientBuilder</a></code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../org/cloudfoundry/spring/client/SpringCloudFoundryClient.SpringCloudFoundryClientBuilder.html#proxyPort-java.lang.Integer-">proxyPort</a></span>(<a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Integer.html?is-external=true" title="class or interface in java.lang">Integer</a>&nbsp;proxyPort)</code>&nbsp;</td>
+</tr>
+<tr id="i12" class="altColor">
+<td class="colFirst"><code><a href="../../../../org/cloudfoundry/spring/client/SpringCloudFoundryClient.SpringCloudFoundryClientBuilder.html" title="class in org.cloudfoundry.spring.client">SpringCloudFoundryClient.SpringCloudFoundryClientBuilder</a></code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../org/cloudfoundry/spring/client/SpringCloudFoundryClient.SpringCloudFoundryClientBuilder.html#proxyUsername-java.lang.String-">proxyUsername</a></span>(<a href="http://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;proxyUsername)</code>&nbsp;</td>
+</tr>
+<tr id="i13" class="rowColor">
+<td class="colFirst"><code><a href="../../../../org/cloudfoundry/spring/client/SpringCloudFoundryClient.SpringCloudFoundryClientBuilder.html" title="class in org.cloudfoundry.spring.client">SpringCloudFoundryClient.SpringCloudFoundryClientBuilder</a></code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../org/cloudfoundry/spring/client/SpringCloudFoundryClient.SpringCloudFoundryClientBuilder.html#skipSslValidation-java.lang.Boolean-">skipSslValidation</a></span>(<a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Boolean.html?is-external=true" title="class or interface in java.lang">Boolean</a>&nbsp;skipSslValidation)</code>&nbsp;</td>
+</tr>
+<tr id="i14" class="altColor">
 <td class="colFirst"><code><a href="http://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../org/cloudfoundry/spring/client/SpringCloudFoundryClient.SpringCloudFoundryClientBuilder.html#toString--">toString</a></span>()</code>&nbsp;</td>
 </tr>
-<tr id="i11" class="rowColor">
+<tr id="i15" class="rowColor">
 <td class="colFirst"><code><a href="../../../../org/cloudfoundry/spring/client/SpringCloudFoundryClient.SpringCloudFoundryClientBuilder.html" title="class in org.cloudfoundry.spring.client">SpringCloudFoundryClient.SpringCloudFoundryClientBuilder</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../org/cloudfoundry/spring/client/SpringCloudFoundryClient.SpringCloudFoundryClientBuilder.html#username-java.lang.String-">username</a></span>(<a href="http://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;username)</code>&nbsp;</td>
 </tr>
@@ -251,6 +267,46 @@ public&nbsp;<a href="../../../../org/cloudfoundry/spring/client/SpringCloudFound
 <h4>clientSecret</h4>
 <pre><a href="http://docs.oracle.com/javase/8/docs/api/javax/annotation/Generated.html?is-external=true" title="class or interface in javax.annotation">@Generated</a>(<a href="http://docs.oracle.com/javase/8/docs/api/javax/annotation/Generated.html?is-external=true#value--" title="class or interface in javax.annotation">value</a>="lombok")
 public&nbsp;<a href="../../../../org/cloudfoundry/spring/client/SpringCloudFoundryClient.SpringCloudFoundryClientBuilder.html" title="class in org.cloudfoundry.spring.client">SpringCloudFoundryClient.SpringCloudFoundryClientBuilder</a>&nbsp;clientSecret(<a href="http://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;clientSecret)</pre>
+</li>
+</ul>
+<a name="proxyHost-java.lang.String-">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>proxyHost</h4>
+<pre><a href="http://docs.oracle.com/javase/8/docs/api/javax/annotation/Generated.html?is-external=true" title="class or interface in javax.annotation">@Generated</a>(<a href="http://docs.oracle.com/javase/8/docs/api/javax/annotation/Generated.html?is-external=true#value--" title="class or interface in javax.annotation">value</a>="lombok")
+public&nbsp;<a href="../../../../org/cloudfoundry/spring/client/SpringCloudFoundryClient.SpringCloudFoundryClientBuilder.html" title="class in org.cloudfoundry.spring.client">SpringCloudFoundryClient.SpringCloudFoundryClientBuilder</a>&nbsp;proxyHost(<a href="http://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;proxyHost)</pre>
+</li>
+</ul>
+<a name="proxyPassword-java.lang.String-">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>proxyPassword</h4>
+<pre><a href="http://docs.oracle.com/javase/8/docs/api/javax/annotation/Generated.html?is-external=true" title="class or interface in javax.annotation">@Generated</a>(<a href="http://docs.oracle.com/javase/8/docs/api/javax/annotation/Generated.html?is-external=true#value--" title="class or interface in javax.annotation">value</a>="lombok")
+public&nbsp;<a href="../../../../org/cloudfoundry/spring/client/SpringCloudFoundryClient.SpringCloudFoundryClientBuilder.html" title="class in org.cloudfoundry.spring.client">SpringCloudFoundryClient.SpringCloudFoundryClientBuilder</a>&nbsp;proxyPassword(<a href="http://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;proxyPassword)</pre>
+</li>
+</ul>
+<a name="proxyPort-java.lang.Integer-">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>proxyPort</h4>
+<pre><a href="http://docs.oracle.com/javase/8/docs/api/javax/annotation/Generated.html?is-external=true" title="class or interface in javax.annotation">@Generated</a>(<a href="http://docs.oracle.com/javase/8/docs/api/javax/annotation/Generated.html?is-external=true#value--" title="class or interface in javax.annotation">value</a>="lombok")
+public&nbsp;<a href="../../../../org/cloudfoundry/spring/client/SpringCloudFoundryClient.SpringCloudFoundryClientBuilder.html" title="class in org.cloudfoundry.spring.client">SpringCloudFoundryClient.SpringCloudFoundryClientBuilder</a>&nbsp;proxyPort(<a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Integer.html?is-external=true" title="class or interface in java.lang">Integer</a>&nbsp;proxyPort)</pre>
+</li>
+</ul>
+<a name="proxyUsername-java.lang.String-">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>proxyUsername</h4>
+<pre><a href="http://docs.oracle.com/javase/8/docs/api/javax/annotation/Generated.html?is-external=true" title="class or interface in javax.annotation">@Generated</a>(<a href="http://docs.oracle.com/javase/8/docs/api/javax/annotation/Generated.html?is-external=true#value--" title="class or interface in javax.annotation">value</a>="lombok")
+public&nbsp;<a href="../../../../org/cloudfoundry/spring/client/SpringCloudFoundryClient.SpringCloudFoundryClientBuilder.html" title="class in org.cloudfoundry.spring.client">SpringCloudFoundryClient.SpringCloudFoundryClientBuilder</a>&nbsp;proxyUsername(<a href="http://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;proxyUsername)</pre>
 </li>
 </ul>
 <a name="username-java.lang.String-">
