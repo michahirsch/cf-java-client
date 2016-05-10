@@ -17,7 +17,7 @@
     catch(err) {
     }
 //-->
-var methods = {"i0":6,"i1":6,"i2":6,"i3":6,"i4":6,"i5":6,"i6":6,"i7":6,"i8":6,"i9":6,"i10":6,"i11":6};
+var methods = {"i0":6,"i1":6,"i2":6,"i3":6,"i4":6,"i5":6,"i6":6,"i7":6,"i8":6,"i9":6,"i10":6,"i11":6,"i12":6};
 var tabs = {65535:["t0","All Methods"],2:["t2","Instance Methods"],4:["t3","Abstract Methods"]};
 var altColor = "altColor";
 var rowColor = "rowColor";
@@ -169,24 +169,30 @@ var activeTableTab = "activeTableTab";
 </td>
 </tr>
 <tr id="i8" class="altColor">
+<td class="colFirst"><code><a href="http://projectreactor.io/core/docs/api/reactor/core/publisher/Flux.html?is-external=true" title="class or interface in reactor.core.publisher">Flux</a>&lt;<a href="../../../../org/cloudfoundry/operations/services/ServiceKey.html" title="class in org.cloudfoundry.operations.services">ServiceKey</a>&gt;</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../org/cloudfoundry/operations/services/Services.html#listServiceKeys-org.cloudfoundry.operations.services.ListServiceKeysRequest-">listServiceKeys</a></span>(<a href="../../../../org/cloudfoundry/operations/services/ListServiceKeysRequest.html" title="class in org.cloudfoundry.operations.services">ListServiceKeysRequest</a>&nbsp;request)</code>
+<div class="block">List the service keys for a service instance</div>
+</td>
+</tr>
+<tr id="i9" class="rowColor">
 <td class="colFirst"><code><a href="http://projectreactor.io/core/docs/api/reactor/core/publisher/Flux.html?is-external=true" title="class or interface in reactor.core.publisher">Flux</a>&lt;<a href="../../../../org/cloudfoundry/operations/services/ServiceOffering.html" title="class in org.cloudfoundry.operations.services">ServiceOffering</a>&gt;</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../org/cloudfoundry/operations/services/Services.html#listServiceOfferings-org.cloudfoundry.operations.services.ListServiceOfferingsRequest-">listServiceOfferings</a></span>(<a href="../../../../org/cloudfoundry/operations/services/ListServiceOfferingsRequest.html" title="class in org.cloudfoundry.operations.services">ListServiceOfferingsRequest</a>&nbsp;request)</code>
 <div class="block">List available services offerings in the marketplace</div>
 </td>
 </tr>
-<tr id="i9" class="rowColor">
+<tr id="i10" class="altColor">
 <td class="colFirst"><code><a href="http://projectreactor.io/core/docs/api/reactor/core/publisher/Mono.html?is-external=true" title="class or interface in reactor.core.publisher">Mono</a>&lt;<a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Void.html?is-external=true" title="class or interface in java.lang">Void</a>&gt;</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../org/cloudfoundry/operations/services/Services.html#renameInstance-org.cloudfoundry.operations.services.RenameServiceInstanceRequest-">renameInstance</a></span>(<a href="../../../../org/cloudfoundry/operations/services/RenameServiceInstanceRequest.html" title="class in org.cloudfoundry.operations.services">RenameServiceInstanceRequest</a>&nbsp;request)</code>
 <div class="block">Rename a service instance</div>
 </td>
 </tr>
-<tr id="i10" class="altColor">
+<tr id="i11" class="rowColor">
 <td class="colFirst"><code><a href="http://projectreactor.io/core/docs/api/reactor/core/publisher/Mono.html?is-external=true" title="class or interface in reactor.core.publisher">Mono</a>&lt;<a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Void.html?is-external=true" title="class or interface in java.lang">Void</a>&gt;</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../org/cloudfoundry/operations/services/Services.html#unbind-org.cloudfoundry.operations.services.UnbindServiceInstanceRequest-">unbind</a></span>(<a href="../../../../org/cloudfoundry/operations/services/UnbindServiceInstanceRequest.html" title="class in org.cloudfoundry.operations.services">UnbindServiceInstanceRequest</a>&nbsp;request)</code>
 <div class="block">Unbind a service instance from an application</div>
 </td>
 </tr>
-<tr id="i11" class="rowColor">
+<tr id="i12" class="altColor">
 <td class="colFirst"><code><a href="http://projectreactor.io/core/docs/api/reactor/core/publisher/Mono.html?is-external=true" title="class or interface in reactor.core.publisher">Mono</a>&lt;<a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Void.html?is-external=true" title="class or interface in java.lang">Void</a>&gt;</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../org/cloudfoundry/operations/services/Services.html#update-org.cloudfoundry.operations.services.UpdateServiceInstanceRequest-">update</a></span>(<a href="../../../../org/cloudfoundry/operations/services/UpdateServiceInstanceRequest.html" title="class in org.cloudfoundry.operations.services">UpdateServiceInstanceRequest</a>&nbsp;request)</code>
 <div class="block">Update a service instance</div>
@@ -330,6 +336,22 @@ var activeTableTab = "activeTableTab";
 <dl>
 <dt><span class="returnLabel">Returns:</span></dt>
 <dd>the service instances</dd>
+</dl>
+</li>
+</ul>
+<a name="listServiceKeys-org.cloudfoundry.operations.services.ListServiceKeysRequest-">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>listServiceKeys</h4>
+<pre><a href="http://projectreactor.io/core/docs/api/reactor/core/publisher/Flux.html?is-external=true" title="class or interface in reactor.core.publisher">Flux</a>&lt;<a href="../../../../org/cloudfoundry/operations/services/ServiceKey.html" title="class in org.cloudfoundry.operations.services">ServiceKey</a>&gt;&nbsp;listServiceKeys(<a href="../../../../org/cloudfoundry/operations/services/ListServiceKeysRequest.html" title="class in org.cloudfoundry.operations.services">ListServiceKeysRequest</a>&nbsp;request)</pre>
+<div class="block">List the service keys for a service instance</div>
+<dl>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>request</code> - the list service keys request</dd>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd>the service keys</dd>
 </dl>
 </li>
 </ul>

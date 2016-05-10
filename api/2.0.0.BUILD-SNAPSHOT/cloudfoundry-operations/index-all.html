@@ -313,6 +313,8 @@
 <dd>&nbsp;</dd>
 <dt><span class="memberNameLink"><a href="org/cloudfoundry/operations/services/GetServiceKeyRequest.GetServiceKeyRequestBuilder.html#build--">build()</a></span> - Method in class org.cloudfoundry.operations.services.<a href="org/cloudfoundry/operations/services/GetServiceKeyRequest.GetServiceKeyRequestBuilder.html" title="class in org.cloudfoundry.operations.services">GetServiceKeyRequest.GetServiceKeyRequestBuilder</a></dt>
 <dd>&nbsp;</dd>
+<dt><span class="memberNameLink"><a href="org/cloudfoundry/operations/services/ListServiceKeysRequest.ListServiceKeysRequestBuilder.html#build--">build()</a></span> - Method in class org.cloudfoundry.operations.services.<a href="org/cloudfoundry/operations/services/ListServiceKeysRequest.ListServiceKeysRequestBuilder.html" title="class in org.cloudfoundry.operations.services">ListServiceKeysRequest.ListServiceKeysRequestBuilder</a></dt>
+<dd>&nbsp;</dd>
 <dt><span class="memberNameLink"><a href="org/cloudfoundry/operations/services/ListServiceOfferingsRequest.ListServiceOfferingsRequestBuilder.html#build--">build()</a></span> - Method in class org.cloudfoundry.operations.services.<a href="org/cloudfoundry/operations/services/ListServiceOfferingsRequest.ListServiceOfferingsRequestBuilder.html" title="class in org.cloudfoundry.operations.services">ListServiceOfferingsRequest.ListServiceOfferingsRequestBuilder</a></dt>
 <dd>&nbsp;</dd>
 <dt><span class="memberNameLink"><a href="org/cloudfoundry/operations/services/RenameServiceInstanceRequest.RenameServiceInstanceRequestBuilder.html#build--">build()</a></span> - Method in class org.cloudfoundry.operations.services.<a href="org/cloudfoundry/operations/services/RenameServiceInstanceRequest.RenameServiceInstanceRequestBuilder.html" title="class in org.cloudfoundry.operations.services">RenameServiceInstanceRequest.RenameServiceInstanceRequestBuilder</a></dt>
@@ -482,6 +484,8 @@
 <dt><span class="memberNameLink"><a href="org/cloudfoundry/operations/services/GetServiceInstanceRequest.html#builder--">builder()</a></span> - Static method in class org.cloudfoundry.operations.services.<a href="org/cloudfoundry/operations/services/GetServiceInstanceRequest.html" title="class in org.cloudfoundry.operations.services">GetServiceInstanceRequest</a></dt>
 <dd>&nbsp;</dd>
 <dt><span class="memberNameLink"><a href="org/cloudfoundry/operations/services/GetServiceKeyRequest.html#builder--">builder()</a></span> - Static method in class org.cloudfoundry.operations.services.<a href="org/cloudfoundry/operations/services/GetServiceKeyRequest.html" title="class in org.cloudfoundry.operations.services">GetServiceKeyRequest</a></dt>
+<dd>&nbsp;</dd>
+<dt><span class="memberNameLink"><a href="org/cloudfoundry/operations/services/ListServiceKeysRequest.html#builder--">builder()</a></span> - Static method in class org.cloudfoundry.operations.services.<a href="org/cloudfoundry/operations/services/ListServiceKeysRequest.html" title="class in org.cloudfoundry.operations.services">ListServiceKeysRequest</a></dt>
 <dd>&nbsp;</dd>
 <dt><span class="memberNameLink"><a href="org/cloudfoundry/operations/services/ListServiceOfferingsRequest.html#builder--">builder()</a></span> - Static method in class org.cloudfoundry.operations.services.<a href="org/cloudfoundry/operations/services/ListServiceOfferingsRequest.html" title="class in org.cloudfoundry.operations.services">ListServiceOfferingsRequest</a></dt>
 <dd>&nbsp;</dd>
@@ -1088,6 +1092,8 @@
 <dt><span class="memberNameLink"><a href="org/cloudfoundry/operations/services/GetServiceInstanceRequest.html#equals-java.lang.Object-">equals(Object)</a></span> - Method in class org.cloudfoundry.operations.services.<a href="org/cloudfoundry/operations/services/GetServiceInstanceRequest.html" title="class in org.cloudfoundry.operations.services">GetServiceInstanceRequest</a></dt>
 <dd>&nbsp;</dd>
 <dt><span class="memberNameLink"><a href="org/cloudfoundry/operations/services/GetServiceKeyRequest.html#equals-java.lang.Object-">equals(Object)</a></span> - Method in class org.cloudfoundry.operations.services.<a href="org/cloudfoundry/operations/services/GetServiceKeyRequest.html" title="class in org.cloudfoundry.operations.services">GetServiceKeyRequest</a></dt>
+<dd>&nbsp;</dd>
+<dt><span class="memberNameLink"><a href="org/cloudfoundry/operations/services/ListServiceKeysRequest.html#equals-java.lang.Object-">equals(Object)</a></span> - Method in class org.cloudfoundry.operations.services.<a href="org/cloudfoundry/operations/services/ListServiceKeysRequest.html" title="class in org.cloudfoundry.operations.services">ListServiceKeysRequest</a></dt>
 <dd>&nbsp;</dd>
 <dt><span class="memberNameLink"><a href="org/cloudfoundry/operations/services/ListServiceOfferingsRequest.html#equals-java.lang.Object-">equals(Object)</a></span> - Method in class org.cloudfoundry.operations.services.<a href="org/cloudfoundry/operations/services/ListServiceOfferingsRequest.html" title="class in org.cloudfoundry.operations.services">ListServiceOfferingsRequest</a></dt>
 <dd>&nbsp;</dd>
@@ -1785,6 +1791,10 @@
 <dd>
 <div class="block">The service instance name</div>
 </dd>
+<dt><span class="memberNameLink"><a href="org/cloudfoundry/operations/services/ServiceKey.html#getName--">getName()</a></span> - Method in class org.cloudfoundry.operations.services.<a href="org/cloudfoundry/operations/services/ServiceKey.html" title="class in org.cloudfoundry.operations.services">ServiceKey</a></dt>
+<dd>
+<div class="block">Service key name</div>
+</dd>
 <dt><span class="memberNameLink"><a href="org/cloudfoundry/operations/services/ServicePlan.html#getName--">getName()</a></span> - Method in class org.cloudfoundry.operations.services.<a href="org/cloudfoundry/operations/services/ServicePlan.html" title="class in org.cloudfoundry.operations.services">ServicePlan</a></dt>
 <dd>
 <div class="block">The name</div>
@@ -2062,6 +2072,10 @@
 <dt><span class="memberNameLink"><a href="org/cloudfoundry/operations/services/GetServiceKeyRequest.html#getServiceInstanceName--">getServiceInstanceName()</a></span> - Method in class org.cloudfoundry.operations.services.<a href="org/cloudfoundry/operations/services/GetServiceKeyRequest.html" title="class in org.cloudfoundry.operations.services">GetServiceKeyRequest</a></dt>
 <dd>
 <div class="block">The name of the service instance</div>
+</dd>
+<dt><span class="memberNameLink"><a href="org/cloudfoundry/operations/services/ListServiceKeysRequest.html#getServiceInstanceName--">getServiceInstanceName()</a></span> - Method in class org.cloudfoundry.operations.services.<a href="org/cloudfoundry/operations/services/ListServiceKeysRequest.html" title="class in org.cloudfoundry.operations.services">ListServiceKeysRequest</a></dt>
+<dd>
+<div class="block">The name of the service instance for which the keys will be listed</div>
 </dd>
 <dt><span class="memberNameLink"><a href="org/cloudfoundry/operations/services/UnbindServiceInstanceRequest.html#getServiceInstanceName--">getServiceInstanceName()</a></span> - Method in class org.cloudfoundry.operations.services.<a href="org/cloudfoundry/operations/services/UnbindServiceInstanceRequest.html" title="class in org.cloudfoundry.operations.services">UnbindServiceInstanceRequest</a></dt>
 <dd>
@@ -2491,6 +2505,8 @@
 <dd>&nbsp;</dd>
 <dt><span class="memberNameLink"><a href="org/cloudfoundry/operations/services/GetServiceKeyRequest.html#hashCode--">hashCode()</a></span> - Method in class org.cloudfoundry.operations.services.<a href="org/cloudfoundry/operations/services/GetServiceKeyRequest.html" title="class in org.cloudfoundry.operations.services">GetServiceKeyRequest</a></dt>
 <dd>&nbsp;</dd>
+<dt><span class="memberNameLink"><a href="org/cloudfoundry/operations/services/ListServiceKeysRequest.html#hashCode--">hashCode()</a></span> - Method in class org.cloudfoundry.operations.services.<a href="org/cloudfoundry/operations/services/ListServiceKeysRequest.html" title="class in org.cloudfoundry.operations.services">ListServiceKeysRequest</a></dt>
+<dd>&nbsp;</dd>
 <dt><span class="memberNameLink"><a href="org/cloudfoundry/operations/services/ListServiceOfferingsRequest.html#hashCode--">hashCode()</a></span> - Method in class org.cloudfoundry.operations.services.<a href="org/cloudfoundry/operations/services/ListServiceOfferingsRequest.html" title="class in org.cloudfoundry.operations.services">ListServiceOfferingsRequest</a></dt>
 <dd>&nbsp;</dd>
 <dt><span class="memberNameLink"><a href="org/cloudfoundry/operations/services/RenameServiceInstanceRequest.html#hashCode--">hashCode()</a></span> - Method in class org.cloudfoundry.operations.services.<a href="org/cloudfoundry/operations/services/RenameServiceInstanceRequest.html" title="class in org.cloudfoundry.operations.services">RenameServiceInstanceRequest</a></dt>
@@ -2723,6 +2739,8 @@
 <dd>&nbsp;</dd>
 <dt><span class="memberNameLink"><a href="org/cloudfoundry/operations/services/GetServiceKeyRequest.html#isValid--">isValid()</a></span> - Method in class org.cloudfoundry.operations.services.<a href="org/cloudfoundry/operations/services/GetServiceKeyRequest.html" title="class in org.cloudfoundry.operations.services">GetServiceKeyRequest</a></dt>
 <dd>&nbsp;</dd>
+<dt><span class="memberNameLink"><a href="org/cloudfoundry/operations/services/ListServiceKeysRequest.html#isValid--">isValid()</a></span> - Method in class org.cloudfoundry.operations.services.<a href="org/cloudfoundry/operations/services/ListServiceKeysRequest.html" title="class in org.cloudfoundry.operations.services">ListServiceKeysRequest</a></dt>
+<dd>&nbsp;</dd>
 <dt><span class="memberNameLink"><a href="org/cloudfoundry/operations/services/ListServiceOfferingsRequest.html#isValid--">isValid()</a></span> - Method in class org.cloudfoundry.operations.services.<a href="org/cloudfoundry/operations/services/ListServiceOfferingsRequest.html" title="class in org.cloudfoundry.operations.services">ListServiceOfferingsRequest</a></dt>
 <dd>&nbsp;</dd>
 <dt><span class="memberNameLink"><a href="org/cloudfoundry/operations/services/RenameServiceInstanceRequest.html#isValid--">isValid()</a></span> - Method in class org.cloudfoundry.operations.services.<a href="org/cloudfoundry/operations/services/RenameServiceInstanceRequest.html" title="class in org.cloudfoundry.operations.services">RenameServiceInstanceRequest</a></dt>
@@ -2810,6 +2828,14 @@
 <dt><a href="org/cloudfoundry/operations/routes/ListRoutesRequest.Level.html" title="enum in org.cloudfoundry.operations.routes"><span class="typeNameLink">ListRoutesRequest.Level</span></a> - Enum in <a href="org/cloudfoundry/operations/routes/package-summary.html">org.cloudfoundry.operations.routes</a></dt>
 <dd>&nbsp;</dd>
 <dt><a href="org/cloudfoundry/operations/routes/ListRoutesRequest.ListRoutesRequestBuilder.html" title="class in org.cloudfoundry.operations.routes"><span class="typeNameLink">ListRoutesRequest.ListRoutesRequestBuilder</span></a> - Class in <a href="org/cloudfoundry/operations/routes/package-summary.html">org.cloudfoundry.operations.routes</a></dt>
+<dd>&nbsp;</dd>
+<dt><span class="memberNameLink"><a href="org/cloudfoundry/operations/services/Services.html#listServiceKeys-org.cloudfoundry.operations.services.ListServiceKeysRequest-">listServiceKeys(ListServiceKeysRequest)</a></span> - Method in interface org.cloudfoundry.operations.services.<a href="org/cloudfoundry/operations/services/Services.html" title="interface in org.cloudfoundry.operations.services">Services</a></dt>
+<dd>
+<div class="block">List the service keys for a service instance</div>
+</dd>
+<dt><a href="org/cloudfoundry/operations/services/ListServiceKeysRequest.html" title="class in org.cloudfoundry.operations.services"><span class="typeNameLink">ListServiceKeysRequest</span></a> - Class in <a href="org/cloudfoundry/operations/services/package-summary.html">org.cloudfoundry.operations.services</a></dt>
+<dd>&nbsp;</dd>
+<dt><a href="org/cloudfoundry/operations/services/ListServiceKeysRequest.ListServiceKeysRequestBuilder.html" title="class in org.cloudfoundry.operations.services"><span class="typeNameLink">ListServiceKeysRequest.ListServiceKeysRequestBuilder</span></a> - Class in <a href="org/cloudfoundry/operations/services/package-summary.html">org.cloudfoundry.operations.services</a></dt>
 <dd>&nbsp;</dd>
 <dt><span class="memberNameLink"><a href="org/cloudfoundry/operations/services/Services.html#listServiceOfferings-org.cloudfoundry.operations.services.ListServiceOfferingsRequest-">listServiceOfferings(ListServiceOfferingsRequest)</a></span> - Method in interface org.cloudfoundry.operations.services.<a href="org/cloudfoundry/operations/services/Services.html" title="interface in org.cloudfoundry.operations.services">Services</a></dt>
 <dd>
@@ -2966,6 +2992,8 @@
 <dt><span class="memberNameLink"><a href="org/cloudfoundry/operations/services/RenameServiceInstanceRequest.RenameServiceInstanceRequestBuilder.html#name-java.lang.String-">name(String)</a></span> - Method in class org.cloudfoundry.operations.services.<a href="org/cloudfoundry/operations/services/RenameServiceInstanceRequest.RenameServiceInstanceRequestBuilder.html" title="class in org.cloudfoundry.operations.services">RenameServiceInstanceRequest.RenameServiceInstanceRequestBuilder</a></dt>
 <dd>&nbsp;</dd>
 <dt><span class="memberNameLink"><a href="org/cloudfoundry/operations/services/ServiceInstance.ServiceInstanceBuilder.html#name-java.lang.String-">name(String)</a></span> - Method in class org.cloudfoundry.operations.services.<a href="org/cloudfoundry/operations/services/ServiceInstance.ServiceInstanceBuilder.html" title="class in org.cloudfoundry.operations.services">ServiceInstance.ServiceInstanceBuilder</a></dt>
+<dd>&nbsp;</dd>
+<dt><span class="memberNameLink"><a href="org/cloudfoundry/operations/services/ServiceKey.ServiceKeyBuilder.html#name-java.lang.String-">name(String)</a></span> - Method in class org.cloudfoundry.operations.services.<a href="org/cloudfoundry/operations/services/ServiceKey.ServiceKeyBuilder.html" title="class in org.cloudfoundry.operations.services">ServiceKey.ServiceKeyBuilder</a></dt>
 <dd>&nbsp;</dd>
 <dt><span class="memberNameLink"><a href="org/cloudfoundry/operations/services/ServicePlan.ServicePlanBuilder.html#name-java.lang.String-">name(String)</a></span> - Method in class org.cloudfoundry.operations.services.<a href="org/cloudfoundry/operations/services/ServicePlan.ServicePlanBuilder.html" title="class in org.cloudfoundry.operations.services">ServicePlan.ServicePlanBuilder</a></dt>
 <dd>&nbsp;</dd>
@@ -3338,6 +3366,8 @@
 <dt><span class="memberNameLink"><a href="org/cloudfoundry/operations/services/CreateServiceKeyRequest.CreateServiceKeyRequestBuilder.html#serviceInstanceName-java.lang.String-">serviceInstanceName(String)</a></span> - Method in class org.cloudfoundry.operations.services.<a href="org/cloudfoundry/operations/services/CreateServiceKeyRequest.CreateServiceKeyRequestBuilder.html" title="class in org.cloudfoundry.operations.services">CreateServiceKeyRequest.CreateServiceKeyRequestBuilder</a></dt>
 <dd>&nbsp;</dd>
 <dt><span class="memberNameLink"><a href="org/cloudfoundry/operations/services/GetServiceKeyRequest.GetServiceKeyRequestBuilder.html#serviceInstanceName-java.lang.String-">serviceInstanceName(String)</a></span> - Method in class org.cloudfoundry.operations.services.<a href="org/cloudfoundry/operations/services/GetServiceKeyRequest.GetServiceKeyRequestBuilder.html" title="class in org.cloudfoundry.operations.services">GetServiceKeyRequest.GetServiceKeyRequestBuilder</a></dt>
+<dd>&nbsp;</dd>
+<dt><span class="memberNameLink"><a href="org/cloudfoundry/operations/services/ListServiceKeysRequest.ListServiceKeysRequestBuilder.html#serviceInstanceName-java.lang.String-">serviceInstanceName(String)</a></span> - Method in class org.cloudfoundry.operations.services.<a href="org/cloudfoundry/operations/services/ListServiceKeysRequest.ListServiceKeysRequestBuilder.html" title="class in org.cloudfoundry.operations.services">ListServiceKeysRequest.ListServiceKeysRequestBuilder</a></dt>
 <dd>&nbsp;</dd>
 <dt><span class="memberNameLink"><a href="org/cloudfoundry/operations/services/UnbindServiceInstanceRequest.UnbindServiceInstanceRequestBuilder.html#serviceInstanceName-java.lang.String-">serviceInstanceName(String)</a></span> - Method in class org.cloudfoundry.operations.services.<a href="org/cloudfoundry/operations/services/UnbindServiceInstanceRequest.UnbindServiceInstanceRequestBuilder.html" title="class in org.cloudfoundry.operations.services">UnbindServiceInstanceRequest.UnbindServiceInstanceRequestBuilder</a></dt>
 <dd>&nbsp;</dd>
@@ -3872,6 +3902,10 @@
 <dt><span class="memberNameLink"><a href="org/cloudfoundry/operations/services/GetServiceKeyRequest.GetServiceKeyRequestBuilder.html#toString--">toString()</a></span> - Method in class org.cloudfoundry.operations.services.<a href="org/cloudfoundry/operations/services/GetServiceKeyRequest.GetServiceKeyRequestBuilder.html" title="class in org.cloudfoundry.operations.services">GetServiceKeyRequest.GetServiceKeyRequestBuilder</a></dt>
 <dd>&nbsp;</dd>
 <dt><span class="memberNameLink"><a href="org/cloudfoundry/operations/services/GetServiceKeyRequest.html#toString--">toString()</a></span> - Method in class org.cloudfoundry.operations.services.<a href="org/cloudfoundry/operations/services/GetServiceKeyRequest.html" title="class in org.cloudfoundry.operations.services">GetServiceKeyRequest</a></dt>
+<dd>&nbsp;</dd>
+<dt><span class="memberNameLink"><a href="org/cloudfoundry/operations/services/ListServiceKeysRequest.ListServiceKeysRequestBuilder.html#toString--">toString()</a></span> - Method in class org.cloudfoundry.operations.services.<a href="org/cloudfoundry/operations/services/ListServiceKeysRequest.ListServiceKeysRequestBuilder.html" title="class in org.cloudfoundry.operations.services">ListServiceKeysRequest.ListServiceKeysRequestBuilder</a></dt>
+<dd>&nbsp;</dd>
+<dt><span class="memberNameLink"><a href="org/cloudfoundry/operations/services/ListServiceKeysRequest.html#toString--">toString()</a></span> - Method in class org.cloudfoundry.operations.services.<a href="org/cloudfoundry/operations/services/ListServiceKeysRequest.html" title="class in org.cloudfoundry.operations.services">ListServiceKeysRequest</a></dt>
 <dd>&nbsp;</dd>
 <dt><span class="memberNameLink"><a href="org/cloudfoundry/operations/services/ListServiceOfferingsRequest.ListServiceOfferingsRequestBuilder.html#toString--">toString()</a></span> - Method in class org.cloudfoundry.operations.services.<a href="org/cloudfoundry/operations/services/ListServiceOfferingsRequest.ListServiceOfferingsRequestBuilder.html" title="class in org.cloudfoundry.operations.services">ListServiceOfferingsRequest.ListServiceOfferingsRequestBuilder</a></dt>
 <dd>&nbsp;</dd>
