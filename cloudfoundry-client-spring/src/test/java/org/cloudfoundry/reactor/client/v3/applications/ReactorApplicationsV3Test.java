@@ -16,10 +16,10 @@
 
 package org.cloudfoundry.reactor.client.v3.applications;
 
+import org.cloudfoundry.client.v3.Id;
 import org.cloudfoundry.client.v3.Lifecycle;
 import org.cloudfoundry.client.v3.Link;
 import org.cloudfoundry.client.v3.PaginatedResponse;
-import org.cloudfoundry.client.v3.Relationship;
 import org.cloudfoundry.client.v3.applications.AssignApplicationDropletRequest;
 import org.cloudfoundry.client.v3.applications.AssignApplicationDropletResponse;
 import org.cloudfoundry.client.v3.applications.CancelApplicationTaskRequest;
@@ -313,9 +313,7 @@ public final class ReactorApplicationsV3Test {
                     .type("buildpack")
                     .data("buildpack", "name-2443")
                     .build())
-                .relationship("space", Relationship.builder()
-                    .id("48989e6d-bb23-480d-94da-dae7c20e7af3")
-                    .build())
+                .relationship("space", Id.of("48989e6d-bb23-480d-94da-dae7c20e7af3"))
                 .build();
         }
 

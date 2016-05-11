@@ -17,7 +17,7 @@
 package org.cloudfoundry.client.v3.applications;
 
 import org.cloudfoundry.ValidationResult;
-import org.cloudfoundry.client.v3.Relationship;
+import org.cloudfoundry.client.v3.Id;
 import org.junit.Test;
 
 import static org.cloudfoundry.ValidationResult.Status.VALID;
@@ -29,9 +29,7 @@ public final class CreateApplicationRequestTest {
     public void isValid() {
         ValidationResult result = CreateApplicationRequest.builder()
             .name("test-name")
-            .relationship("space", Relationship.builder()
-                .id("test-id")
-                .build())
+            .relationship("space", Id.of("test-id"))
             .build()
             .isValid();
 
@@ -41,9 +39,7 @@ public final class CreateApplicationRequestTest {
     @Test
     public void isValidNoName() {
         ValidationResult result = CreateApplicationRequest.builder()
-            .relationship("test-relationship", Relationship.builder()
-                .id("test-id")
-                .build())
+            .relationship("test-relationship", Id.of("test-id"))
             .build()
             .isValid();
 

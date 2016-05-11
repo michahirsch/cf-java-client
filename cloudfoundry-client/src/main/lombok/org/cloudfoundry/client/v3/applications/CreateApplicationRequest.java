@@ -23,8 +23,8 @@ import lombok.Getter;
 import lombok.Singular;
 import org.cloudfoundry.Validatable;
 import org.cloudfoundry.ValidationResult;
+import org.cloudfoundry.client.v3.Id;
 import org.cloudfoundry.client.v3.Lifecycle;
-import org.cloudfoundry.client.v3.Relationship;
 
 import java.util.Map;
 
@@ -68,13 +68,13 @@ public final class CreateApplicationRequest implements Validatable {
      * @return the relationships
      */
     @Getter(onMethod = @__(@JsonProperty("relationships")))
-    private final Map<String, Relationship> relationships;
+    private final Map<String, Id> relationships;
 
     @Builder
     CreateApplicationRequest(@Singular Map<String, String> environmentVariables,
                              Lifecycle lifecycle,
                              String name,
-                             @Singular Map<String, Relationship> relationships) {
+                             @Singular Map<String, Id> relationships) {
         this.environmentVariables = environmentVariables;
         this.lifecycle = lifecycle;
         this.name = name;
@@ -89,11 +89,8 @@ public final class CreateApplicationRequest implements Validatable {
             builder.message("name must be specified");
         }
 
-        Relationship spaceRelationship = this.relationships.get("space");
-        if (spaceRelationship == null) {
+        if (this.relationships.get("space") == null) {
             builder.message("space relationship must be specified");
-        } else {
-            builder.messages(spaceRelationship.isValid().getMessages());
         }
 
         return builder.build();

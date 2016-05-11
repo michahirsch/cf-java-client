@@ -16,8 +16,8 @@
 
 package org.cloudfoundry.reactor.client.v3.servicebindings;
 
+import org.cloudfoundry.client.v3.Id;
 import org.cloudfoundry.client.v3.Link;
-import org.cloudfoundry.client.v3.Relationship;
 import org.cloudfoundry.client.v3.servicebindings.CreateServiceBindingRequest;
 import org.cloudfoundry.client.v3.servicebindings.CreateServiceBindingRequest.Relationships;
 import org.cloudfoundry.client.v3.servicebindings.CreateServiceBindingResponse;
@@ -96,12 +96,8 @@ public final class ReactorServiceBindingsV3Test {
                     .parameters(Collections.singletonMap("some_object_id", "for_the_service_broker"))
                     .build())
                 .relationships(Relationships.builder()
-                    .application(Relationship.builder()
-                        .id("74f7c078-0934-470f-9883-4fddss5b8f13")
-                        .build())
-                    .serviceInstance(Relationship.builder()
-                        .id("8bfe4c1b-9e18-45b1-83be-124163f31f9e")
-                        .build())
+                    .application(Id.of("74f7c078-0934-470f-9883-4fddss5b8f13"))
+                    .serviceInstance(Id.of("8bfe4c1b-9e18-45b1-83be-124163f31f9e"))
                     .build())
                 .type(APP)
                 .build();

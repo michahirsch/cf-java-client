@@ -16,9 +16,8 @@
 
 package org.cloudfoundry.client.v3.servicebindings;
 
-
 import org.cloudfoundry.ValidationResult;
-import org.cloudfoundry.client.v3.Relationship;
+import org.cloudfoundry.client.v3.Id;
 import org.cloudfoundry.client.v3.servicebindings.CreateServiceBindingRequest.Data;
 import org.cloudfoundry.client.v3.servicebindings.CreateServiceBindingRequest.Relationships;
 import org.cloudfoundry.client.v3.servicebindings.CreateServiceBindingRequest.ServiceBindingType;
@@ -42,9 +41,7 @@ public final class CreateServiceBindingRequestTest {
     @Test
     public void relationshipsIsInvalidNoApplication() {
         ValidationResult result = Relationships.builder()
-            .serviceInstance(Relationship.builder()
-                .id("test-service-instance-id")
-                .build())
+            .serviceInstance(Id.of("test-service-instance-id"))
             .build()
             .isValid();
 
@@ -55,9 +52,7 @@ public final class CreateServiceBindingRequestTest {
     @Test
     public void relationshipsIsInvalidNoServiceInstance() {
         ValidationResult result = Relationships.builder()
-            .application(Relationship.builder()
-                .id("test-application-id")
-                .build())
+            .application(Id.of("test-application-id"))
             .build()
             .isValid();
 
@@ -68,12 +63,8 @@ public final class CreateServiceBindingRequestTest {
     @Test
     public void relationshipsIsValid() {
         ValidationResult result = Relationships.builder()
-            .application(Relationship.builder()
-                .id("test-application-id")
-                .build())
-            .serviceInstance(Relationship.builder()
-                .id("test-service-instance-id")
-                .build())
+            .application(Id.of("test-application-id"))
+            .serviceInstance(Id.of("test-service-instance-id"))
             .build()
             .isValid();
 
@@ -95,12 +86,8 @@ public final class CreateServiceBindingRequestTest {
     public void requestIsNotValidNoType() {
         ValidationResult result = CreateServiceBindingRequest.builder()
             .relationships(Relationships.builder()
-                .application(Relationship.builder()
-                    .id("test-application-id")
-                    .build())
-                .serviceInstance(Relationship.builder()
-                    .id("test-service-instance-id")
-                    .build())
+                .application(Id.of("test-application-id"))
+                .serviceInstance(Id.of("test-service-instance-id"))
                 .build())
             .build()
             .isValid();
@@ -113,12 +100,8 @@ public final class CreateServiceBindingRequestTest {
     public void requestIsValid() {
         ValidationResult result = CreateServiceBindingRequest.builder()
             .relationships(Relationships.builder()
-                .application(Relationship.builder()
-                    .id("test-application-id")
-                    .build())
-                .serviceInstance(Relationship.builder()
-                    .id("test-service-instance-id")
-                    .build())
+                .application(Id.of("test-application-id"))
+                .serviceInstance(Id.of("test-service-instance-id"))
                 .build())
             .type(ServiceBindingType.APP)
             .build()

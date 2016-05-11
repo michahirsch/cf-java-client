@@ -17,41 +17,31 @@
 package org.cloudfoundry.client.v3;
 
 import com.fasterxml.jackson.annotation.JsonProperty;
-import lombok.Builder;
 import lombok.Data;
 import lombok.Getter;
-import org.cloudfoundry.Validatable;
-import org.cloudfoundry.ValidationResult;
+import lombok.NonNull;
 
 /**
- * Represents a relationship to another entity
+ * Represents an entity identifier
  */
 @Data
-public final class Relationship implements Validatable {
+public final class Id {
 
     /**
-     * The id
+     * The identifier
      *
-     * @param id the id
-     * @return the id
+     * @param id the identifier
+     * @return the identifier
      */
     @Getter(onMethod = @__(@JsonProperty("guid")))
     private final String id;
 
-    @Builder
-    Relationship(String id) {
+    private Id(String id) {
         this.id = id;
     }
 
-    @Override
-    public ValidationResult isValid() {
-        ValidationResult.ValidationResultBuilder builder = ValidationResult.builder();
-
-        if (this.id == null) {
-            builder.message("id must be specified");
-        }
-
-        return builder.build();
+    public static Id of(@NonNull String id) {
+        return new Id(id);
     }
 
 }

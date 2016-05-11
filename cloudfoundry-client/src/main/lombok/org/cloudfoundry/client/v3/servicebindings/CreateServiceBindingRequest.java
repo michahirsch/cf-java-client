@@ -16,14 +16,13 @@
 
 package org.cloudfoundry.client.v3.servicebindings;
 
-
 import com.fasterxml.jackson.annotation.JsonProperty;
 import com.fasterxml.jackson.annotation.JsonValue;
 import lombok.Builder;
 import lombok.Getter;
 import org.cloudfoundry.Validatable;
 import org.cloudfoundry.ValidationResult;
-import org.cloudfoundry.client.v3.Relationship;
+import org.cloudfoundry.client.v3.Id;
 
 import java.util.Map;
 
@@ -130,13 +129,13 @@ public final class CreateServiceBindingRequest implements Validatable {
     public static final class Relationships implements Validatable {
 
         @Getter(onMethod = @__(@JsonProperty("app")))
-        private final Relationship application;
+        private final Id application;
 
         @Getter(onMethod = @__(@JsonProperty("service_instance")))
-        private final Relationship serviceInstance;
+        private final Id serviceInstance;
 
         @Builder
-        public Relationships(Relationship application, Relationship serviceInstance) {
+        public Relationships(Id application, Id serviceInstance) {
             this.application = application;
             this.serviceInstance = serviceInstance;
         }
@@ -147,14 +146,10 @@ public final class CreateServiceBindingRequest implements Validatable {
 
             if (this.application == null) {
                 builder.message("application relationship must be specified");
-            } else {
-                builder.messages(this.application.isValid().getMessages());
-            }
-
+            } 
+            
             if (this.serviceInstance == null) {
                 builder.message("service instance relationship must be specified");
-            } else {
-                builder.messages(this.serviceInstance.isValid().getMessages());
             }
 
             return builder.build();
