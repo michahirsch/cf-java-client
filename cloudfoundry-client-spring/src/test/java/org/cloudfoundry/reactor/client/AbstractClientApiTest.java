@@ -72,7 +72,6 @@ public abstract class AbstractClientApiTest<REQ, RSP> extends AbstractApiTest<RE
         return matcher.group(1);
     }
 
-
     protected static byte[] getBytes(String path) {
         try (InputStream in = new FileInputStream(new File("src/test/resources", path)); ByteArrayOutputStream out = new ByteArrayOutputStream()) {
             byte[] buffer = new byte[8192];

@@ -38,8 +38,11 @@ import static org.cloudfoundry.util.tuple.TupleUtils.function;
 
 public abstract class AbstractClientV2Operations extends AbstractReactorOperations {
 
+    private final ObjectMapper objectMapper;
+
     protected AbstractClientV2Operations(AuthorizationProvider authorizationProvider, HttpClient httpClient, ObjectMapper objectMapper, Mono<String> root) {
         super(authorizationProvider, httpClient, objectMapper, root);
+        this.objectMapper = objectMapper;
     }
 
     protected final <REQ extends Validatable, RSP> Mono<RSP> delete(REQ request, Class<RSP> responseType, Function<Tuple2<UriComponentsBuilder, REQ>, UriComponentsBuilder> uriTransformer) {
@@ -66,7 +69,7 @@ public abstract class AbstractClientV2Operations extends AbstractReactorOperatio
                                                                   Function<Tuple2<MultipartHttpOutbound, REQ>, Mono<Void>> requestTransformer) {
 
         return doPostComplete(request, responseType, getUriAugmenter(uriTransformer),
-            function((outbound, validRequest) -> requestTransformer.apply(Tuple.of(new MultipartHttpOutbound(outbound), validRequest))))
+            function((outbound, validRequest) -> requestTransformer.apply(Tuple.of(new MultipartHttpOutbound(this.objectMapper, outbound), validRequest))))
             .otherwise(ExceptionUtils.replace(HttpException.class, CloudFoundryExceptionBuilder::build));
     }
 
@@ -79,7 +82,7 @@ public abstract class AbstractClientV2Operations extends AbstractReactorOperatio
                                                                  Function<Tuple2<MultipartHttpOutbound, REQ>, Mono<Void>> requestTransformer) {
 
         return doPutComplete(request, responseType, getUriAugmenter(uriTransformer),
-            function((outbound, validRequest) -> requestTransformer.apply(Tuple.of(new MultipartHttpOutbound(outbound), validRequest))))
+            function((outbound, validRequest) -> requestTransformer.apply(Tuple.of(new MultipartHttpOutbound(this.objectMapper, outbound), validRequest))))
             .otherwise(ExceptionUtils.replace(HttpException.class, CloudFoundryExceptionBuilder::build));
     }
 

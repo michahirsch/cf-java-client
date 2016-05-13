@@ -41,6 +41,8 @@ import static org.cloudfoundry.util.tuple.TupleUtils.function;
 
 public abstract class AbstractReactorOperations {
 
+    protected static final AsciiString APPLICATION_JSON = new AsciiString("application/json");
+
     protected static final AsciiString APPLICATION_ZIP = new AsciiString("application/zip");
 
     protected static final AsciiString CONTENT_TYPE = new AsciiString("Content-Type");
