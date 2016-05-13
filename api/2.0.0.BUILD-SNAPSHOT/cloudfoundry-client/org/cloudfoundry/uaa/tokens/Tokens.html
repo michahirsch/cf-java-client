@@ -17,7 +17,7 @@
     catch(err) {
     }
 //-->
-var methods = {"i0":6,"i1":6,"i2":6,"i3":6};
+var methods = {"i0":6,"i1":6,"i2":6,"i3":6,"i4":6};
 var tabs = {65535:["t0","All Methods"],2:["t2","Instance Methods"],4:["t3","Abstract Methods"]};
 var altColor = "altColor";
 var rowColor = "rowColor";
@@ -133,12 +133,18 @@ var activeTableTab = "activeTableTab";
 </td>
 </tr>
 <tr id="i2" class="altColor">
+<td class="colFirst"><code><a href="http://projectreactor.io/core/docs/api/reactor/core/publisher/Mono.html?is-external=true" title="class or interface in reactor.core.publisher">Mono</a>&lt;<a href="../../../../org/cloudfoundry/uaa/tokens/GetTokenByPasswordResponse.html" title="class in org.cloudfoundry.uaa.tokens">GetTokenByPasswordResponse</a>&gt;</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../org/cloudfoundry/uaa/tokens/Tokens.html#getByPassword-org.cloudfoundry.uaa.tokens.GetTokenByPasswordRequest-">getByPassword</a></span>(<a href="../../../../org/cloudfoundry/uaa/tokens/GetTokenByPasswordRequest.html" title="class in org.cloudfoundry.uaa.tokens">GetTokenByPasswordRequest</a>&nbsp;request)</code>
+<div class="block">Makes the <a href="http://docs.cloudfoundry.com/uaa/#password-grant">Password Grant</a> request</div>
+</td>
+</tr>
+<tr id="i3" class="rowColor">
 <td class="colFirst"><code><a href="http://projectreactor.io/core/docs/api/reactor/core/publisher/Mono.html?is-external=true" title="class or interface in reactor.core.publisher">Mono</a>&lt;<a href="../../../../org/cloudfoundry/uaa/tokens/GetTokenKeyResponse.html" title="class in org.cloudfoundry.uaa.tokens">GetTokenKeyResponse</a>&gt;</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../org/cloudfoundry/uaa/tokens/Tokens.html#getKey-org.cloudfoundry.uaa.tokens.GetTokenKeyRequest-">getKey</a></span>(<a href="../../../../org/cloudfoundry/uaa/tokens/GetTokenKeyRequest.html" title="class in org.cloudfoundry.uaa.tokens">GetTokenKeyRequest</a>&nbsp;request)</code>
 <div class="block">Makes the <a href="http://docs.cloudfoundry.com/uaa/#token-key">Token Key</a> request</div>
 </td>
 </tr>
-<tr id="i3" class="rowColor">
+<tr id="i4" class="altColor">
 <td class="colFirst"><code><a href="http://projectreactor.io/core/docs/api/reactor/core/publisher/Mono.html?is-external=true" title="class or interface in reactor.core.publisher">Mono</a>&lt;<a href="../../../../org/cloudfoundry/uaa/tokens/ListTokenKeysResponse.html" title="class in org.cloudfoundry.uaa.tokens">ListTokenKeysResponse</a>&gt;</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../org/cloudfoundry/uaa/tokens/Tokens.html#listKeys-org.cloudfoundry.uaa.tokens.ListTokenKeysRequest-">listKeys</a></span>(<a href="../../../../org/cloudfoundry/uaa/tokens/ListTokenKeysRequest.html" title="class in org.cloudfoundry.uaa.tokens">ListTokenKeysRequest</a>&nbsp;request)</code>
 <div class="block">Makes the <a href="http://docs.cloudfoundry.com/uaa/#token-keys">Token Keys</a> request</div>
@@ -188,6 +194,22 @@ var activeTableTab = "activeTableTab";
 <dd><code>request</code> - the Client Credentials request</dd>
 <dt><span class="returnLabel">Returns:</span></dt>
 <dd>the response from the Client Credentials request</dd>
+</dl>
+</li>
+</ul>
+<a name="getByPassword-org.cloudfoundry.uaa.tokens.GetTokenByPasswordRequest-">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>getByPassword</h4>
+<pre><a href="http://projectreactor.io/core/docs/api/reactor/core/publisher/Mono.html?is-external=true" title="class or interface in reactor.core.publisher">Mono</a>&lt;<a href="../../../../org/cloudfoundry/uaa/tokens/GetTokenByPasswordResponse.html" title="class in org.cloudfoundry.uaa.tokens">GetTokenByPasswordResponse</a>&gt;&nbsp;getByPassword(<a href="../../../../org/cloudfoundry/uaa/tokens/GetTokenByPasswordRequest.html" title="class in org.cloudfoundry.uaa.tokens">GetTokenByPasswordRequest</a>&nbsp;request)</pre>
+<div class="block">Makes the <a href="http://docs.cloudfoundry.com/uaa/#password-grant">Password Grant</a> request</div>
+<dl>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>request</code> - the Password token request</dd>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd>the response from the Password token request</dd>
 </dl>
 </li>
 </ul>
