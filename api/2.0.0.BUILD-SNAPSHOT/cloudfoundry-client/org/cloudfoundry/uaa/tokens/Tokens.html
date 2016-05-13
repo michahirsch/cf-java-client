@@ -17,7 +17,7 @@
     catch(err) {
     }
 //-->
-var methods = {"i0":6,"i1":6,"i2":6};
+var methods = {"i0":6,"i1":6,"i2":6,"i3":6};
 var tabs = {65535:["t0","All Methods"],2:["t2","Instance Methods"],4:["t3","Abstract Methods"]};
 var altColor = "altColor";
 var rowColor = "rowColor";
@@ -127,12 +127,18 @@ var activeTableTab = "activeTableTab";
 </td>
 </tr>
 <tr id="i1" class="rowColor">
+<td class="colFirst"><code><a href="http://projectreactor.io/core/docs/api/reactor/core/publisher/Mono.html?is-external=true" title="class or interface in reactor.core.publisher">Mono</a>&lt;<a href="../../../../org/cloudfoundry/uaa/tokens/GetTokenByClientCredentialsResponse.html" title="class in org.cloudfoundry.uaa.tokens">GetTokenByClientCredentialsResponse</a>&gt;</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../org/cloudfoundry/uaa/tokens/Tokens.html#getByClientCredentials-org.cloudfoundry.uaa.tokens.GetTokenByClientCredentialsRequest-">getByClientCredentials</a></span>(<a href="../../../../org/cloudfoundry/uaa/tokens/GetTokenByClientCredentialsRequest.html" title="class in org.cloudfoundry.uaa.tokens">GetTokenByClientCredentialsRequest</a>&nbsp;request)</code>
+<div class="block">Makes the <a href="http://docs.cloudfoundry.com/uaa/#client-credentials-grant">Client Credentials Grant</a> request</div>
+</td>
+</tr>
+<tr id="i2" class="altColor">
 <td class="colFirst"><code><a href="http://projectreactor.io/core/docs/api/reactor/core/publisher/Mono.html?is-external=true" title="class or interface in reactor.core.publisher">Mono</a>&lt;<a href="../../../../org/cloudfoundry/uaa/tokens/GetTokenKeyResponse.html" title="class in org.cloudfoundry.uaa.tokens">GetTokenKeyResponse</a>&gt;</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../org/cloudfoundry/uaa/tokens/Tokens.html#getKey-org.cloudfoundry.uaa.tokens.GetTokenKeyRequest-">getKey</a></span>(<a href="../../../../org/cloudfoundry/uaa/tokens/GetTokenKeyRequest.html" title="class in org.cloudfoundry.uaa.tokens">GetTokenKeyRequest</a>&nbsp;request)</code>
 <div class="block">Makes the <a href="http://docs.cloudfoundry.com/uaa/#token-key">Token Key</a> request</div>
 </td>
 </tr>
-<tr id="i2" class="altColor">
+<tr id="i3" class="rowColor">
 <td class="colFirst"><code><a href="http://projectreactor.io/core/docs/api/reactor/core/publisher/Mono.html?is-external=true" title="class or interface in reactor.core.publisher">Mono</a>&lt;<a href="../../../../org/cloudfoundry/uaa/tokens/ListTokenKeysResponse.html" title="class in org.cloudfoundry.uaa.tokens">ListTokenKeysResponse</a>&gt;</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../org/cloudfoundry/uaa/tokens/Tokens.html#listKeys-org.cloudfoundry.uaa.tokens.ListTokenKeysRequest-">listKeys</a></span>(<a href="../../../../org/cloudfoundry/uaa/tokens/ListTokenKeysRequest.html" title="class in org.cloudfoundry.uaa.tokens">ListTokenKeysRequest</a>&nbsp;request)</code>
 <div class="block">Makes the <a href="http://docs.cloudfoundry.com/uaa/#token-keys">Token Keys</a> request</div>
@@ -166,6 +172,22 @@ var activeTableTab = "activeTableTab";
 <dd><code>request</code> - the Authorization Code request</dd>
 <dt><span class="returnLabel">Returns:</span></dt>
 <dd>the response from the Authorization Code request</dd>
+</dl>
+</li>
+</ul>
+<a name="getByClientCredentials-org.cloudfoundry.uaa.tokens.GetTokenByClientCredentialsRequest-">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>getByClientCredentials</h4>
+<pre><a href="http://projectreactor.io/core/docs/api/reactor/core/publisher/Mono.html?is-external=true" title="class or interface in reactor.core.publisher">Mono</a>&lt;<a href="../../../../org/cloudfoundry/uaa/tokens/GetTokenByClientCredentialsResponse.html" title="class in org.cloudfoundry.uaa.tokens">GetTokenByClientCredentialsResponse</a>&gt;&nbsp;getByClientCredentials(<a href="../../../../org/cloudfoundry/uaa/tokens/GetTokenByClientCredentialsRequest.html" title="class in org.cloudfoundry.uaa.tokens">GetTokenByClientCredentialsRequest</a>&nbsp;request)</pre>
+<div class="block">Makes the <a href="http://docs.cloudfoundry.com/uaa/#client-credentials-grant">Client Credentials Grant</a> request</div>
+<dl>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>request</code> - the Client Credentials request</dd>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd>the response from the Client Credentials request</dd>
 </dl>
 </li>
 </ul>
