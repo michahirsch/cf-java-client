@@ -96,27 +96,20 @@ import org.cloudfoundry.reactor.util.AuthorizationProvider;
 import org.cloudfoundry.reactor.util.ConnectionContextSupplier;
 import org.cloudfoundry.reactor.util.DefaultConnectionContext;
 import org.cloudfoundry.spring.util.CloudFoundryClientCompatibilityChecker;
-import org.cloudfoundry.spring.util.SchedulerGroupBuilder;
 import org.cloudfoundry.spring.util.network.ConnectionContext;
 import org.cloudfoundry.spring.util.network.ConnectionContextFactory;
 import org.cloudfoundry.spring.util.network.FallbackHttpMessageConverter;
 import org.cloudfoundry.spring.util.network.OAuth2RestOperationsOAuth2TokenProvider;
 import org.cloudfoundry.spring.util.network.OAuth2RestTemplateBuilder;
 import org.cloudfoundry.spring.util.network.OAuth2TokenProvider;
-import org.cloudfoundry.spring.util.network.SslCertificateTruster;
 import org.springframework.security.oauth2.client.OAuth2RestOperations;
-import org.springframework.web.util.UriComponentsBuilder;
 import reactor.core.publisher.Mono;
-import reactor.core.scheduler.Scheduler;
 import reactor.io.netty.http.HttpClient;
 
-import java.net.URI;
 import java.util.List;
-import java.util.Optional;
 
 import static com.fasterxml.jackson.annotation.JsonInclude.Include.NON_NULL;
 import static com.fasterxml.jackson.databind.DeserializationFeature.FAIL_ON_UNKNOWN_PROPERTIES;
-import static java.util.concurrent.TimeUnit.SECONDS;
 
 /**
  * The Spring-based implementation of {@link CloudFoundryClient}
@@ -498,22 +491,6 @@ public final class SpringCloudFoundryClient implements CloudFoundryClient, Conne
             .sslContext(connectionContext.getSslContext())
             .messageConverter(new FallbackHttpMessageConverter())
             .problemHandlers(problemHandlers)
-            .build();
-    }
-
-    private static URI getRoot(String host, Integer port, SslCertificateTruster sslCertificateTruster) {
-        URI uri = UriComponentsBuilder.newInstance()
-            .scheme("https").host(host).port(Optional.ofNullable(port).orElse(443))
-            .build().toUri();
-
-        sslCertificateTruster.trust(uri.getHost(), uri.getPort(), 5, SECONDS);
-        return uri;
-    }
-
-    private static Scheduler getSchedulerGroup() {
-        return new SchedulerGroupBuilder()
-            .name("cloud-foundry")
-            .autoShutdown(false)
             .build();
     }
 
